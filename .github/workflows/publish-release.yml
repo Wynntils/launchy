@@ -1,0 +1,87 @@
+name: Publish release
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '**.md'
+      - 'versions.yml'
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up JDK 16
+        uses: actions/setup-java@v2
+        with:
+          distribution: adopt
+          java-version: 16
+          cache: gradle
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Run custom gradle package
+        run: gradle packageForRelease
+
+      - name: Upload build
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-${{ matrix.os }}
+          path: 'releases/*'
+
+      - name: Get version from gradle
+        shell: bash
+        id: extract_version
+        run: |
+          version=`./gradlew properties --no-daemon --console=plain -q | grep "^version:" | awk '{printf $2}'`
+          echo "::set-output name=version::$version"
+
+      - name: Create release version artifact
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        shell: bash
+        run: |
+          echo "${{ steps.extract_version.outputs.version }}" > version.txt
+
+      - name: Upload release version artifact
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: version
+          path: version.txt
+  publish-release:
+    needs: [ build ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v2
+        with:
+          path: artifacts
+
+      - name: Read versions file
+        shell: bash
+        id: extract_version
+        run: |
+          version=`cat artifacts/version/version.txt`
+          echo "::set-output name=version::$version"
+
+      - name: Move all release artifacts into one folder
+        shell: bash
+        run: |
+          mkdir releases
+          mv artifacts/build*/* releases
+
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          automatic_release_tag: v${{ steps.extract_version.outputs.version }}
+          files: |
+            releases/*
+
