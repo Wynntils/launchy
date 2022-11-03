@@ -9,19 +9,7 @@ plugins {
     id("com.mineinabyss.conventions.kotlin")
     id("org.jetbrains.compose") version "1.1.1"
     kotlin("plugin.serialization")
-//    id("com.github.johnrengelman.shadow") version "7.1.1"
-//    id("proguard") version "7.1.0"
-
 }
-
-/*buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("com.guardsquare:proguard-gradle:7.1.0")
-    }
-}*/
 
 repositories {
     google()
@@ -54,7 +42,7 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.freeCompilerArgs = listOf("-opt-in=androidx.compose.material3.ExperimentalMaterial3Api")
 }
 
-val appName = "MineInAbyss_Launcher-" + when {
+val appName = "Wynntils_Launcher-" + when {
     Os.isFamily(Os.FAMILY_MAC) -> "macOS"
     Os.isFamily(Os.FAMILY_WINDOWS) -> "windows"
     else -> "linux"
@@ -89,7 +77,7 @@ compose.desktop {
     }
 }
 
-val linuxAppDir = project.file("packaging/appimage/Mine in Abyss.AppDir")
+val linuxAppDir = project.file("packaging/appimage/Wynntils.AppDir")
 val appImageTool = project.file("deps/appimagetool.AppImage")
 val composePackageDir = "$buildDir/compose/binaries/main/${
     when {
@@ -149,29 +137,5 @@ tasks {
             Os.isFamily(Os.FAMILY_MAC) -> dependsOn(dmgRelease)
             else -> dependsOn(executeAppImageBuilder)
         }
-    }
-}
-
-/*
-tasks {
-    shadowJar {
-        mergeServiceFiles()
-        minimize {
-            exclude(dependency("org.jetbrains.compose.desktop:desktop-jvm.*:.*"))
-            exclude(dependency("io.ktor:ktor-client.*:.*"))
-            exclude(dependency(("org.jetbrains.compose.material:material-icons.*:.*")))
-            exclude("androidx/compose/material/icons/filled/**")
-            exclude("androidx/compose/material/icons/outlined/**")
-            exclude("androidx/compose/material/icons/sharp/**")
-            exclude("androidx/compose/material/icons/twotone/**")
-        }
-
-        manifest {
-            attributes(mapOf("Main-Class" to "com.mineinabyss.launchy.MainKt"))
-        }
-    }
-
-    build {
-        dependsOn(shadowJar)
     }
 }

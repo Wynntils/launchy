@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.*
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
@@ -18,6 +19,7 @@ sealed class Screen(val transparentTopBar: Boolean = false) {
     object Settings : Screen()
 }
 
+@ExperimentalComposeUiApi
 @Composable
 fun Screens() {
     var screen: Screen by remember { mutableStateOf(Screen.Default) }

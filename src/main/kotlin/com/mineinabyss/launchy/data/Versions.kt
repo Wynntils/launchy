@@ -1,11 +1,13 @@
 package com.mineinabyss.launchy.data
 
+import com.mineinabyss.launchy.DEV_MODE
 import com.mineinabyss.launchy.logic.Downloader
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
+import kotlin.io.path.Path
 import kotlin.io.path.inputStream
 
 @Serializable
@@ -25,11 +27,17 @@ data class Versions(
         .associateBy { it.name }
 
     companion object {
-        const val VERSIONS_URL = "https://raw.githubusercontent.com/MineInAbyss/launchy/master/versions.yml"
+        const val VERSIONS_URL = "https://raw.githubusercontent.com/Wynntils/launchy/master/versions.yml"
 
         suspend fun readLatest(download: Boolean): Versions = withContext(Dispatchers.IO) {
-            if (download) Downloader.download(VERSIONS_URL, Dirs.versionsFile)
-            Formats.yaml.decodeFromStream(serializer(), Dirs.versionsFile.inputStream())
+            // check if in development mode
+            if (DEV_MODE) {
+                val file = Path("versions.yml")
+                Formats.yaml.decodeFromStream(serializer(), file.inputStream())
+            } else {
+                if (download) Downloader.download(VERSIONS_URL, Dirs.versionsFile)
+                Formats.yaml.decodeFromStream(serializer(), Dirs.versionsFile.inputStream())
+            }
         }
     }
 }

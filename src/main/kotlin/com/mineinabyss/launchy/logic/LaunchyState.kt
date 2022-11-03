@@ -89,7 +89,7 @@ class LaunchyState(
     val fabricUpToDate by derivedStateOf {
         installedFabricVersion == versions.fabricVersion && FabricInstaller.isProfileInstalled(
             Dirs.minecraft,
-            "Mine in Abyss"
+            "Wynntils"
         )
     }
     val updatesQueued by derivedStateOf { queuedUpdates.isNotEmpty() }
@@ -143,7 +143,7 @@ class LaunchyState(
         FabricInstaller.installToLauncher(
             Dirs.minecraft,
             Dirs.mineinabyss,
-            "Mine in Abyss",
+            "Wynntils",
             versions.minecraftVersion,
             "fabric-loader",
             versions.fabricVersion,

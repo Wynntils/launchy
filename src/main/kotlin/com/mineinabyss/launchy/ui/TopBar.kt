@@ -67,7 +67,7 @@ fun AppTopBar(
                 }
                 AnimatedVisibility(!transparent) {
                     Text(
-                        "Mine in Abyss",
+                        "Wynntils",
                         fontWeight = FontWeight.Medium,
                         color = MaterialTheme.colorScheme.primary
                     )

@@ -26,6 +26,9 @@ import com.mineinabyss.launchy.ui.state.TopBarProvider
 import com.mineinabyss.launchy.ui.state.TopBarState
 
 private val LaunchyStateProvider = compositionLocalOf<LaunchyState> { error("No local versions provided") }
+
+// set to true to enable dev mode
+const val DEV_MODE = false
 val LocalLaunchyState: LaunchyState
     @Composable
     get() = LaunchyStateProvider.current
@@ -33,7 +36,7 @@ val LocalLaunchyState: LaunchyState
 fun main() {
     application {
         val windowState = rememberWindowState(placement = WindowPlacement.Floating)
-        val icon = painterResource("mia_profile_icon.png")
+        val icon = painterResource("logo.png")
         val launchyState by produceState<LaunchyState?>(null) {
             val config = Config.read()
             val versions = Versions.readLatest(config.downloadUpdates)
@@ -45,20 +48,20 @@ fun main() {
         }
         Window(
             state = windowState,
-            title = "Mine in Abyss - Launcher",
+            title = "Wynntils - Launcher",
             icon = icon,
             onCloseRequest = onClose,
             undecorated = true,
         ) {
             val topBarState = remember { TopBarState(onClose, windowState, this) }
             val ready = launchyState != null
-            val scheme = rememberMIAColorScheme(0.02f)
+            val scheme = rememberMIAColorScheme(0.25f)
             MaterialTheme(colorScheme = scheme) {
                 CompositionLocalProvider(TopBarProvider provides topBarState) {
                     Scaffold {
                         AnimatedVisibility(!ready, exit = fadeOut()) {
                             Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                                Text("Getting latest plugin versions...")
+                                Text("Getting latest mod versions...")
                             }
                         }
                         AnimatedVisibility(ready, enter = fadeIn()) {

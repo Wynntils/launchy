@@ -12,9 +12,9 @@ object Dirs {
     }
 
     val mineinabyss = when (OS.get()) {
-        OS.WINDOWS -> Path(System.getenv("APPDATA")) / ".mineinabyss"
-        OS.MAC -> Path(System.getProperty("user.home")) / "Library/Application Support/mineinabyss"
-        OS.LINUX -> Path(System.getProperty("user.home")) / ".mineinabyss"
+        OS.WINDOWS -> Path(System.getenv("APPDATA")) / ".wynntils"
+        OS.MAC -> Path(System.getProperty("user.home")) / "Library/Application Support/wynntils"
+        OS.LINUX -> Path(System.getProperty("user.home")) / ".wynntils"
     }
     val mods = mineinabyss / "mods"
     val configZip = mineinabyss / "configs.zip"
@@ -23,10 +23,10 @@ object Dirs {
         OS.WINDOWS -> Path(System.getenv("APPDATA"))
         OS.MAC -> Path(System.getProperty("user.home")) / "Library/Application Support"
         OS.LINUX -> home / ".config"
-    } / "mineinabyss"
+    } / "wynntils"
 
-    val configFile = config / "mia-launcher.yml"
-    val versionsFile = config / "mia-versions.yml"
+    val configFile = config / "wynntils-launcher.yml"
+    val versionsFile = config / "wynntils-versions.yml"
 
     fun createDirs() {
         config.createDirectories()

@@ -5,6 +5,7 @@ import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.WindowScope
@@ -12,6 +13,7 @@ import com.mineinabyss.launchy.LocalLaunchyState
 import com.mineinabyss.launchy.ui.screens.main.buttons.InstallButton
 import com.mineinabyss.launchy.ui.screens.main.buttons.SettingsButton
 
+@ExperimentalComposeUiApi
 @Preview
 @Composable
 fun MainScreen(windowScope: WindowScope, onSettings: () -> Unit) {
@@ -23,7 +25,7 @@ fun MainScreen(windowScope: WindowScope, onSettings: () -> Unit) {
         Column(
             modifier =
             Modifier.align(Alignment.Center)
-                .heightIn(0.dp, 500.dp)
+                .heightIn(0.dp, 550.dp)
                 .fillMaxSize(),
             verticalArrangement = Arrangement.SpaceBetween,
             horizontalAlignment = Alignment.CenterHorizontally
@@ -31,7 +33,7 @@ fun MainScreen(windowScope: WindowScope, onSettings: () -> Unit) {
             LogoLarge(Modifier.weight(3f))
             Row(
                 horizontalArrangement = Arrangement.Center,
-                verticalAlignment = Alignment.Top,
+                verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.fillMaxWidth().weight(1f),
             ) {
                 InstallButton(!state.isDownloading && state.operationsQueued && state.minecraftValid)
