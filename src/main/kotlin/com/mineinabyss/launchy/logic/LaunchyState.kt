@@ -82,6 +82,11 @@ class LaunchyState(
         addAll(config.toggledConfigs.mapNotNull { it.toMod() })
     }
 
+    init {
+        // trigger update incase we have dependencies
+        enabledMods.forEach { setModEnabled(it, true) }
+    }
+
     private val downloading = mutableStateMapOf<Mod, Long>()
     val isDownloading by derivedStateOf { downloading.isNotEmpty() }
 
