@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Wynntils/launchy/compare/v1.1.2...v1.1.3) (2022-11-03)
+
+
+### Bug Fixes
+
+* fix incompatibility check, add bobby ([3dcc44f](https://github.com/Wynntils/launchy/commit/3dcc44fb2f3671227e079b76b679252423c90e6e))
+
 ## [1.1.2](https://github.com/Wynntils/launchy/compare/v1.1.1...v1.1.2) (2022-11-03)
 
 
@@ -9,6 +16,7 @@
 ### Miscellaneous Chores
 
 * **release:** v1.1.1 [skip ci] ([3090153](https://github.com/Wynntils/launchy/commit/3090153426d46888ec0eb08832b8e4c40abd7e0f))
+* **release:** v1.1.2 [skip ci] ([a77d6ed](https://github.com/Wynntils/launchy/commit/a77d6edec2de110cf0cb08f00b32750f7a9b0e5b))
 
 ## [1.1.1](https://github.com/Wynntils/launchy/compare/v1.1.0...v1.1.1) (2022-11-03)
 
