@@ -93,11 +93,12 @@ jobs:
           mkdir releases
           mv artifacts/build*/* releases
 
-      - uses: marvinpinto/action-automatic-releases@latest
+      - name: Create release
+        uses: softprops/action-gh-release@v1
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          automatic_release_tag: ${{ needs.changelog.outputs.tag }}
-          files: |
-            releases/*
+          files: releases/*
+          tag_name: ${{ needs.changelog.outputs.tag }}
+          prerelease: true
+          body: ${{ needs.changelog.outputs.clean_changelog }}
+          target_commitish: ${{ github.sha }}
 
