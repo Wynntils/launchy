@@ -106,8 +106,22 @@ class LaunchyState(
     )
 
     fun setModEnabled(mod: Mod, enabled: Boolean) {
-        if (enabled) enabledMods += mod
-        else enabledMods -= mod
+        if (enabled) {
+            enabledMods += mod
+            enabledMods.filter { it.name in mod.incompatibleWith || it.incompatibleWith.contains(mod.name) }.forEach { setModEnabled(it, false) }
+            disabledMods.filter { it.name in mod.requires }.forEach { setModEnabled(it, true) }
+        } else {
+            enabledMods -= mod
+            // if a mod is disabled, disable all mods that depend on it
+            enabledMods.filter { it.requires.contains(mod.name) }.forEach { setModEnabled(it, false) }
+            // if a mod is disabled, and the dependency is only used by this mod, disable the dependency too, unless it's not marked as a dependency
+            enabledMods.filter { dep ->
+                mod.requires.contains(dep.name)  // if the mod depends on this dependency
+                        && dep.dependency // if the dependency is marked as a dependency
+                        && enabledMods.none { it.requires.contains(dep.name) }  // and no other mod depends on this dependency
+//                        && !versions.modGroups.filterValues { it.contains(dep) }.keys.any { it.forceEnabled } // and the group the dependency is in is not force enabled
+            }.forEach { setModEnabled(it, false) }
+        }
         setModConfigEnabled(mod, enabled)
     }
 

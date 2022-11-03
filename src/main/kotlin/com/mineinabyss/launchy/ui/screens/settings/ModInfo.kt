@@ -2,22 +2,24 @@ package com.mineinabyss.launchy.ui.screens.settings
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.TooltipArea
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Link
-import androidx.compose.material.icons.rounded.Settings
+import androidx.compose.material.icons.rounded.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.unit.dp
 import com.mineinabyss.launchy.LocalLaunchyState
 import com.mineinabyss.launchy.data.Group
 import com.mineinabyss.launchy.data.Mod
-import edu.stanford.ejalbert.BrowserLauncher
 import java.awt.Desktop
 import java.net.URI
 
@@ -26,6 +28,7 @@ object Browser {
     fun browse(url: String) = synchronized(desktop) { desktop.browse(URI.create(url)) }
 }
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun ModInfo(group: Group, mod: Mod) {
     val state = LocalLaunchyState
@@ -57,31 +60,80 @@ fun ModInfo(group: Group, mod: Mod) {
 
                 Row(Modifier.weight(6f)) {
                     Text(mod.name, style = MaterialTheme.typography.bodyLarge)
+                    if (mod.requires.isNotEmpty() || mod.incompatibleWith.isNotEmpty()) {
+                        TooltipArea(
+                            modifier = Modifier.alpha(0.5f),
+                            tooltip = {
+                                Box(Modifier.background(MaterialTheme.colorScheme.background)) {
+                                    if (mod.requires.isNotEmpty()) {
+                                        Text(
+                                            text = "Requires: ${mod.requires.joinToString()}",
+                                            modifier = Modifier.padding(4.dp),
+                                            style = MaterialTheme.typography.labelMedium
+                                        )
+                                    }
+                                    if (mod.incompatibleWith.isNotEmpty()) {
+                                        Text(
+                                            text = "Incompatible with: ${mod.incompatibleWith.joinToString()}",
+                                            modifier = Modifier.padding(4.dp),
+                                            style = MaterialTheme.typography.labelMedium
+                                        )
+                                    }
+                                }
+                            }
+                        ) {
+                            Icon(
+                                imageVector = Icons.Rounded.Info,
+                                contentDescription = "Requires",
+                                modifier = Modifier.scale(0.75f)
+                            )
+                        }
+                    }
                 }
                 Text(
                     mod.desc,
                     style = MaterialTheme.typography.bodySmall,
                     modifier = Modifier.alpha(0.5f)
                 )
-                if (mod.homepage.isNotBlank())
-                    IconButton(
+                if (mod.configUrl.isNotEmpty()) {
+                    TooltipArea(
                         modifier = Modifier.alpha(0.5f),
-                        onClick = { BrowserLauncher().openURLinBrowser(mod.homepage) }
-                    ) {
-                        Icon(
-                            imageVector = Icons.Rounded.Link,
-                            contentDescription = "URL"
-                        )
-                    }
-                if (mod.configUrl.isNotBlank()) {
-                    IconButton(
-                        modifier = Modifier.alpha(0.5f).rotate(configTabState),
-                        onClick = { configExpanded = !configExpanded }
+                        tooltip = {
+                            Text(
+                                text = "Config",
+                                style = MaterialTheme.typography.bodySmall
+                            )
+                        }
                     ) {
                         Icon(
                             imageVector = Icons.Rounded.Settings,
-                            contentDescription = "ConfigTab"
+                            contentDescription = "ConfigTab",
+                            modifier = Modifier
+                                .scale(0.75f)
+                                .rotate(configTabState)
+                                .clickable { configExpanded = !configExpanded }
                         )
+                    }
+                }
+                if (mod.homepage.isNotEmpty()) {
+                    TooltipArea(
+                        modifier = Modifier.alpha(0.5f),
+                        tooltip = {
+                            Text(
+                                text = "Open homepage",
+                                style = MaterialTheme.typography.bodySmall
+                            )
+                        }
+                    ) {
+                        IconButton(
+                            modifier = Modifier.alpha(0.5f),
+                            onClick = { Browser.browse(mod.homepage) }
+                        ) {
+                            Icon(
+                                imageVector = Icons.Rounded.OpenInNew,
+                                contentDescription = "Homepage"
+                            )
+                        }
                     }
                 }
             }
