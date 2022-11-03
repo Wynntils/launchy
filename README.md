@@ -1,13 +1,13 @@
 <div align="center">
 
-# Launchy
+# Wynntils Mod Installer
 
 [![Release](https://img.shields.io/github/v/release/Wynntils/launchy?label=Download&style=for-the-badge)](https://github.com/Wynntils/launchy/releases/latest)
 [![Forked](https://img.shields.io/badge/Fork%20Of-MineInAbyss%2Flaunchy-green?style=for-the-badge&logo=github)](https://github.com/MineInAbyss/launchy)
 
 </div>
 
-Our custom launcher which makes it easier to set up optional mods and in the future, resourcepack options, and more!
+Our custom installer which makes it easier to set up optional mods and in the future, resourcepack options, and more!
 
 ## Screenshots
 <div align="center">
@@ -18,7 +18,7 @@ Our custom launcher which makes it easier to set up optional mods and in the fut
 
 ## Instructions
 
-Install it from our [releases](https://github.com/Wynntils/launchy/releases/latest), set up your preferences then just launch through Minecraft (you will need to reopen the launcher to download any mod updates we provide.)
+Install it from our [releases](https://github.com/Wynntils/launchy/releases/latest), set up your preferences then just launch through Minecraft (you will need to reopen the installer to download any mod updates we provide.)
 
 ## Features
 - Installs fabric into a 'Wynntils' profile

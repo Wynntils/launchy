@@ -50,7 +50,7 @@ fun main() {
         }
         Window(
             state = windowState,
-            title = "Wynntils - Launcher",
+            title = "Wynntils - Installer",
             icon = icon,
             onCloseRequest = onClose,
             undecorated = true,

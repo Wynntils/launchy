@@ -42,11 +42,7 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.freeCompilerArgs = listOf("-opt-in=androidx.compose.material3.ExperimentalMaterial3Api")
 }
 
-val appName = "Wynntils_Launcher-" + when {
-    Os.isFamily(Os.FAMILY_MAC) -> "macOS"
-    Os.isFamily(Os.FAMILY_WINDOWS) -> "windows"
-    else -> "linux"
-}
+val appName = "Wynntils Mod Installer"
 
 compose.desktop {
     application {
