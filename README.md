@@ -2,7 +2,9 @@
 
 # Launchy
 
-[![Release](https://img.shields.io/github/v/release/Wynntils/launchy?label=Download)](https://github.com/Wynntils/launchy/releases/latest)
+[![Release](https://img.shields.io/github/v/release/Wynntils/launchy?label=Download&style=for-the-badge)](https://github.com/Wynntils/launchy/releases/latest)
+[![Forked](https://img.shields.io/badge/Fork%20Of-MineInAbyss%2Flaunchy-green?style=for-the-badge&logo=github)](https://github.com/MineInAbyss/launchy)
+
 </div>
 
 Our custom launcher which makes it easier to set up optional mods and in the future, resourcepack options, and more!
