@@ -1,3 +1,15 @@
+## [1.1.2](https://github.com/Wynntils/launchy/compare/v1.1.1...v1.1.2) (2022-11-03)
+
+
+### Bug Fixes
+
+* dependency not being selected on first startup ([f898e43](https://github.com/Wynntils/launchy/commit/f898e43a47d06196cdbc0fdd6d9d75672af363e2))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.1.1 [skip ci] ([3090153](https://github.com/Wynntils/launchy/commit/3090153426d46888ec0eb08832b8e4c40abd7e0f))
+
 ## [1.1.1](https://github.com/Wynntils/launchy/compare/v1.1.0...v1.1.1) (2022-11-03)
 
 
