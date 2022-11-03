@@ -137,6 +137,7 @@ modGroups:
       desc: Shaders for fabric
       url: https://cdn.modrinth.com/data/YL57xq9U/versions/1BCkW8RE/iris-mc1.18.2-1.4.0.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/Shaderpacks_1.0.zip
+      configDesc: "Includes the following shaderpacks: \n - BSL v8.1.02.2 \n - Complementary Shaders v4.4 \n - Continuum v2.0.4 \n - Sonic Ether's Unbelievable Shaders PTGI HRR 3"
 
     - name: Distant Horizons
       license: LGPL-3
@@ -144,6 +145,13 @@ modGroups:
       desc: Level-Of-Detail mod to allow for better performance and higher render-distance
       url: https://cdn.modrinth.com/data/uCdwusMi/versions/1.6.5a-1.18.2/DistantHorizons-1.6.5a-1.18.2.jar
       incompatibleWith: [Iris shaders]
+
+    - name: Bobby
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/bobby
+      desc: Bobby allows for render distances greater than the server's view-distance setting
+      url: https://cdn.modrinth.com/data/M08ruV16/versions/3.1.1/bobby-3.1.1.jar
+      incompatibleWith: [Distant Horizons]
 
     - name: Falling leaves
       license: MIT

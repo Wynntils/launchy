@@ -60,7 +60,11 @@ fun ModInfo(group: Group, mod: Mod) {
 
                 Row(Modifier.weight(6f)) {
                     Text(mod.name, style = MaterialTheme.typography.bodyLarge)
-                    if (mod.requires.isNotEmpty() || mod.incompatibleWith.isNotEmpty()) {
+                    // build list of mods that are incompatible with this mod
+                    val incompatibleMods = state.versions.modGroups.flatMap { it.value }
+                        .filter { it.incompatibleWith.contains(mod.name) || mod.incompatibleWith.contains(it.name) }
+                        .map { it.name }
+                    if (mod.requires.isNotEmpty() || incompatibleMods.isNotEmpty()) {
                         TooltipArea(
                             modifier = Modifier.alpha(0.5f),
                             tooltip = {
@@ -72,9 +76,9 @@ fun ModInfo(group: Group, mod: Mod) {
                                             style = MaterialTheme.typography.labelMedium
                                         )
                                     }
-                                    if (mod.incompatibleWith.isNotEmpty()) {
+                                    if (incompatibleMods.isNotEmpty()) {
                                         Text(
-                                            text = "Incompatible with: ${mod.incompatibleWith.joinToString()}",
+                                            text = "Incompatible with: ${incompatibleMods.joinToString()}",
                                             modifier = Modifier.padding(4.dp),
                                             style = MaterialTheme.typography.labelMedium
                                         )
@@ -152,10 +156,20 @@ fun ModInfo(group: Group, mod: Mod) {
                         },
                         enabled = !mod.forceConfigDownload,
                     )
-                    Text(
-                        "Download our recommended configuration",
-                        style = MaterialTheme.typography.bodyMedium
-                    )
+                    Column {
+                        Text(
+                            "Download our recommended configuration",
+                            style = MaterialTheme.typography.bodyMedium
+                        )
+                        if (mod.configDesc.isNotEmpty()) {
+                            Spacer(Modifier.width(4.dp))
+                            Text(
+                                mod.configDesc,
+                                style = MaterialTheme.typography.bodySmall,
+                                modifier = Modifier.alpha(0.5f)
+                            )
+                        }
+                    }
                 }
             }
         }
