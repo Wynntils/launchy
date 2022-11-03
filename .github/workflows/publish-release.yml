@@ -98,7 +98,6 @@ jobs:
         with:
           files: releases/*
           tag_name: ${{ needs.changelog.outputs.tag }}
-          prerelease: true
           body: ${{ needs.changelog.outputs.clean_changelog }}
           target_commitish: ${{ github.sha }}
 
