@@ -9,9 +9,8 @@ Our custom launcher which makes it easier to set up optional mods and in the fut
 
 ## Screenshots
 <div align="center">
-  
-  <img src="https://user-images.githubusercontent.com/16233018/162873692-36215478-e4ec-4060-bb5d-12dafcdcd1da.png" width="600px">
-  <img src="https://user-images.githubusercontent.com/16233018/162874485-5964893d-2480-42f7-bf2a-6fa40705361d.png" width="600px">
+  <img src="https://user-images.githubusercontent.com/15234414/199799942-7681ec17-b03a-4182-b086-976881ec7508.png" width="700px">
+  <img src="https://user-images.githubusercontent.com/15234414/199800326-027d1824-b8b3-4c36-9a54-b93886795f0e.png" width="700px">
 </div>
 
 
