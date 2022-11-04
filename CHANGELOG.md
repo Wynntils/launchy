@@ -1,9 +1,21 @@
+## [1.1.7](https://github.com/Wynntils/launchy/compare/v1.1.6...v1.1.7) (2022-11-04)
+
+
+### Bug Fixes
+
+* **progress-bar:** add progress bar to mods ([6245827](https://github.com/Wynntils/launchy/commit/624582755257be84b585c0c27d0d85b7461a25ee))
+
 ## [1.1.6](https://github.com/Wynntils/launchy/compare/v1.1.5...v1.1.6) (2022-11-04)
 
 
 ### Bug Fixes
 
 * **workflow:** fix workflow for webhook ([1ad7a8e](https://github.com/Wynntils/launchy/commit/1ad7a8ee88459ee68f08c38ef59fa5425fab9dd1))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.1.6 [skip ci] ([5987b01](https://github.com/Wynntils/launchy/commit/5987b010faffc0e0c68bf19c27e104ac3f481726))
 
 ## [1.1.5](https://github.com/Wynntils/launchy/compare/v1.1.4...v1.1.5) (2022-11-04)
 
@@ -40,17 +52,4 @@
 ### Miscellaneous Chores
 
 * **release:** v1.1.3 [skip ci] ([e5c1997](https://github.com/Wynntils/launchy/commit/e5c19975a621b457c096780afcd53cc2ffafb2a1))
-
-## [1.1.2](https://github.com/Wynntils/launchy/compare/v1.1.1...v1.1.2) (2022-11-03)
-
-
-### Bug Fixes
-
-* dependency not being selected on first startup ([f898e43](https://github.com/Wynntils/launchy/commit/f898e43a47d06196cdbc0fdd6d9d75672af363e2))
-
-
-### Miscellaneous Chores
-
-* **release:** v1.1.1 [skip ci] ([3090153](https://github.com/Wynntils/launchy/commit/3090153426d46888ec0eb08832b8e4c40abd7e0f))
-* **release:** v1.1.2 [skip ci] ([a77d6ed](https://github.com/Wynntils/launchy/commit/a77d6edec2de110cf0cb08f00b32750f7a9b0e5b))
 
