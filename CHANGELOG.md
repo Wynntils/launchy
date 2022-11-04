@@ -1,9 +1,21 @@
+## [1.1.8](https://github.com/Wynntils/launchy/compare/v1.1.7...v1.1.8) (2022-11-04)
+
+
+### Bug Fixes
+
+* add first launch screen and play button ([a6170f8](https://github.com/Wynntils/launchy/commit/a6170f898a28e35d94f51efecbb52951e232a859))
+
 ## [1.1.7](https://github.com/Wynntils/launchy/compare/v1.1.6...v1.1.7) (2022-11-04)
 
 
 ### Bug Fixes
 
 * **progress-bar:** add progress bar to mods ([6245827](https://github.com/Wynntils/launchy/commit/624582755257be84b585c0c27d0d85b7461a25ee))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.1.7 [skip ci] ([55ec69d](https://github.com/Wynntils/launchy/commit/55ec69dc17d6fa72fa89673a44c761db9577d119))
 
 ## [1.1.6](https://github.com/Wynntils/launchy/compare/v1.1.5...v1.1.6) (2022-11-04)
 
@@ -40,16 +52,4 @@
 ### Miscellaneous Chores
 
 * **release:** v1.1.4 [skip ci] ([55bb3db](https://github.com/Wynntils/launchy/commit/55bb3db2c899d9ec4c89100ea6ecbe52b4acf0d7))
-
-## [1.1.3](https://github.com/Wynntils/launchy/compare/v1.1.2...v1.1.3) (2022-11-03)
-
-
-### Bug Fixes
-
-* fix incompatibility check, add bobby ([3dcc44f](https://github.com/Wynntils/launchy/commit/3dcc44fb2f3671227e079b76b679252423c90e6e))
-
-
-### Miscellaneous Chores
-
-* **release:** v1.1.3 [skip ci] ([e5c1997](https://github.com/Wynntils/launchy/commit/e5c19975a621b457c096780afcd53cc2ffafb2a1))
 
