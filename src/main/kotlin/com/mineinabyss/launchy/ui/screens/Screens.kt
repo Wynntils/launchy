@@ -4,7 +4,10 @@ import androidx.compose.animation.*
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.IntOffset
@@ -19,13 +22,13 @@ sealed class Screen(val transparentTopBar: Boolean = false) {
     object Settings : Screen()
 }
 
+var screen: Screen by mutableStateOf(Screen.Default)
+
 @ExperimentalComposeUiApi
 @Composable
 fun Screens() {
-    var screen: Screen by remember { mutableStateOf(Screen.Default) }
-
     TransitionFade(screen == Screen.Default) {
-        MainScreen(TopBar.windowScope, onSettings = { screen = Screen.Settings })
+        MainScreen()
     }
 
     TranslucentTopBar(screen) {

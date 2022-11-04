@@ -91,11 +91,13 @@ class LaunchyState(
     val downloadingConfigs = mutableStateMapOf<Mod, Progress>()
     val isDownloading by derivedStateOf { downloading.isNotEmpty() || downloadingConfigs.isNotEmpty() }
 
+    fun isDownloading(mod: Mod) = downloading[mod] != null || downloadingConfigs[mod] != null
+
     var installingProfile by mutableStateOf(false)
     val fabricUpToDate by derivedStateOf {
         installedFabricVersion == versions.fabricVersion && FabricInstaller.isProfileInstalled(
             Dirs.minecraft,
-            "Wynntils"
+            "Wynncraft"
         )
     }
     val updatesQueued by derivedStateOf { queuedUpdates.isNotEmpty() }
@@ -107,9 +109,11 @@ class LaunchyState(
     // If any state is true, we consider import handled and move on
     var handledImportOptions by mutableStateOf(
         config.handledImportOptions ||
-                (Dirs.mineinabyss / "options.txt").exists() ||
+                (Dirs.wynntils / "options.txt").exists() ||
                 !Dirs.minecraft.exists()
     )
+
+    var handledFirstLaunch by mutableStateOf(config.handledFirstLaunch)
 
     fun setModEnabled(mod: Mod, enabled: Boolean) {
         if (enabled) {
@@ -162,8 +166,8 @@ class LaunchyState(
         installingProfile = true
         FabricInstaller.installToLauncher(
             Dirs.minecraft,
-            Dirs.mineinabyss,
-            "Wynntils",
+            Dirs.wynntils,
+            "Wynncraft",
             versions.minecraftVersion,
             "fabric-loader",
             versions.fabricVersion,
@@ -187,7 +191,7 @@ class LaunchyState(
                     downloadingConfigs[mod] = it
                 }
                 downloadConfigURLs[mod] = mod.configUrl
-                unzip((Dirs.configZip).toFile(), Dirs.mineinabyss.toString())
+                unzip((Dirs.configZip).toFile(), Dirs.wynntils.toString())
                 (Dirs.configZip).toFile().delete()
             }
         }.onFailure {
@@ -214,6 +218,7 @@ class LaunchyState(
             seenGroups = versions.groups.map { it.name }.toSet(),
             installedFabricVersion = installedFabricVersion,
             handledImportOptions = handledImportOptions,
+            handledFirstLaunch = handledFirstLaunch,
         ).save()
     }
 
@@ -229,6 +234,10 @@ class LaunchyState(
 
     private fun configUpdateNotPresent(): Set<Mod> {
         return downloadConfigURLs.filter { !it.key.isDownloaded }.keys.also { notPresentConfigDownloads = it }
+    }
+
+    fun launch() {
+        TODO()
     }
 }
 

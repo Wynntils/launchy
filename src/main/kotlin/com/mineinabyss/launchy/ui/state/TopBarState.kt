@@ -11,6 +11,10 @@ val TopBar: TopBarState
     @Composable
     get() = TopBarProvider.current
 
+val windowScope: WindowScope
+    @Composable
+    get() = TopBar.windowScope
+
 class TopBarState(
     val onClose: () -> Unit,
     val windowState: WindowState,
