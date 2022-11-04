@@ -2,11 +2,9 @@ package com.mineinabyss.launchy.ui.screens.settings
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
-import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.TooltipArea
-import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.LinearProgressIndicator
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.*
 import androidx.compose.material3.*
@@ -47,6 +45,17 @@ fun ModInfo(group: Group, mod: Mod) {
             else -> MaterialTheme.colorScheme.surface
         }
     ) {
+        if (state.downloading.containsKey(mod) || state.downloadingConfigs.containsKey(mod)) {
+            val downloaded =
+                ((state.downloading[mod]?.bytesDownloaded ?: 0L) + (state.downloadingConfigs[mod]?.bytesDownloaded
+                    ?: 0L)).toFloat()
+            val total = ((state.downloading[mod]?.totalBytes ?: 0L) + (state.downloadingConfigs[mod]?.totalBytes
+                ?: 0L)).toFloat()
+            LinearProgressIndicator(
+                progress = downloaded / total,
+                color = MaterialTheme.colorScheme.primaryContainer
+            )
+        }
         Column(Modifier.padding(2.dp)) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
