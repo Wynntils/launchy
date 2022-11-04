@@ -175,17 +175,16 @@ class LaunchyState(
 
     suspend fun download(mod: Mod) {
         runCatching {
-            Downloader.download(url = mod.url, writeTo = mod.file) {
+            downloading[mod] = Progress(0, 0) // set progress to 0
+            Downloader.download(url = mod.url, writeTo = mod.file) progress@{
                 downloading[mod] = it
-                if (it.bytesDownloaded == it.contentLength) downloading -= mod
             }
             downloadURLs[mod] = mod.url
             save()
 
             if (mod.configUrl.isNotBlank() && (mod in enabledConfigs)) {
-                Downloader.download(url = mod.configUrl, writeTo = Dirs.configZip) {
+                Downloader.download(url = mod.configUrl, writeTo = Dirs.configZip) progress@{
                     downloadingConfigs[mod] = it
-                    if (it.bytesDownloaded == it.contentLength) downloadingConfigs -= mod
                 }
                 downloadConfigURLs[mod] = mod.configUrl
                 unzip((Dirs.configZip).toFile(), Dirs.mineinabyss.toString())
@@ -198,6 +197,9 @@ class LaunchyState(
 //            scaffoldState.snackbarHostState.showSnackbar(
 //                "Failed to download ${mod.name}: ${it.localizedMessage}!", "OK"
 //            )
+        }.onSuccess {
+            downloading -= mod
+            downloadingConfigs -= mod
         }
     }
 

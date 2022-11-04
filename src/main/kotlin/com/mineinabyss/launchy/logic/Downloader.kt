@@ -31,4 +31,4 @@ object Downloader {
     }
 }
 
-data class Progress(val bytesDownloaded: Long, val contentLength: Long)
+data class Progress(val bytesDownloaded: Long, val totalBytes: Long)

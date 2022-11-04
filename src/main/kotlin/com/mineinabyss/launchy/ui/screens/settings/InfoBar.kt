@@ -25,7 +25,7 @@ fun InfoBar(modifier: Modifier = Modifier) {
     ) {
         if (state.isDownloading) {
             val totalBytesToDownload =
-                state.downloading.values.sumOf { it.contentLength } + state.downloadingConfigs.values.sumOf { it.contentLength }
+                state.downloading.values.sumOf { it.totalBytes } + state.downloadingConfigs.values.sumOf { it.totalBytes }
             val totalBytesDownloaded =
                 state.downloading.values.sumOf { it.bytesDownloaded } + state.downloadingConfigs.values.sumOf { it.bytesDownloaded }
             LinearProgressIndicator(
