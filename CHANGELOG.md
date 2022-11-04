@@ -1,9 +1,21 @@
+## [1.1.4](https://github.com/Wynntils/launchy/compare/v1.1.3...v1.1.4) (2022-11-04)
+
+
+### Bug Fixes
+
+* add progress bar for downloads ([051bee4](https://github.com/Wynntils/launchy/commit/051bee4452a7ec30fc9f275b8870715e1e0b5306))
+
 ## [1.1.3](https://github.com/Wynntils/launchy/compare/v1.1.2...v1.1.3) (2022-11-03)
 
 
 ### Bug Fixes
 
 * fix incompatibility check, add bobby ([3dcc44f](https://github.com/Wynntils/launchy/commit/3dcc44fb2f3671227e079b76b679252423c90e6e))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.1.3 [skip ci] ([e5c1997](https://github.com/Wynntils/launchy/commit/e5c19975a621b457c096780afcd53cc2ffafb2a1))
 
 ## [1.1.2](https://github.com/Wynntils/launchy/compare/v1.1.1...v1.1.2) (2022-11-03)
 
@@ -49,6 +61,4 @@
 ### New Features
 
 * allow mod dependency and incompatibility ([ef11594](https://github.com/Wynntils/launchy/commit/ef11594ae38743e4daac89232791877eb1ba8b01))
-
-## 1.0.0 (2022-11-03)
 
