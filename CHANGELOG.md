@@ -1,9 +1,21 @@
+## [1.1.5](https://github.com/Wynntils/launchy/compare/v1.1.4...v1.1.5) (2022-11-04)
+
+
+### Bug Fixes
+
+* **progress-bar:** fix getting stuck ([ed8b4a7](https://github.com/Wynntils/launchy/commit/ed8b4a7aa6a5df12e1a5b68187169677917e4e2a))
+
 ## [1.1.4](https://github.com/Wynntils/launchy/compare/v1.1.3...v1.1.4) (2022-11-04)
 
 
 ### Bug Fixes
 
 * add progress bar for downloads ([051bee4](https://github.com/Wynntils/launchy/commit/051bee4452a7ec30fc9f275b8870715e1e0b5306))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.1.4 [skip ci] ([55bb3db](https://github.com/Wynntils/launchy/commit/55bb3db2c899d9ec4c89100ea6ecbe52b4acf0d7))
 
 ## [1.1.3](https://github.com/Wynntils/launchy/compare/v1.1.2...v1.1.3) (2022-11-03)
 
@@ -48,17 +60,4 @@
 * update readme [skip ci] ([153a613](https://github.com/Wynntils/launchy/commit/153a6139010c8fbc7c578aeb04e3025f17ffea5d))
 * update readme [skip ci] ([c348fd0](https://github.com/Wynntils/launchy/commit/c348fd08a436d957d6f4a974bd646295c5924f59))
 * update readme [skip ci] ([04d615e](https://github.com/Wynntils/launchy/commit/04d615ecef04d5312ea8207a7d0820ac49c5d9e7))
-
-## [1.1.0](https://github.com/Wynntils/launchy/compare/v1.0.0...v1.1.0) (2022-11-03)
-
-
-### Miscellaneous Chores
-
-* rebranding ([821089d](https://github.com/Wynntils/launchy/commit/821089dfacb862ce4915a629c378ce426d4dc1e4))
-* update mod list ([019459c](https://github.com/Wynntils/launchy/commit/019459c08640e529afeba530d8f5c8c516d2d492))
-
-
-### New Features
-
-* allow mod dependency and incompatibility ([ef11594](https://github.com/Wynntils/launchy/commit/ef11594ae38743e4daac89232791877eb1ba8b01))
 
