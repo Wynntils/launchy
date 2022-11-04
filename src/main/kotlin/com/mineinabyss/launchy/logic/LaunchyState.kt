@@ -87,8 +87,9 @@ class LaunchyState(
         enabledMods.forEach { setModEnabled(it, true) }
     }
 
-    private val downloading = mutableStateMapOf<Mod, Long>()
-    val isDownloading by derivedStateOf { downloading.isNotEmpty() }
+    val downloading = mutableStateMapOf<Mod, Progress>()
+    val downloadingConfigs = mutableStateMapOf<Mod, Progress>()
+    val isDownloading by derivedStateOf { downloading.isNotEmpty() || downloadingConfigs.isNotEmpty() }
 
     var installingProfile by mutableStateOf(false)
     val fabricUpToDate by derivedStateOf {
@@ -174,14 +175,18 @@ class LaunchyState(
 
     suspend fun download(mod: Mod) {
         runCatching {
-            downloading[mod] = 0 //TODO download progress?
-            Downloader.download(url = mod.url, writeTo = mod.file)
-            downloading -= mod
+            Downloader.download(url = mod.url, writeTo = mod.file) {
+                downloading[mod] = it
+                if (it.bytesDownloaded == it.contentLength) downloading -= mod
+            }
             downloadURLs[mod] = mod.url
             save()
 
             if (mod.configUrl.isNotBlank() && (mod in enabledConfigs)) {
-                Downloader.download(url = mod.configUrl, writeTo = Dirs.configZip)
+                Downloader.download(url = mod.configUrl, writeTo = Dirs.configZip) {
+                    downloadingConfigs[mod] = it
+                    if (it.bytesDownloaded == it.contentLength) downloadingConfigs -= mod
+                }
                 downloadConfigURLs[mod] = mod.configUrl
                 unzip((Dirs.configZip).toFile(), Dirs.mineinabyss.toString())
                 (Dirs.configZip).toFile().delete()

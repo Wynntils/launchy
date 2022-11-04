@@ -26,6 +26,7 @@ dependencies {
     }
     @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
     implementation(compose.material3)
+    implementation(compose.material)
     implementation(compose.materialIconsExtended)
     implementation(Deps.kotlinx.serialization.json)
     implementation(Deps.kotlinx.serialization.kaml)

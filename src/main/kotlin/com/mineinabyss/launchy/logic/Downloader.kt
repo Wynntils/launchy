@@ -16,18 +16,19 @@ object Downloader {
     suspend fun download(
         url: String,
         writeTo: Path,
-        onProgressUpdate: (progress: Long) -> Unit = {},
+        onProgressUpdate: (progress: Progress) -> Unit = {},
     ) {
         val response = httpClient.get<HttpStatement>(url) {
             onDownload { bytesSentTotal, contentLength ->
-                val progress = bytesSentTotal / contentLength
-                onProgressUpdate(progress)
+                onProgressUpdate(Progress(bytesSentTotal, contentLength))
             }
-
         }.receive<ByteArray>()
+        onProgressUpdate(Progress(1, 1)) //make sure we're at 100% when we're done
         writeTo.parent.createDirectories()
         if (!writeTo.exists())
             writeTo.createFile()
         writeTo.writeBytes(response)
     }
 }
+
+data class Progress(val bytesDownloaded: Long, val contentLength: Long)

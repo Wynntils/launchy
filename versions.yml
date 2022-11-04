@@ -131,6 +131,13 @@ modGroups:
       url: https://voicesofwynn.com/download/32/jar
 
   Visual Enhancements:
+    - name: Distant Horizons
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/distanthorizons
+      desc: Level-Of-Detail mod to allow for better performance and higher render-distance
+      url: https://cdn.modrinth.com/data/uCdwusMi/versions/1.6.5a-1.18.2/DistantHorizons-1.6.5a-1.18.2.jar
+      incompatibleWith: [ Iris shaders, Bobby ]
+
     - name: Iris shaders
       license: LGPL-3
       homepage: https://modrinth.com/mod/iris
@@ -138,20 +145,14 @@ modGroups:
       url: https://cdn.modrinth.com/data/YL57xq9U/versions/1BCkW8RE/iris-mc1.18.2-1.4.0.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/Shaderpacks_1.0.zip
       configDesc: "Includes the following shaderpacks: \n - BSL v8.1.02.2 \n - Complementary Shaders v4.4 \n - Continuum v2.0.4 \n - Sonic Ether's Unbelievable Shaders PTGI HRR 3"
-
-    - name: Distant Horizons
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/distanthorizons
-      desc: Level-Of-Detail mod to allow for better performance and higher render-distance
-      url: https://cdn.modrinth.com/data/uCdwusMi/versions/1.6.5a-1.18.2/DistantHorizons-1.6.5a-1.18.2.jar
-      incompatibleWith: [Iris shaders]
+      incompatibleWith: [ Distant Horizons ]
 
     - name: Bobby
       license: LGPL-3
       homepage: https://modrinth.com/mod/bobby
       desc: Bobby allows for render distances greater than the server's view-distance setting
       url: https://cdn.modrinth.com/data/M08ruV16/versions/3.1.1/bobby-3.1.1.jar
-      incompatibleWith: [Distant Horizons]
+      incompatibleWith: [ Distant Horizons ]
 
     - name: Falling leaves
       license: MIT
@@ -159,7 +160,7 @@ modGroups:
       desc: Adds falling leaf particles to trees
       url: https://cdn.modrinth.com/data/WhbRG4iK/versions/1.11.1/fallingleaves-1.11.1%2B1.18.2.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/FallingLeaves_1.0.zip
-      requires: [Cloth config]
+      requires: [ Cloth config ]
 
     - name: Continuity
       license: LGPL-3
@@ -216,7 +217,7 @@ modGroups:
       homepage: https://modrinth.com/mod/dripsounds-fabric
       desc: Adds sounds for drip particles landing
       url: https://cdn.modrinth.com/data/T8MMXTpr/versions/1.18-0.3.0/DripSounds-1.18-0.3.0.jar
-      requires: [Cloth config]
+      requires: [ Cloth config ]
 
     - name: ExtraSounds
       license: CC0
@@ -237,7 +238,7 @@ modGroups:
       homepage: https://modrinth.com/mod/reeses-sodium-options
       desc: Alternative menu for Sodium
       url: https://cdn.modrinth.com/data/Bh37bMuy/versions/74LitD6T/reeses_sodium_options-1.4.7%2Bmc1.18.2-build.58.jar
-      requires: [Sodium]
+      requires: [ Sodium ]
 
   Misc Enhancements:
     - name: First Person Models
@@ -263,7 +264,7 @@ modGroups:
       homepage: https://modrinth.com/mod/sodium-extra
       desc: Extra features not available in Sodium
       url: https://cdn.modrinth.com/data/PtjYWJkn/versions/lyZvsCAT/sodium-extra-0.4.11%2Bmc1.18.2-build.67.jar
-      requires: [Sodium]
+      requires: [ Sodium ]
 
     - name: Fabrishot
       license: MIT

@@ -31,7 +31,7 @@ fun InstallButton(enabled: Boolean) {
             AnimatedVisibility(state.operationsQueued && !state.isDownloading) {
                 Text("Install")
             }
-            AnimatedVisibility(!state.operationsQueued) {
+            AnimatedVisibility(!state.operationsQueued && !state.isDownloading) {
                 Text("Installed")
             }
             AnimatedVisibility(state.isDownloading) {
