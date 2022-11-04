@@ -17,6 +17,7 @@ jobs:
       skipped: ${{ steps.changelog.outputs.skipped }}
       clean_changelog: ${{ steps.changelog.outputs.clean_changelog }}
       changelog: ${{ steps.changelog.outputs.changelog }}
+      release_id: ${{ steps.release.outputs.id }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -40,6 +41,15 @@ jobs:
           skip-version-file: true
           skip-git-pull: true
 
+      - name: Create release
+        if: ${{ steps.changelog.outputs.skipped != 'true' }}
+        id: release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.changelog }}
+          draft: true
+
       - name: Upload version information
         uses: actions/upload-artifact@v3
         with:
@@ -47,6 +57,7 @@ jobs:
           path: gradle.properties
 
   build:
+    if: ${{ needs.changelog.outputs.skipped != 'true' }}
     runs-on: ${{ matrix.os }}
     needs: [changelog] # Build needs the new version number
     strategy:
@@ -72,32 +83,21 @@ jobs:
       - name: Run custom gradle package
         run: gradle packageForRelease
 
-      - name: Upload build
-        uses: actions/upload-artifact@v3
+      - name: Upload files to release
+        uses: softprops/action-gh-release@v1
         with:
-          name: build-${{ matrix.os }}
-          path: 'releases/*'
+          tag_name: ${{ needs.changelog.outputs.tag }}
+          draft: true
+          files: releases/*
 
   publish-release:
     needs: [ build, changelog ]
+    if: ${{ needs.changelog.outputs.skipped != 'true' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Download all artifacts
-        uses: actions/download-artifact@v3
+      - name: Publish Release
+        uses: eregon/publish-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          path: artifacts
-
-      - name: Move all release artifacts into one folder
-        shell: bash
-        run: |
-          mkdir releases
-          mv artifacts/build*/* releases
-
-      - name: Create release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: releases/*
-          tag_name: ${{ needs.changelog.outputs.tag }}
-          body: ${{ needs.changelog.outputs.clean_changelog }}
-          target_commitish: ${{ github.sha }}
-
+          release_id: ${{ needs.changelog.outputs.release_id }}

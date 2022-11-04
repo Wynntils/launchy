@@ -11,7 +11,7 @@ module.exports = config({
         { type: "fix", section: "Bug Fixes" },
         { type: "perf", section: "Performance Improvements" },
         { type: "revert", section: "Reverts" },
-        { type: "docs", section: "Documentation" },
+        // { type: "docs", section: "Documentation" },
         { type: "style", section: "Styles" },
         { type: "chore", section: "Miscellaneous Chores" },
         { type: "refactor", section: "Code Refactoring" },
