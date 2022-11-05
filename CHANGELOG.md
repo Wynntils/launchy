@@ -1,9 +1,26 @@
+## [1.1.9](https://github.com/Wynntils/launchy/compare/v1.1.8...v1.1.9) (2022-11-05)
+
+
+### Bug Fixes
+
+* linux builds ([ebb1b30](https://github.com/Wynntils/launchy/commit/ebb1b307edf53d97871045e3aabd15f57f0bcea9))
+
+
+### Miscellaneous Chores
+
+* disable LambdaBetterGrass ([fe957c4](https://github.com/Wynntils/launchy/commit/fe957c489bf9af888a2c1dbcb1962951bf0c1ab0))
+
 ## [1.1.8](https://github.com/Wynntils/launchy/compare/v1.1.7...v1.1.8) (2022-11-04)
 
 
 ### Bug Fixes
 
 * add first launch screen and play button ([a6170f8](https://github.com/Wynntils/launchy/commit/a6170f898a28e35d94f51efecbb52951e232a859))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.1.8 [skip ci] ([01aa3a3](https://github.com/Wynntils/launchy/commit/01aa3a3a0f1a3e4a676ef4d523a2cb1e4f95cf26))
 
 ## [1.1.7](https://github.com/Wynntils/launchy/compare/v1.1.6...v1.1.7) (2022-11-04)
 
@@ -40,16 +57,4 @@
 ### Miscellaneous Chores
 
 * **release:** v1.1.5 [skip ci] ([7e1b05d](https://github.com/Wynntils/launchy/commit/7e1b05d7423ffe72a008fba50c8a40cc3258857b))
-
-## [1.1.4](https://github.com/Wynntils/launchy/compare/v1.1.3...v1.1.4) (2022-11-04)
-
-
-### Bug Fixes
-
-* add progress bar for downloads ([051bee4](https://github.com/Wynntils/launchy/commit/051bee4452a7ec30fc9f275b8870715e1e0b5306))
-
-
-### Miscellaneous Chores
-
-* **release:** v1.1.4 [skip ci] ([55bb3db](https://github.com/Wynntils/launchy/commit/55bb3db2c899d9ec4c89100ea6ecbe52b4acf0d7))
 
