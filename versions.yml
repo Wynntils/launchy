@@ -168,12 +168,6 @@ modGroups:
       desc: Provides default connected textures
       url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
 
-    - name: LambdaBetterGrass
-      license: MIT
-      homepage: https://modrinth.com/mod/lambdabettergrass
-      desc: Adds better grass and snow to the game
-      url: https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.4%2B1.18/lambdabettergrass-1.2.4%2B1.18.jar
-
     - name: Lamb Dynamic Lights
       license: MIT
       homepage: https://modrinth.com/mod/lambdynamiclights
@@ -332,4 +326,9 @@ modGroups:
       url: https://cdn.modrinth.com/data/9s6osm5g/versions/EXrxCjl6/cloth-config-8.2.88-fabric.jar
       dependency: true
 
-#  Outdated/Disabled:
+  Outdated/Disabled:
+    - name: LambdaBetterGrass
+      license: MIT
+      homepage: https://modrinth.com/mod/lambdabettergrass
+      desc: Adds better grass and snow to the game
+      url: https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.4%2B1.18/lambdabettergrass-1.2.4%2B1.18.jar
