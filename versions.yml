@@ -224,7 +224,7 @@ modGroups:
       license: MIT
       homepage: https://modrinth.com/mod/betterf3
       desc: Makes the F3-menu customizable and cleaner
-      url: https://cdn.modrinth.com/data/8shC1gFX/versions/QIXtqgTu/BetterF3-3.0.0-Forge-1.18.2.jar
+      url: https://cdn.modrinth.com/data/8shC1gFX/versions/qUyRV6XT/BetterF3-3.0.0-Fabric-1.18.2.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
 
     - name: Reese's Sodium Options
