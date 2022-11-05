@@ -1,5 +1,6 @@
 #!/bin/bash
 
 HERE="$(dirname $"$(readlink -f "${0}")")"
-EXEC="${HERE}/usr/bin/Wynntils_Launcher-linux"
+ls "${HERE}/usr/bin"
+EXEC="${HERE}/usr/bin/Wynntils Mod Installer"
 exec "${EXEC}"
