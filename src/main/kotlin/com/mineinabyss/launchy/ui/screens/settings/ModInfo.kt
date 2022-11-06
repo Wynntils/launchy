@@ -40,6 +40,7 @@ fun ModInfo(group: Group, mod: Mod) {
             .fillMaxWidth()
             .clickable { if (!group.forceEnabled && !group.forceDisabled) state.setModEnabled(mod, !modEnabled) },
         color = when (mod) {
+            in state.failedDownloads -> MaterialTheme.colorScheme.error
             in state.queuedDeletions -> MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.25f)
             in state.queuedInstalls -> MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.25f)//Color(105, 240, 174, alpha = 25)
             else -> MaterialTheme.colorScheme.surface

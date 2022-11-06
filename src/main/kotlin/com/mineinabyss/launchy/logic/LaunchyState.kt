@@ -90,6 +90,7 @@ class LaunchyState(
     val downloading = mutableStateMapOf<Mod, Progress>()
     val downloadingConfigs = mutableStateMapOf<Mod, Progress>()
     val isDownloading by derivedStateOf { downloading.isNotEmpty() || downloadingConfigs.isNotEmpty() }
+    val failedDownloads = mutableStateSetOf<Mod>()
 
     // Caclculate the speed of the download
     val downloadSpeed by derivedStateOf {
@@ -203,6 +204,13 @@ class LaunchyState(
                 (Dirs.configZip).toFile().delete()
             }
         }.onFailure {
+            downloading -= mod
+            downloadingConfigs -= mod
+            failedDownloads += mod
+            setModEnabled(mod, false)
+
+            println("Failed to download ${mod.name}")
+            it.printStackTrace()
 //            Badge {
 //                Text("Failed to download ${mod.name}: ${it.localizedMessage}!"/*, "OK"*/)
 //            }
