@@ -168,12 +168,6 @@ modGroups:
       desc: Provides default connected textures
       url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
 
-    - name: LambdaBetterGrass
-      license: MIT
-      homepage: https://modrinth.com/mod/lambdabettergrass
-      desc: Adds better grass and snow to the game
-      url: https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.4%2B1.18/lambdabettergrass-1.2.4%2B1.18.jar
-
     - name: Lamb Dynamic Lights
       license: MIT
       homepage: https://modrinth.com/mod/lambdynamiclights
@@ -212,7 +206,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/zV5r3pPn/versions/1.4.6-fabric-1.18/3dskinlayers-fabric-1.4.6-mc1.18.2.jar
 
   Audio Enhancements:
-    - name: Presence Footseps
+    - name: Presence Footsteps
       license: MIT
       homepage: https://modrinth.com/mod/presence-footsteps
       desc: Improved stepping sound effects
@@ -236,7 +230,7 @@ modGroups:
       license: MIT
       homepage: https://modrinth.com/mod/betterf3
       desc: Makes the F3-menu customizable and cleaner
-      url: https://cdn.modrinth.com/data/8shC1gFX/versions/QIXtqgTu/BetterF3-3.0.0-Forge-1.18.2.jar
+      url: https://cdn.modrinth.com/data/8shC1gFX/versions/qUyRV6XT/BetterF3-3.0.0-Fabric-1.18.2.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
 
     - name: Reese's Sodium Options
@@ -344,4 +338,9 @@ modGroups:
       url: https://cdn.modrinth.com/data/9s6osm5g/versions/EXrxCjl6/cloth-config-8.2.88-fabric.jar
       dependency: true
 
-#  Outdated/Disabled:
+  Outdated/Disabled:
+    - name: LambdaBetterGrass
+      license: MIT
+      homepage: https://modrinth.com/mod/lambdabettergrass
+      desc: Adds better grass and snow to the game
+      url: https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.4%2B1.18/lambdabettergrass-1.2.4%2B1.18.jar

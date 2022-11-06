@@ -128,7 +128,7 @@ object FabricInstaller {
 
     private fun getProfileIcon(): String {
         return try {
-            val input: InputStream = Utils::class.java.classLoader.getResourceAsStream("profile-icon.png")!!
+            val input: InputStream = Utils::class.java.classLoader.getResourceAsStream("wynncraft_icon.png")!!
             val var4: String
             try {
                 var ret = ByteArray(4096)

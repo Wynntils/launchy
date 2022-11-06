@@ -23,7 +23,6 @@ object Downloader {
                 onProgressUpdate(Progress(bytesSentTotal, contentLength))
             }
         }.receive<ByteArray>()
-        onProgressUpdate(Progress(1, 1)) //make sure we're at 100% when we're done
         writeTo.parent.createDirectories()
         if (!writeTo.exists())
             writeTo.createFile()
@@ -31,4 +30,7 @@ object Downloader {
     }
 }
 
-data class Progress(val bytesDownloaded: Long, val totalBytes: Long)
+data class Progress(val bytesDownloaded: Long, val totalBytes: Long) {
+    val percent: Float
+        get() = bytesDownloaded.toFloat() / totalBytes.toFloat()
+}

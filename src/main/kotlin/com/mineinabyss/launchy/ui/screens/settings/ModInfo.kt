@@ -45,7 +45,7 @@ fun ModInfo(group: Group, mod: Mod) {
             else -> MaterialTheme.colorScheme.surface
         }
     ) {
-        if (state.downloading.containsKey(mod) || state.downloadingConfigs.containsKey(mod)) {
+        if (state.isDownloading(mod)) {
             val downloaded =
                 ((state.downloading[mod]?.bytesDownloaded ?: 0L) + (state.downloadingConfigs[mod]?.bytesDownloaded
                     ?: 0L)).toFloat()

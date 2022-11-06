@@ -18,23 +18,33 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.WindowScope
 import com.mineinabyss.launchy.LocalLaunchyState
 import com.mineinabyss.launchy.data.Dirs
+import com.mineinabyss.launchy.ui.screens.Screen
+import com.mineinabyss.launchy.ui.screens.screen
+import com.mineinabyss.launchy.ui.state.windowScope
 import kotlin.io.path.copyTo
 import kotlin.io.path.div
 
 @Composable
-fun HandleImportSettings(windowScope: WindowScope) {
+fun HandleImportSettings() {
     val state = LocalLaunchyState
     AnimatedVisibility(
-        !state.handledImportOptions,
+        !state.handledImportOptions && state.handledFirstLaunch,
         enter = fadeIn(), exit = fadeOut(),
     ) {
         ImportSettingsDialog(
             windowScope,
             onAccept = {
-                (Dirs.minecraft / "options.txt").copyTo(Dirs.mineinabyss / "options.txt")
+                try {
+                    (Dirs.minecraft / "options.txt").copyTo(Dirs.wynntils / "options.txt")
+                } catch (e: Exception) {
+                    // TODO: Show error message
+                    e.printStackTrace()
+                }
+                screen = Screen.Settings
                 state.handledImportOptions = true
             },
             onDecline = {
+                screen = Screen.Settings
                 state.handledImportOptions = true
             }
         )

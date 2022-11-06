@@ -20,6 +20,7 @@ data class Config(
     val installedFabricVersion: String? = null,
     val downloadUpdates: Boolean = true,
     val handledImportOptions: Boolean = false,
+    val handledFirstLaunch: Boolean = false,
 ) {
     fun save() {
         Dirs.configFile.writeText(Formats.yaml.encodeToString(this))
