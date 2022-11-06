@@ -70,6 +70,19 @@ fun InfoBar(modifier: Modifier = Modifier) {
                 desc = "Will remove",
                 extra = state.queuedDeletions.size.toString()
             )
+            Spacer(Modifier.width(10.dp).weight(1f))
+
+            if (state.isDownloading) {
+                // Show download progress
+                val totalBytesToDownload =
+                    state.downloading.values.sumOf { it.totalBytes } + state.downloadingConfigs.values.sumOf { it.totalBytes }
+                val totalBytesDownloaded =
+                    state.downloading.values.sumOf { it.bytesDownloaded } + state.downloadingConfigs.values.sumOf { it.bytesDownloaded }
+                Text(
+                    text = "Downloading ${state.downloading.size + state.downloadingConfigs.size} files (${totalBytesDownloaded / 1000} / ${totalBytesToDownload / 1000} KB)",
+                    style = MaterialTheme.typography.bodySmall,
+                )
+            }
 
 //                var path by remember { mutableStateOf("") }
 //                Button(onClick = {

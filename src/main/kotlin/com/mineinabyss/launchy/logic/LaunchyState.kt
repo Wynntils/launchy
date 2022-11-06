@@ -91,6 +91,13 @@ class LaunchyState(
     val downloadingConfigs = mutableStateMapOf<Mod, Progress>()
     val isDownloading by derivedStateOf { downloading.isNotEmpty() || downloadingConfigs.isNotEmpty() }
 
+    // Caclculate the speed of the download
+    val downloadSpeed by derivedStateOf {
+        val total = downloading.values.sumOf { it.bytesDownloaded }
+        val time = downloading.values.sumOf { it.timeElapsed }
+        if (time == 0L) 0 else total / time
+    }
+
     fun isDownloading(mod: Mod) = downloading[mod] != null || downloadingConfigs[mod] != null
 
     var installingProfile by mutableStateOf(false)
@@ -179,7 +186,8 @@ class LaunchyState(
 
     suspend fun download(mod: Mod) {
         runCatching {
-            downloading[mod] = Progress(0, 0) // set progress to 0
+            println("Starting download of ${mod.name}")
+            downloading[mod] = Progress(0, 0, 0) // set progress to 0
             Downloader.download(url = mod.url, writeTo = mod.file) progress@{
                 downloading[mod] = it
             }
@@ -202,6 +210,8 @@ class LaunchyState(
 //                "Failed to download ${mod.name}: ${it.localizedMessage}!", "OK"
 //            )
         }.onSuccess {
+            val downloadInfo = downloading[mod]!!
+            println("Finished downloading ${mod.name} in ${downloadInfo.timeElapsed}ms, ${downloadInfo.bytesDownloaded.toFloat() / 1024}kb")
             downloading -= mod
             downloadingConfigs -= mod
         }
