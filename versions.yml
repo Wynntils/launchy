@@ -199,7 +199,19 @@ modGroups:
       url: https://minecraftphysicsmod.com/s/physics-mod-278-mc-1182-fabric.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/PhysicsModConfig_1.0.zip
 
+    - name: 3D Skin Layers
+      license: tr7zw Protective License
+      homepage: https://modrinth.com/mod/3dskinlayers
+      desc: Creates 3d skin layers on skins
+      url: https://cdn.modrinth.com/data/zV5r3pPn/versions/1.4.6-fabric-1.18/3dskinlayers-fabric-1.4.6-mc1.18.2.jar
+
   Audio Enhancements:
+    - name: Dynamic Sound filters
+      license: APACHE
+      homepage: https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters
+      desc: Adds sound filters depending on your current location
+      url: https://edge.forgecdn.net/files/3673/233/DynamicSoundFilters-1.3.0+1.18.2.jar
+
     - name: Presence Footsteps
       license: MIT
       homepage: https://modrinth.com/mod/presence-footsteps
@@ -283,6 +295,12 @@ modGroups:
       homepage: https://modrinth.com/mod/dcch
       desc: Prevents chat-history from being cleared on leaving a server
       url: https://cdn.modrinth.com/data/sUbMm93i/versions/2.0+1.17/DCCH-2.0+1.17.jar
+
+    - name: Logical Zoom
+      license: MIT
+      homepage: https://modrinth.com/mod/logical-zoom
+      desc: Adds a configurable zoom key.
+      url: https://cdn.modrinth.com/data/8bOImuGU/versions/0.0.14/logical_zoom-0.0.14.jar
 
   Developer Tools:
     - name: NBTToolTips
