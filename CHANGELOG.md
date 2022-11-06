@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/Wynntils/launchy/compare/v1.1.9...v1.1.10) (2022-11-06)
+
+
+### Bug Fixes
+
+* add text download percent ([f764188](https://github.com/Wynntils/launchy/commit/f764188228cc6733c14e1911bc5ebd4df12e1e1f))
+
 ## [1.1.9](https://github.com/Wynntils/launchy/compare/v1.1.8...v1.1.9) (2022-11-05)
 
 
@@ -9,6 +16,7 @@
 ### Miscellaneous Chores
 
 * disable LambdaBetterGrass ([fe957c4](https://github.com/Wynntils/launchy/commit/fe957c489bf9af888a2c1dbcb1962951bf0c1ab0))
+* **release:** v1.1.9 [skip ci] ([2fe07a8](https://github.com/Wynntils/launchy/commit/2fe07a8e61fbfe3f051f9ef2acfa4e1df7c733b0))
 
 ## [1.1.8](https://github.com/Wynntils/launchy/compare/v1.1.7...v1.1.8) (2022-11-04)
 
@@ -45,16 +53,4 @@
 ### Miscellaneous Chores
 
 * **release:** v1.1.6 [skip ci] ([5987b01](https://github.com/Wynntils/launchy/commit/5987b010faffc0e0c68bf19c27e104ac3f481726))
-
-## [1.1.5](https://github.com/Wynntils/launchy/compare/v1.1.4...v1.1.5) (2022-11-04)
-
-
-### Bug Fixes
-
-* **progress-bar:** fix getting stuck ([ed8b4a7](https://github.com/Wynntils/launchy/commit/ed8b4a7aa6a5df12e1a5b68187169677917e4e2a))
-
-
-### Miscellaneous Chores
-
-* **release:** v1.1.5 [skip ci] ([7e1b05d](https://github.com/Wynntils/launchy/commit/7e1b05d7423ffe72a008fba50c8a40cc3258857b))
 
