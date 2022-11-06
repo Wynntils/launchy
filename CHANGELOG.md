@@ -1,9 +1,21 @@
+## [1.1.11](https://github.com/Wynntils/launchy/compare/v1.1.10...v1.1.11) (2022-11-06)
+
+
+### Bug Fixes
+
+* add error handling for downloads ([09df88e](https://github.com/Wynntils/launchy/commit/09df88e1f283b8b576b723cf3e8c47254517d6f9))
+
 ## [1.1.10](https://github.com/Wynntils/launchy/compare/v1.1.9...v1.1.10) (2022-11-06)
 
 
 ### Bug Fixes
 
 * add text download percent ([f764188](https://github.com/Wynntils/launchy/commit/f764188228cc6733c14e1911bc5ebd4df12e1e1f))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.1.10 [skip ci] ([fe30558](https://github.com/Wynntils/launchy/commit/fe3055821fbc039ecb2b5582e643cddff2adefd0))
 
 ## [1.1.9](https://github.com/Wynntils/launchy/compare/v1.1.8...v1.1.9) (2022-11-05)
 
@@ -41,16 +53,4 @@
 ### Miscellaneous Chores
 
 * **release:** v1.1.7 [skip ci] ([55ec69d](https://github.com/Wynntils/launchy/commit/55ec69dc17d6fa72fa89673a44c761db9577d119))
-
-## [1.1.6](https://github.com/Wynntils/launchy/compare/v1.1.5...v1.1.6) (2022-11-04)
-
-
-### Bug Fixes
-
-* **workflow:** fix workflow for webhook ([1ad7a8e](https://github.com/Wynntils/launchy/commit/1ad7a8ee88459ee68f08c38ef59fa5425fab9dd1))
-
-
-### Miscellaneous Chores
-
-* **release:** v1.1.6 [skip ci] ([5987b01](https://github.com/Wynntils/launchy/commit/5987b010faffc0e0c68bf19c27e104ac3f481726))
 
