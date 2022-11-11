@@ -17,7 +17,7 @@ object Dirs {
         OS.LINUX -> Path(System.getProperty("user.home")) / ".wynntils"
     }
     val mods = wynntils / "mods"
-    val configZip = wynntils / "configs.zip"
+    val tmp = wynntils / ".tmp"
 
     val config = when (OS.get()) {
         OS.WINDOWS -> Path(System.getenv("APPDATA"))
@@ -31,6 +31,8 @@ object Dirs {
     fun createDirs() {
         config.createDirectories()
         wynntils.createDirectories()
+        mods.createDirectories()
+        tmp.createDirectories()
     }
 
     fun createConfigFiles() {

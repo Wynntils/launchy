@@ -84,6 +84,14 @@ fun InfoBar(modifier: Modifier = Modifier) {
                 )
             }
 
+            if (state.failedDownloads.isNotEmpty()) {
+                // Show failed downloads
+                Text(
+                    text = "Failed downloads: ${state.failedDownloads.size}",
+                    style = MaterialTheme.typography.bodySmall,
+                )
+            }
+
 //                var path by remember { mutableStateOf("") }
 //                Button(onClick = {
 //                    path = FileDialog(ComposeWindow()).apply {

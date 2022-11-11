@@ -16,6 +16,7 @@ data class Config(
     val toggledMods: Set<ModName> = setOf(),
     val toggledConfigs: Set<ModName> = setOf(),
     val downloads: Map<ModName, DownloadURL> = mapOf(),
+    val configs: Map<ModName, ConfigURL> = mapOf(),
     val seenGroups: Set<GroupName> = setOf(),
     val installedFabricVersion: String? = null,
     val downloadUpdates: Boolean = true,

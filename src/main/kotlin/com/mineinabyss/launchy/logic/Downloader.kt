@@ -18,16 +18,27 @@ object Downloader {
         writeTo: Path,
         onProgressUpdate: (progress: Progress) -> Unit = {},
     ) {
-        val startTime = System.currentTimeMillis()
-        val response = httpClient.get<HttpStatement>(url) {
-            onDownload { bytesSentTotal, contentLength ->
-                onProgressUpdate(Progress(bytesSentTotal, contentLength, timeElapsed = System.currentTimeMillis() - startTime))
-            }
-        }.receive<ByteArray>()
-        writeTo.parent.createDirectories()
-        if (!writeTo.exists())
-            writeTo.createFile()
-        writeTo.writeBytes(response)
+        try {
+            val startTime = System.currentTimeMillis()
+            val response = httpClient.get<HttpStatement>(url) {
+                onDownload { bytesSentTotal, contentLength ->
+                    onProgressUpdate(
+                        Progress(
+                            bytesSentTotal,
+                            contentLength,
+                            timeElapsed = System.currentTimeMillis() - startTime
+                        )
+                    )
+                }
+            }.receive<ByteArray>()
+            writeTo.parent.createDirectories()
+            if (!writeTo.exists())
+                writeTo.createFile()
+            writeTo.writeBytes(response)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            throw e
+        }
     }
 }
 

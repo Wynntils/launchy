@@ -6,6 +6,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import java.util.*
+import java.util.concurrent.CancellationException
 import kotlin.io.path.deleteIfExists
 import kotlin.io.path.div
 import kotlin.io.path.exists
@@ -42,8 +43,8 @@ class LaunchyState(
         )
     }
 
-    val downloadConfigURLs = mutableStateMapOf<Mod, DownloadURL>().apply {
-        putAll(config.downloads
+    val downloadConfigURLs = mutableStateMapOf<Mod, ConfigURL>().apply {
+        putAll(config.configs
             .mapNotNull { it.key.toMod()?.to(it.value) }
             .toMap()
         )
@@ -53,16 +54,23 @@ class LaunchyState(
 
     var notPresentDownloads by mutableStateOf(setOf<Mod>())
         private set
-
     init {
         updateNotPresent()
     }
 
-    val upToDate: Set<Mod> by derivedStateOf {
-        (downloadURLs - notPresentDownloads).filter { (mod, url) -> mod.url == url }.keys
+    val upToDateMods by derivedStateOf {
+        enabledMods.filter { it in downloadURLs && downloadURLs[it] == it.url }
     }
 
-    val queuedDownloads by derivedStateOf { enabledMods - upToDate }
+    val upToDateConfigs by derivedStateOf {
+        enabledMods.filter { it in downloadConfigURLs && downloadConfigURLs[it] == it.configUrl }
+    }
+
+    val enabledModsWithConfig by derivedStateOf {
+        enabledMods.filter { it.configUrl != "" }
+    }
+
+    val queuedDownloads by derivedStateOf { (enabledMods - upToDateMods) + (enabledModsWithConfig - upToDateConfigs) }
     val queuedUpdates by derivedStateOf { queuedDownloads.filter { it.isDownloaded }.toSet() }
     val queuedInstalls by derivedStateOf { queuedDownloads - queuedUpdates }
     private var _deleted by mutableStateOf(0)
@@ -71,12 +79,7 @@ class LaunchyState(
         disabledMods.filter { it.isDownloaded }.also { if (it.isEmpty()) updateNotPresent() }
     }
 
-    var notPresentConfigDownloads by mutableStateOf(setOf<Mod>())
-        private set
 
-    init {
-        configUpdateNotPresent()
-    }
 
     val enabledConfigs: MutableSet<Mod> = mutableStateSetOf<Mod>().apply {
         addAll(config.toggledConfigs.mapNotNull { it.toMod() })
@@ -187,41 +190,61 @@ class LaunchyState(
 
     suspend fun download(mod: Mod) {
         runCatching {
-            println("Starting download of ${mod.name}")
-            downloading[mod] = Progress(0, 0, 0) // set progress to 0
-            Downloader.download(url = mod.url, writeTo = mod.file) progress@{
-                downloading[mod] = it
-            }
-            downloadURLs[mod] = mod.url
-            save()
-
-            if (mod.configUrl.isNotBlank() && (mod in enabledConfigs)) {
-                Downloader.download(url = mod.configUrl, writeTo = Dirs.configZip) progress@{
-                    downloadingConfigs[mod] = it
+            if (mod !in upToDateMods) {
+                try {
+                    println("Starting download of ${mod.name}")
+                    downloading[mod] = Progress(0, 0, 0) // set progress to 0
+                    Downloader.download(url = mod.url, writeTo = mod.file) progress@{
+                        downloading[mod] = it
+                    }
+                    downloadURLs[mod] = mod.url
+                    save()
+                    println("Successfully downloaded ${mod.name}")
+                } catch (ex: CancellationException) {
+                    throw ex // Must let the CancellationException propagate
+                } catch (e: Exception) {
+                    println("Failed to download ${mod.name}")
+                    e.printStackTrace()
+                    failedDownloads += mod
+                } finally {
+                    println("Finished download of ${mod.name}")
+                    downloading -= mod
                 }
-                downloadConfigURLs[mod] = mod.configUrl
-                unzip((Dirs.configZip).toFile(), Dirs.wynntils.toString())
-                (Dirs.configZip).toFile().delete()
+            }
+
+            if (mod.configUrl.isNotBlank() && (mod in enabledConfigs) && mod !in upToDateConfigs) {
+                try {
+                    println("Starting download of ${mod.name} config")
+                    downloadingConfigs[mod] = Progress(0, 0, 0) // set progress to 0
+                    Downloader.download(url = mod.configUrl, writeTo = mod.config) progress@{
+                        downloadingConfigs[mod] = it
+                    }
+                    downloadConfigURLs[mod] = mod.configUrl
+                    unzip(mod.config.toFile(), Dirs.wynntils.toString())
+                    mod.config.toFile().delete()
+                    save()
+                    println("Successfully downloaded ${mod.name} config")
+                } catch (ex: CancellationException) {
+                    throw ex // Must let the CancellationException propagate
+                } catch (e: Exception) {
+                    println("Failed to download ${mod.name} config")
+                    failedDownloads += mod
+                    e.printStackTrace()
+                } finally {
+                    println("Finished download of ${mod.name} config")
+                    downloadingConfigs -= mod
+                }
             }
         }.onFailure {
-            downloading -= mod
-            downloadingConfigs -= mod
-            failedDownloads += mod
-            setModEnabled(mod, false)
-
-            println("Failed to download ${mod.name}")
-            it.printStackTrace()
+            if (it !is CancellationException) {
+                it.printStackTrace()
+            }
 //            Badge {
 //                Text("Failed to download ${mod.name}: ${it.localizedMessage}!"/*, "OK"*/)
 //            }
 //            scaffoldState.snackbarHostState.showSnackbar(
 //                "Failed to download ${mod.name}: ${it.localizedMessage}!", "OK"
 //            )
-        }.onSuccess {
-            val downloadInfo = downloading[mod]!!
-            println("Finished downloading ${mod.name} in ${downloadInfo.timeElapsed}ms, ${downloadInfo.bytesDownloaded.toFloat() / 1024}kb")
-            downloading -= mod
-            downloadingConfigs -= mod
         }
     }
 
@@ -233,6 +256,7 @@ class LaunchyState(
             toggledMods = enabledMods.mapTo(mutableSetOf()) { it.name },
             toggledConfigs = enabledConfigs.mapTo(mutableSetOf()) { it.name } + enabledMods.filter { it.forceConfigDownload }.mapTo(mutableSetOf()) { it.name },
             downloads = downloadURLs.mapKeys { it.key.name },
+            configs = downloadConfigURLs.mapKeys { it.key.name },
             seenGroups = versions.groups.map { it.name }.toSet(),
             installedFabricVersion = installedFabricVersion,
             handledImportOptions = handledImportOptions,
@@ -244,14 +268,11 @@ class LaunchyState(
     fun GroupName.toGroup(): Group? = versions.nameToGroup[this]
 
     val Mod.file get() = Dirs.mods / "${name}.jar"
+    val Mod.config get() = Dirs.tmp / "${name}-config.zip"
     val Mod.isDownloaded get() = file.exists()
 
     private fun updateNotPresent(): Set<Mod> {
         return downloadURLs.filter { !it.key.isDownloaded }.keys.also { notPresentDownloads = it }
-    }
-
-    private fun configUpdateNotPresent(): Set<Mod> {
-        return downloadConfigURLs.filter { !it.key.isDownloaded }.keys.also { notPresentConfigDownloads = it }
     }
 
     fun launch() {
