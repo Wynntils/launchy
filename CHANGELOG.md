@@ -1,9 +1,21 @@
+## [1.2.0](https://github.com/Wynntils/launchy/compare/v1.1.11...v1.2.0) (2022-11-11)
+
+
+### New Features
+
+* add config download update support ([b0ef346](https://github.com/Wynntils/launchy/commit/b0ef3461f06a97eaf7a517ea801764a6b434937d))
+
 ## [1.1.11](https://github.com/Wynntils/launchy/compare/v1.1.10...v1.1.11) (2022-11-06)
 
 
 ### Bug Fixes
 
 * add error handling for downloads ([09df88e](https://github.com/Wynntils/launchy/commit/09df88e1f283b8b576b723cf3e8c47254517d6f9))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.1.11 [skip ci] ([0eac8dc](https://github.com/Wynntils/launchy/commit/0eac8dc2fe4b538286ed083573be04d9cad01116))
 
 ## [1.1.10](https://github.com/Wynntils/launchy/compare/v1.1.9...v1.1.10) (2022-11-06)
 
@@ -41,16 +53,4 @@
 ### Miscellaneous Chores
 
 * **release:** v1.1.8 [skip ci] ([01aa3a3](https://github.com/Wynntils/launchy/commit/01aa3a3a0f1a3e4a676ef4d523a2cb1e4f95cf26))
-
-## [1.1.7](https://github.com/Wynntils/launchy/compare/v1.1.6...v1.1.7) (2022-11-04)
-
-
-### Bug Fixes
-
-* **progress-bar:** add progress bar to mods ([6245827](https://github.com/Wynntils/launchy/commit/624582755257be84b585c0c27d0d85b7461a25ee))
-
-
-### Miscellaneous Chores
-
-* **release:** v1.1.7 [skip ci] ([55ec69d](https://github.com/Wynntils/launchy/commit/55ec69dc17d6fa72fa89673a44c761db9577d119))
 
