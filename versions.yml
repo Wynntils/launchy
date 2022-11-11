@@ -8,6 +8,7 @@ groups:
   - name: Wynncraft Enhancements
     enabledByDefault: true
   - name: Visual Enhancements
+  - name: Camera Enhancements
   - name: Audio Enhancements
   - name: HUD & Menu Enhancements
   - name: Misc Enhancements
@@ -47,6 +48,20 @@ modGroups:
       homepage: https://modrinth.com/mod/indium
       desc: Sodium addon providing support for Fabric Rendering API
       url: https://cdn.modrinth.com/data/Orvt0mRa/versions/1.0.7%2Bmc1.18.2/indium-1.0.7%2Bmc1.18.2.jar
+
+    - name: Desired Servers
+      license: MIT
+      homepage: https://modrinth.com/mod/desired-servers
+      desc: Ship servers without modifying servers.dat
+      url: https://cdn.modrinth.com/data/GDpe4LHD/versions/1.0.1/desiredservers-1.0.1%20%281%29.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DesiredServers.zip
+      forceConfigDownload: true
+
+    - name: Controlling
+      license: MIT
+      homepage: https://www.curseforge.com/minecraft/mc-mods/controlling
+      desc: Adds a keybinding menu to the options screen
+      url: https://edge.forgecdn.net/files/3950/208/Controlling-fabric-1.18.2-9.0+22.jar
 
   Performance:
     - name: Starlight
@@ -90,6 +105,7 @@ modGroups:
       homepage: https://modrinth.com/mod/cull-less-leaves
       desc: Cull leaves while looking hot!
       url: https://cdn.modrinth.com/data/iG6ZHsUV/versions/1.0.1/CullLessLeaves-1.0.1.jar
+      requires: [ Cloth Config ]
 
     - name: Enhanced Block Entities
       license: LGPL-3
@@ -122,6 +138,8 @@ modGroups:
       homepage: https://modrinth.com/mod/wynnlib
       desc: Mod that aims to provide data-related functionalities
       url: https://cdn.modrinth.com/data/e7tR8Lcc/versions/2UtKS00k/wynnlib-0.2.7.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
+      configDesc: "Fixes a conflict with Wynntils"
       requires: [FabricKotlinLanguage]
 
     - name: Voices of Wynn
@@ -136,6 +154,8 @@ modGroups:
       homepage: https://modrinth.com/mod/distanthorizons
       desc: Level-Of-Detail mod to allow for better performance and higher render-distance
       url: https://cdn.modrinth.com/data/uCdwusMi/versions/1.6.5a-1.18.2/DistantHorizons-1.6.5a-1.18.2.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DistantHorizons.zip
+      configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [ Iris shaders, Bobby ]
 
     - name: Iris shaders
@@ -143,7 +163,7 @@ modGroups:
       homepage: https://modrinth.com/mod/iris
       desc: Shaders for fabric
       url: https://cdn.modrinth.com/data/YL57xq9U/versions/1BCkW8RE/iris-mc1.18.2-1.4.0.jar
-      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/Shaderpacks_1.0.zip
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Iris.zip
       configDesc: "Includes the following shaderpacks: \n - BSL v8.1.02.2 \n - Complementary Shaders v4.4 \n - Continuum v2.0.4 \n - Sonic Ether's Unbelievable Shaders PTGI HRR 3"
       incompatibleWith: [ Distant Horizons ]
 
@@ -152,7 +172,10 @@ modGroups:
       homepage: https://modrinth.com/mod/bobby
       desc: Bobby allows for render distances greater than the server's view-distance setting
       url: https://cdn.modrinth.com/data/M08ruV16/versions/3.1.1/bobby-3.1.1.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Bobby.zip
+      configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [ Distant Horizons ]
+      requires: [ Cloth Config ]
 
     - name: Falling leaves
       license: MIT
@@ -197,13 +220,35 @@ modGroups:
       homepage: https://minecraftphysicsmod.com/
       desc: Adds more immersive physics to just about every aspect of the game
       url: https://minecraftphysicsmod.com/s/physics-mod-278-mc-1182-fabric.jar
-      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/PhysicsModConfig_1.0.zip
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/PhysicsMod.zip
 
     - name: 3D Skin Layers
       license: tr7zw Protective License
       homepage: https://modrinth.com/mod/3dskinlayers
       desc: Creates 3d skin layers on skins
       url: https://cdn.modrinth.com/data/zV5r3pPn/versions/1.4.6-fabric-1.18/3dskinlayers-fabric-1.4.6-mc1.18.2.jar
+
+  Camera Enhancements:
+    - name: Camera Overhaul
+      license: MIT
+      homepage: https://modrinth.com/mod/cameraoverhaul
+      desc: Adds various camera tilting
+      url: https://cdn.modrinth.com/data/m0oRwcZx/versions/82Y9HLAL/CameraOverhaul-1.3.1-fabric-universal.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/CameraOverhaul.zip
+      requires: [ Cloth Config ]
+
+    - name: Better Third Person
+      license: ARR
+      homepage: https://www.curseforge.com/minecraft/mc-mods/better-third-person
+      desc: Adds independent rotation of the camera in a third person view
+      url: https://edge.forgecdn.net/files/3834/418/BetterThirdPerson-Fabric-1.18.2-1.8.1.jar
+
+    - name: Shoulder Surfing Reloaded
+      license: MIT
+      homepage: https://www.curseforge.com/minecraft/mc-mods/shoulder-surfing-reloaded
+      desc: Revamped over-the-shoulder F5 third-person camera view
+      url: https://edge.forgecdn.net/files/4058/335/ShoulderSurfing-Fabric-1.18.2-2.2.16.jar
+      requires: [ Forge Config API Port ]
 
   Audio Enhancements:
     - name: Dynamic Sound filters
@@ -341,10 +386,18 @@ modGroups:
       license: LGPL-3
       homepage: https://github.com/shedaniel/cloth-config/
       desc: A config API used by many mods
-      url: https://cdn.modrinth.com/data/9s6osm5g/versions/EXrxCjl6/cloth-config-8.2.88-fabric.jar
+      url: https://cdn.modrinth.com/data/9s6osm5g/versions/gPqHXnrg/cloth-config-6.3.81-fabric.jar
+      dependency: true
+
+    - name: Forge Config API Port
+      license: MPL-2
+      homepage: https://modrinth.com/mod/forge-config-api-port
+      desc: Forge Config API ported to Fabric
+      url: https://cdn.modrinth.com/data/ohNO6lps/versions/XGKEYlsw/ForgeConfigAPIPort-v3.2.4-1.18.2-Fabric.jar
       dependency: true
 
   Outdated/Disabled:
+    # not compatible with wynn resource pack
     - name: LambdaBetterGrass
       license: MIT
       homepage: https://modrinth.com/mod/lambdabettergrass
