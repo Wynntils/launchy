@@ -183,7 +183,7 @@ modGroups:
       desc: Adds falling leaf particles to trees
       url: https://cdn.modrinth.com/data/WhbRG4iK/versions/1.11.1/fallingleaves-1.11.1%2B1.18.2.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/FallingLeaves_1.0.zip
-      requires: [ Cloth config ]
+      requires: [ Cloth Config ]
 
     - name: Continuity
       license: LGPL-3
@@ -268,7 +268,7 @@ modGroups:
       homepage: https://modrinth.com/mod/dripsounds-fabric
       desc: Adds sounds for drip particles landing
       url: https://cdn.modrinth.com/data/T8MMXTpr/versions/1.18-0.3.0/DripSounds-1.18-0.3.0.jar
-      requires: [ Cloth config ]
+      requires: [ Cloth Config ]
 
     - name: ExtraSounds
       license: CC0
@@ -382,7 +382,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/Ha28R6CL/versions/allNCj2E/fabric-language-kotlin-1.8.4%2Bkotlin.1.7.20.jar
       dependency: true
 
-    - name: Cloth config
+    - name: Cloth Config
       license: LGPL-3
       homepage: https://github.com/shedaniel/cloth-config/
       desc: A config API used by many mods
