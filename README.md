@@ -30,3 +30,14 @@ Install it from our [releases](https://github.com/Wynntils/launchy/releases/late
 
 ### My game uses my default mods folder
 - On Linux, Flatpak users should make sure the Minecraft launcher has access to `~/.wynntils` (you may need to allow access to the entire home directory.)
+
+### [MacOS] "Wynntils Mod Installer" is damaged and can't be opened
+![img.png](docs/img.png)
+
+On MacOS, you will see this error message due to our file not being signed by an apple developer key, which is $80/year
+
+To fix this, use the following command to download the file to your computer:
+```shell
+curl -L "https://github.com/Wynntils/launchy/releases/download/v1.2.0/Wynntils.Mod.Installer-1.2.0.dmg" -o Installer.dmg
+open Installer.dmg
+```
