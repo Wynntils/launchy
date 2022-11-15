@@ -40,14 +40,17 @@ dependencies {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
-    kotlinOptions.freeCompilerArgs = listOf("-opt-in=androidx.compose.material3.ExperimentalMaterial3Api")
+    kotlinOptions.freeCompilerArgs = listOf(
+        "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+        "-opt-in=androidx.compose.ui.ExperimentalComposeUiApi",
+    )
 }
 
 val appName = "Wynntils Mod Installer"
 
 compose.desktop {
     application {
-        mainClass = "com.mineinabyss.launchy.MainKt"
+        mainClass = "com.wynntils.launchy.MainKt"
         nativeDistributions {
             when {
                 Os.isFamily(Os.FAMILY_MAC) -> targetFormats(TargetFormat.Dmg)
