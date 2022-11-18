@@ -1,9 +1,21 @@
+## [1.2.1](https://github.com/Wynntils/launchy/compare/v1.2.0...v1.2.1) (2022-11-18)
+
+
+### Code Refactoring
+
+* change package name ([dc5716d](https://github.com/Wynntils/launchy/commit/dc5716d27f5bde80a924e817f48c31c778e41404))
+
 ## [1.2.0](https://github.com/Wynntils/launchy/compare/v1.1.11...v1.2.0) (2022-11-11)
 
 
 ### New Features
 
 * add config download update support ([b0ef346](https://github.com/Wynntils/launchy/commit/b0ef3461f06a97eaf7a517ea801764a6b434937d))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.2.0 [skip ci] ([dc95bec](https://github.com/Wynntils/launchy/commit/dc95becf5ecfc6fe59f46e1594a70eeeac3f5c9f))
 
 ## [1.1.11](https://github.com/Wynntils/launchy/compare/v1.1.10...v1.1.11) (2022-11-06)
 
@@ -41,16 +53,4 @@
 
 * disable LambdaBetterGrass ([fe957c4](https://github.com/Wynntils/launchy/commit/fe957c489bf9af888a2c1dbcb1962951bf0c1ab0))
 * **release:** v1.1.9 [skip ci] ([2fe07a8](https://github.com/Wynntils/launchy/commit/2fe07a8e61fbfe3f051f9ef2acfa4e1df7c733b0))
-
-## [1.1.8](https://github.com/Wynntils/launchy/compare/v1.1.7...v1.1.8) (2022-11-04)
-
-
-### Bug Fixes
-
-* add first launch screen and play button ([a6170f8](https://github.com/Wynntils/launchy/commit/a6170f898a28e35d94f51efecbb52951e232a859))
-
-
-### Miscellaneous Chores
-
-* **release:** v1.1.8 [skip ci] ([01aa3a3](https://github.com/Wynntils/launchy/commit/01aa3a3a0f1a3e4a676ef4d523a2cb1e4f95cf26))
 
