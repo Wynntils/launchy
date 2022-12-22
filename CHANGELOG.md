@@ -1,9 +1,21 @@
+## [1.3.0](https://github.com/Wynntils/launchy/compare/v1.2.1...v1.3.0) (2022-12-22)
+
+
+### New Features
+
+* 1.19.3 update ([eb5de51](https://github.com/Wynntils/launchy/commit/eb5de51330c29caa15d28f2ae88bbbc1d626a2f3))
+
 ## [1.2.1](https://github.com/Wynntils/launchy/compare/v1.2.0...v1.2.1) (2022-11-18)
 
 
 ### Code Refactoring
 
 * change package name ([dc5716d](https://github.com/Wynntils/launchy/commit/dc5716d27f5bde80a924e817f48c31c778e41404))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.2.1 [skip ci] ([cfe4c79](https://github.com/Wynntils/launchy/commit/cfe4c791339d23690bc80514e54d28249edc1afc))
 
 ## [1.2.0](https://github.com/Wynntils/launchy/compare/v1.1.11...v1.2.0) (2022-11-11)
 
@@ -40,17 +52,4 @@
 ### Miscellaneous Chores
 
 * **release:** v1.1.10 [skip ci] ([fe30558](https://github.com/Wynntils/launchy/commit/fe3055821fbc039ecb2b5582e643cddff2adefd0))
-
-## [1.1.9](https://github.com/Wynntils/launchy/compare/v1.1.8...v1.1.9) (2022-11-05)
-
-
-### Bug Fixes
-
-* linux builds ([ebb1b30](https://github.com/Wynntils/launchy/commit/ebb1b307edf53d97871045e3aabd15f57f0bcea9))
-
-
-### Miscellaneous Chores
-
-* disable LambdaBetterGrass ([fe957c4](https://github.com/Wynntils/launchy/commit/fe957c489bf9af888a2c1dbcb1962951bf0c1ab0))
-* **release:** v1.1.9 [skip ci] ([2fe07a8](https://github.com/Wynntils/launchy/commit/2fe07a8e61fbfe3f051f9ef2acfa4e1df7c733b0))
 
