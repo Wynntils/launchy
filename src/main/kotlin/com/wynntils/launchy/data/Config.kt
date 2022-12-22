@@ -19,6 +19,7 @@ data class Config(
     val configs: Map<ModName, ConfigURL> = mapOf(),
     val seenGroups: Set<GroupName> = setOf(),
     val installedFabricVersion: String? = null,
+    val installedMinecraftVersion: String? = "1.18.2", // default to 1.18.2
     val downloadUpdates: Boolean = true,
     val handledImportOptions: Boolean = false,
     val handledFirstLaunch: Boolean = false,

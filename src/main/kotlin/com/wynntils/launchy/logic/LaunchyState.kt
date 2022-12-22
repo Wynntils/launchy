@@ -51,6 +51,7 @@ class LaunchyState(
     }
 
     var installedFabricVersion by mutableStateOf(config.installedFabricVersion)
+    var installedMinecraftVersion by mutableStateOf(config.installedMinecraftVersion)
 
     var notPresentDownloads by mutableStateOf(setOf<Mod>())
         private set
@@ -59,7 +60,7 @@ class LaunchyState(
     }
 
     val upToDateMods by derivedStateOf {
-        enabledMods.filter { it in downloadURLs && downloadURLs[it] == it.url }
+        enabledMods.filter { it in downloadURLs && downloadURLs[it] == it.url && it !in notPresentDownloads }
     }
 
     val upToDateConfigs by derivedStateOf {
@@ -106,6 +107,7 @@ class LaunchyState(
 
     var installingProfile by mutableStateOf(false)
     val fabricUpToDate by derivedStateOf {
+        installedMinecraftVersion == versions.minecraftVersion &&
         installedFabricVersion == versions.fabricVersion && FabricInstaller.isProfileInstalled(
             Dirs.minecraft,
             "Wynncraft"
@@ -186,6 +188,8 @@ class LaunchyState(
         installingProfile = false
         installedFabricVersion = "Installing..."
         installedFabricVersion = versions.fabricVersion
+        installedMinecraftVersion = "Installing..."
+        installedMinecraftVersion = versions.minecraftVersion
     }
 
     suspend fun download(mod: Mod) {
@@ -259,6 +263,7 @@ class LaunchyState(
             configs = downloadConfigURLs.mapKeys { it.key.name },
             seenGroups = versions.groups.map { it.name }.toSet(),
             installedFabricVersion = installedFabricVersion,
+            installedMinecraftVersion = installedMinecraftVersion,
             handledImportOptions = handledImportOptions,
             handledFirstLaunch = handledFirstLaunch,
         ).save()

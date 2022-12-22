@@ -77,6 +77,10 @@ jobs:
           java-version: 16
           cache: gradle
 
+      - name: Install FUSE (ubuntu)
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        run: sudo apt-get install libfuse2 fuse
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
