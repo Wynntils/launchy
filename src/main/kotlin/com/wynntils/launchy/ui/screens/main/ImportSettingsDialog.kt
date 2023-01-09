@@ -40,11 +40,11 @@ fun HandleImportSettings() {
                     // TODO: Show error message
                     e.printStackTrace()
                 }
-                screen = Screen.Settings
+                screen = Screen.Mods
                 state.handledImportOptions = true
             },
             onDecline = {
-                screen = Screen.Settings
+                screen = Screen.Mods
                 state.handledImportOptions = true
             }
         )

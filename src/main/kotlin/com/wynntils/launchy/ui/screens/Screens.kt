@@ -5,21 +5,20 @@ import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
+import com.wynntils.launchy.LocalLaunchyState
 import com.wynntils.launchy.ui.AppTopBar
 import com.wynntils.launchy.ui.screens.main.MainScreen
-import com.wynntils.launchy.ui.screens.settings.SettingsScreen
+import com.wynntils.launchy.ui.screens.settings.ModsScreen
 import com.wynntils.launchy.ui.state.TopBar
+import kotlinx.coroutines.launch
 
 sealed class Screen(val transparentTopBar: Boolean = false) {
     object Default : Screen(transparentTopBar = true)
-    object Settings : Screen()
+    object Mods : Screen()
 }
 
 var screen: Screen by mutableStateOf(Screen.Default)
@@ -32,8 +31,8 @@ fun Screens() {
     }
 
     TranslucentTopBar(screen) {
-        TransitionSlideUp(screen == Screen.Settings) {
-            SettingsScreen()
+        TransitionSlideUp(screen == Screen.Mods) {
+            ModsScreen()
         }
     }
 

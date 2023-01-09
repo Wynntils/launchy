@@ -16,7 +16,9 @@ repositories {
     mavenCentral()
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     maven("https://maven.fabricmc.net")
+    maven("https://maven.pkg.jetbrains.space/public/p/ktor/eap")
 }
+val ktor_version: String by project
 
 dependencies {
     implementation(kotlin("reflect"))
@@ -30,8 +32,10 @@ dependencies {
     implementation(compose.materialIconsExtended)
     implementation(Deps.kotlinx.serialization.json)
     implementation(Deps.kotlinx.serialization.kaml)
-    implementation("io.ktor:ktor-client-core:1.6.8")
-    implementation("io.ktor:ktor-client-cio:1.6.8")
+    implementation("io.ktor:ktor-client-core:$ktor_version")
+    implementation("io.ktor:ktor-client-cio:$ktor_version")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
 
     implementation("org.json:json:20210307")
     implementation("net.fabricmc:fabric-installer:0.9.0")

@@ -1,9 +1,9 @@
 package com.wynntils.launchy.logic
 
 import io.ktor.client.*
-import io.ktor.client.features.*
+import io.ktor.client.call.*
+import io.ktor.client.plugins.*
 import io.ktor.client.request.*
-import io.ktor.client.statement.*
 import java.nio.file.Path
 import kotlin.io.path.createDirectories
 import kotlin.io.path.createFile
@@ -20,7 +20,7 @@ object Downloader {
     ) {
         try {
             val startTime = System.currentTimeMillis()
-            val response = httpClient.get<HttpStatement>(url) {
+            val response = httpClient.get(url) {
                 onDownload { bytesSentTotal, contentLength ->
                     onProgressUpdate(
                         Progress(
@@ -30,7 +30,7 @@ object Downloader {
                         )
                     )
                 }
-            }.receive<ByteArray>()
+            }.body<ByteArray>()
             writeTo.parent.createDirectories()
             if (!writeTo.exists())
                 writeTo.createFile()

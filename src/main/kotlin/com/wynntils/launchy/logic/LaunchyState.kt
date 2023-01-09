@@ -2,6 +2,7 @@ package com.wynntils.launchy.logic
 
 import androidx.compose.runtime.*
 import com.wynntils.launchy.data.*
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
@@ -55,12 +56,21 @@ class LaunchyState(
 
     var notPresentDownloads by mutableStateOf(setOf<Mod>())
         private set
+
+    var modrinthModsNeedingUpdate = mutableMapOf<Mod, ModrinthFile>()
+        private set
     init {
         updateNotPresent()
     }
 
+    // Up To Date Mods:
+    // - Current download url matches current mod download url
+    // - Mod is not in notPresentDownloads (i.e. it is present)
+    // - Mod is not in modrinthModsNeedingUpdate (i.e. it is up to date)
     val upToDateMods by derivedStateOf {
-        enabledMods.filter { it in downloadURLs && downloadURLs[it] == it.url && it !in notPresentDownloads }
+        enabledMods.filter { it in downloadURLs && downloadURLs[it] == it.url && it !in notPresentDownloads && (
+                it !in modrinthModsNeedingUpdate || it in modrinthModsNeedingUpdate && modrinthModsNeedingUpdate[it]!!.url == downloadURLs[it]
+            ) }
     }
 
     val upToDateConfigs by derivedStateOf {
@@ -79,7 +89,6 @@ class LaunchyState(
         _deleted
         disabledMods.filter { it.isDownloaded }.also { if (it.isEmpty()) updateNotPresent() }
     }
-
 
 
     val enabledConfigs: MutableSet<Mod> = mutableStateSetOf<Mod>().apply {
@@ -108,7 +117,7 @@ class LaunchyState(
     var installingProfile by mutableStateOf(false)
     val fabricUpToDate by derivedStateOf {
         installedMinecraftVersion == versions.minecraftVersion &&
-        installedFabricVersion == versions.fabricVersion && FabricInstaller.isProfileInstalled(
+                installedFabricVersion == versions.fabricVersion && FabricInstaller.isProfileInstalled(
             Dirs.minecraft,
             "Wynncraft"
         )
@@ -131,7 +140,8 @@ class LaunchyState(
     fun setModEnabled(mod: Mod, enabled: Boolean) {
         if (enabled) {
             enabledMods += mod
-            enabledMods.filter { it.name in mod.incompatibleWith || it.incompatibleWith.contains(mod.name) }.forEach { setModEnabled(it, false) }
+            enabledMods.filter { it.name in mod.incompatibleWith || it.incompatibleWith.contains(mod.name) }
+                .forEach { setModEnabled(it, false) }
             disabledMods.filter { it.name in mod.requires }.forEach { setModEnabled(it, true) }
         } else {
             enabledMods -= mod
@@ -196,12 +206,15 @@ class LaunchyState(
         runCatching {
             if (mod !in upToDateMods) {
                 try {
-                    println("Starting download of ${mod.name}")
+                    var downloadURL = mod.url
+                    if (mod in modrinthModsNeedingUpdate) {
+                        downloadURL = modrinthModsNeedingUpdate[mod]?.url.toString()
+                    }
                     downloading[mod] = Progress(0, 0, 0) // set progress to 0
-                    Downloader.download(url = mod.url, writeTo = mod.file) progress@{
+                    Downloader.download(url = downloadURL, writeTo = mod.file) progress@{
                         downloading[mod] = it
                     }
-                    downloadURLs[mod] = mod.url
+                    downloadURLs[mod] = downloadURL
                     save()
                     println("Successfully downloaded ${mod.name}")
                 } catch (ex: CancellationException) {
@@ -213,6 +226,10 @@ class LaunchyState(
                 } finally {
                     println("Finished download of ${mod.name}")
                     downloading -= mod
+
+                    if (mod in modrinthModsNeedingUpdate) {
+                        modrinthModsNeedingUpdate -= mod
+                    }
                 }
             }
 
@@ -258,7 +275,8 @@ class LaunchyState(
                 .filter { enabledMods.containsAll(it.value) }.keys
                 .map { it.name }.toSet(),
             toggledMods = enabledMods.mapTo(mutableSetOf()) { it.name },
-            toggledConfigs = enabledConfigs.mapTo(mutableSetOf()) { it.name } + enabledMods.filter { it.forceConfigDownload }.mapTo(mutableSetOf()) { it.name },
+            toggledConfigs = enabledConfigs.mapTo(mutableSetOf()) { it.name } + enabledMods.filter { it.forceConfigDownload }
+                .mapTo(mutableSetOf()) { it.name },
             downloads = downloadURLs.mapKeys { it.key.name },
             configs = downloadConfigURLs.mapKeys { it.key.name },
             seenGroups = versions.groups.map { it.name }.toSet(),
@@ -280,9 +298,27 @@ class LaunchyState(
         return downloadURLs.filter { !it.key.isDownloaded }.keys.also { notPresentDownloads = it }
     }
 
-    fun launch() {
-        TODO()
+    val modrinthChecked = mutableStateOf(false)
+    suspend fun updateModrinthVersions(scope: CoroutineScope) {
+        if (modrinthChecked.value) return
+        enabledMods.forEach {
+            if (it.modrinthId.isNotBlank()) {
+                scope.launch {
+                    println("Checking for ${it.name} updates")
+                    val modrinthMod =
+                        ModrinthAPI.getLatestVersion(it.modrinthId, versions.minecraftVersion) ?: return@launch
+                    val file = modrinthMod.files[0]
+                    val url = file.url
+
+                    if (url != downloadURLs[it]) {
+                        modrinthModsNeedingUpdate += it to file
+                    }
+                }
+            }
+        }
+        modrinthChecked.value = true
     }
+
 }
 
 fun <T> mutableStateSetOf() = Collections.newSetFromMap(mutableStateMapOf<T, Boolean>())
