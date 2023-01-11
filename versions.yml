@@ -270,12 +270,12 @@ modGroups:
       desc: Adds independent rotation of the camera in a third person view
       url: https://edge.forgecdn.net/files/4182/575/BetterThirdPerson-Fabric-1.19-1.9.0.jar
 
-#    - name: Shoulder Surfing Reloaded
-#      license: MIT
-#      homepage: https://www.curseforge.com/minecraft/mc-mods/shoulder-surfing-reloaded
-#      desc: Revamped over-the-shoulder F5 third-person camera view
-#      url: https://edge.forgecdn.net/files/4058/335/ShoulderSurfing-Fabric-1.18.2-2.2.16.jar
-#      requires: [ Forge Config API Port ]
+    - name: Shoulder Surfing Reloaded
+      license: MIT
+      homepage: https://www.curseforge.com/minecraft/mc-mods/shoulder-surfing-reloaded
+      desc: Revamped over-the-shoulder F5 third-person camera view
+      url: https://edge.forgecdn.net/files/4259/394/ShoulderSurfing-Fabric-1.19.3-2.2.18.jar
+      requires: [ Forge Config API Port ]
 
   Audio Enhancements:
     - name: Dynamic Sound filters
@@ -473,42 +473,12 @@ modGroups:
       desc: Provides default connected textures
       url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
 
-#    - name: Forge Config API Port
-#      license: MPL-2
-#      homepage: https://modrinth.com/mod/forge-config-api-port
-#      desc: Forge Config API ported to Fabric
-#      url: https://cdn.modrinth.com/data/ohNO6lps/versions/XGKEYlsw/ForgeConfigAPIPort-v3.2.4-1.18.2-Fabric.jar
-#      dependency: true
-
-    - name: Shoulder Surfing Reloaded
-      license: MIT
-      homepage: https://www.curseforge.com/minecraft/mc-mods/shoulder-surfing-reloaded
-      desc: Revamped over-the-shoulder F5 third-person camera view
-      url: https://edge.forgecdn.net/files/4058/335/ShoulderSurfing-Fabric-1.18.2-2.2.16.jar
-      requires: [ Forge Config API Port ]
-
-#    - name: Lamb Dynamic Lights
-#      license: MIT
-#      homepage: https://modrinth.com/mod/lambdynamiclights
-#      modrinthId: yBW8D80W
-#      desc: Holding a torch will light up your surroundings
-#      url: https://cdn.modrinth.com/data/yBW8D80W/versions/2.1.0%2B1.17/lambdynamiclights-2.1.0%2B1.17.jar
-
     - name: Enhanced Block Entities
       license: LGPL-3
       homepage: https://modrinth.com/mod/ebe
       desc: Makes blocks like chests render faster and nicer
       url: https://cdn.modrinth.com/data/OVuFYfre/versions/0.7.1%2B1.18.2/enhancedblockentities-0.7.1%2B1.18.2.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/enhanced_bes_1.1.zip
-
-#    - name: Distant Horizons
-#      license: LGPL-3
-#      homepage: https://modrinth.com/mod/distanthorizons
-#      desc: Level-Of-Detail mod to allow for better performance and higher render-distance
-#      url: https://cdn.modrinth.com/data/uCdwusMi/versions/1.6.5a-1.18.2/DistantHorizons-1.6.5a-1.18.2.jar
-#      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DistantHorizons.zip
-#      configDesc: "Includes cached chunks for Wynncraft"
-#      incompatibleWith: [ Iris shaders, Bobby ]
 
     - name: ExtraSounds
       license: CC0
@@ -521,11 +491,3 @@ modGroups:
 #      homepage: https://modrinth.com/mod/indium
 #      desc: Sodium addon providing support for Fabric Rendering API
 #      url: https://cdn.modrinth.com/data/Orvt0mRa/versions/1.0.7%2Bmc1.18.2/indium-1.0.7%2Bmc1.18.2.jar
-
-#    - name: Camera Overhaul
-#      license: MIT
-#      homepage: https://modrinth.com/mod/cameraoverhaul
-#      desc: Adds various camera tilting
-#      url: https://cdn.modrinth.com/data/m0oRwcZx/versions/82Y9HLAL/CameraOverhaul-1.3.1-fabric-universal.jar
-#      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/CameraOverhaul.zip
-#      requires: [ Cloth Config ]
