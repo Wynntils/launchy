@@ -59,7 +59,7 @@ modGroups:
       homepage: https://modrinth.com/mod/desired-servers
       modrinthId: GDpe4LHD
       desc: Ship servers without modifying servers.dat
-      url: https://cdn.modrinth.com/data/GDpe4LHD/versions/f1DrQcQt/desiredservers-forge-1.19.2-1.1.0.jar
+      url: https://cdn.modrinth.com/data/GDpe4LHD/versions/4F5sOpkI/desiredservers-fabric-1.19.2-1.1.0.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DesiredServers.zip
       forceConfigDownload: true
 
@@ -103,7 +103,7 @@ modGroups:
       homepage: https://modrinth.com/mod/ferrite-core
       modrinthId: uXXizFIs
       desc: Optimizes memory usage
-      url: https://cdn.modrinth.com/data/uXXizFIs/versions/YrvjR5sX/ferritecore-5.1.0-forge.jar
+      url: https://cdn.modrinth.com/data/uXXizFIs/versions/GHcKib6J/ferritecore-5.1.0-fabric.jar
 
     - name: Entity Culling
       license: MIT
