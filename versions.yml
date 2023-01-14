@@ -132,14 +132,14 @@ modGroups:
       homepage: https://modrinth.com/mod/forgetmechunk
       modrinthId: vRXn3MrA
       desc: Removes light-update when unloading chunks to fix lag spikes
-      url: https://github.com/mjwells2002/ForgetMeChunk/releases/download/1.0.4/forgetmechunk-1.0.4-1.18.X-1.19.X.jar
+      url: https://cdn.modrinth.com/data/vRXn3MrA/versions/1.0.4/forgetmechunk-1.0.4-1.18.X-1.19.X.jar
 
     - name: C2ME
       license: MIT
       homepage: https://modrinth.com/mod/c2me-fabric
       modrinthId: VSNURh3q
       desc: Improves chunk performance of Minecraft
-      url: https://cdn.modrinth.com/data/vRXn3MrA/versions/1.0.4/forgetmechunk-1.0.4-1.18.X-1.19.X.jar
+      url: https://cdn.modrinth.com/data/VSNURh3q/versions/FpgVeSQK/c2me-fabric-mc1.19.3-0.2.0%2Balpha.10.0.jar
 
     - name: KennyTVsEpicForceCloseLoadingScreenMod
       license: MIT
