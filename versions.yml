@@ -323,6 +323,12 @@ modGroups:
       requires: [ Sodium ]
 
   Misc Enhancements:
+    - name: Server Packer Unlocker
+      license: UNLICENSE
+      homepage: https://modrinth.com/mod/server-pack-unlocker
+      desc: Allows resource packs provided by servers to be overridden and moved.
+      url: https://cdn.modrinth.com/data/PiuygVWJ/versions/wk6uA1yO/spu-1.3.jar
+
     - name: First Person Models
       license: MIT
       homepage: https://modrinth.com/mod/first-person-model
