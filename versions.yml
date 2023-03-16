@@ -31,7 +31,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-api
       modrinthId: P7dR8mSH
       desc: The core api used by fabric mods
-      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/pCfxz2JH/fabric-api-0.69.1%2B1.19.3.jar
+      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/V7gqra8F/fabric-api-0.76.0%2B1.19.3.jar
 
     - name: Sodium
       license: LGPL-3
@@ -52,7 +52,7 @@ modGroups:
       homepage: https://modrinth.com/mod/indium
       modrinthId: Orvt0mRa
       desc: Sodium addon providing support for Fabric Rendering API
-      url: https://cdn.modrinth.com/data/Orvt0mRa/versions/BoAba4K3/indium-1.0.10%2Bmc1.19.3.jar
+      url: https://cdn.modrinth.com/data/Orvt0mRa/versions/U94NcDpV/indium-1.0.14%2Bmc1.19.3.jar
 
     - name: Desired Servers
       license: MIT
@@ -162,7 +162,7 @@ modGroups:
       license: GPL-3.0
       homepage: https://voicesofwynn.com
       desc: Adds voice lines to Wynncraft
-      url: https://voicesofwynn.com/download/37/jar
+      url: https://voicesofwynn.com/download/41/jar
 
   Visual Enhancements:
     - name: Distant Horizons
@@ -180,7 +180,7 @@ modGroups:
       homepage: https://modrinth.com/mod/iris
       modrinthId: YL57xq9U
       desc: Shaders for fabric
-      url: https://cdn.modrinth.com/data/YL57xq9U/versions/py8Wa69O/iris-mc1.19.3-1.4.6.jar
+      url: https://cdn.modrinth.com/data/YL57xq9U/versions/ExtC2pRY/iris-mc1.19.3-1.5.2.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Iris.zip
       configDesc: "Includes the following shaderpacks: \n - BSL v8.1.02.2 \n - Complementary Shaders v4.4 \n - Continuum v2.0.4 \n - Sonic Ether's Unbelievable Shaders PTGI HRR 3"
       incompatibleWith: [ Distant Horizons ]
@@ -201,7 +201,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fallingleaves
       modrinthId: WhbRG4iK
       desc: Adds falling leaf particles to trees
-      url: https://cdn.modrinth.com/data/WhbRG4iK/versions/nlfT2jHV/fallingleaves-1.14.0%2B1.19.3.jar
+      url: https://cdn.modrinth.com/data/WhbRG4iK/versions/XYq90g2b/fallingleaves-1.14.5%2B1.19.3.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/FallingLeaves_1.0.zip
       requires: [ Cloth Config ]
 
@@ -244,7 +244,7 @@ modGroups:
       homepage: https://modrinth.com/mod/physicsmod
       modrinthId: Xy8aRQKS
       desc: Adds more immersive physics to just about every aspect of the game
-      url: https://cdn.modrinth.com/data/Xy8aRQKS/versions/VA4GbM79/physics-mod-2.9.4-mc-1.19.3-fabric.jar
+      url: https://cdn.modrinth.com/data/Xy8aRQKS/versions/i6Fzs13p/physics-mod-2.11.8-mc-1.19.3-fabric.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/PhysicsMod.zip
 
     - name: 3D Skin Layers
@@ -252,7 +252,7 @@ modGroups:
       homepage: https://modrinth.com/mod/3dskinlayers
       modrinthId: zV5r3pPn
       desc: Creates 3d skin layers on skins
-      url: https://cdn.modrinth.com/data/zV5r3pPn/versions/lt0gHTA6/3dskinlayers-fabric-1.5.2-mc1.19.3.jar
+      url: https://cdn.modrinth.com/data/zV5r3pPn/versions/p5nYXh23/3dskinlayers-fabric-1.5.3-mc1.19.3.jar
 
   Camera Enhancements:
     - name: Camera Overhaul
@@ -355,7 +355,7 @@ modGroups:
       homepage: https://modrinth.com/mod/sodium-extra
       modrinthId: PtjYWJkn
       desc: Extra features not available in Sodium
-      url: https://cdn.modrinth.com/data/PtjYWJkn/versions/dGDpjLtu/sodium-extra-0.4.14%2Bmc1.19.3-build.81.jar
+      url: https://cdn.modrinth.com/data/PtjYWJkn/versions/Fo9beybz/sodium-extra-0.4.18%2Bmc1.19.3-build.99.jar
       requires: [ Sodium ]
 
     - name: Fabrishot
@@ -377,7 +377,7 @@ modGroups:
       homepage: https://modrinth.com/mod/notenoughcrashes
       modrinthId: yM94ont6
       desc: Sends you to title screen instead of crashing your game
-      url: https://cdn.modrinth.com/data/yM94ont6/versions/f3lqB3uY/notenoughcrashes-4.2.0%2B1.19.3-fabric.jar
+      url: https://cdn.modrinth.com/data/yM94ont6/versions/djywv31z/notenoughcrashes-4.4.0%2B1.19.3-fabric.jar
 
     - name: Dont Clear Chat History
       license: CC0
@@ -445,7 +445,7 @@ modGroups:
       homepage: https://modrinth.com/mod/forge-config-api-port
       modrinthId: ohNO6lps
       desc: Forge Config API ported to Fabric
-      url: https://cdn.modrinth.com/data/ohNO6lps/versions/alqrny5V/ForgeConfigAPIPort-v5.0.6-1.19.3-Fabric.jar
+      url: https://cdn.modrinth.com/data/ohNO6lps/versions/TFLCxTVc/ForgeConfigAPIPort-v5.0.10-1.19.3-Fabric.jar
       dependency: true
 
     - name: Yet Another Config Lib
@@ -453,7 +453,7 @@ modGroups:
       homepage: https://modrinth.com/mod/yacl
       modrinthId: 1eAoo2KR
       desc: Yet Another Config Lib, like, what were you expecting?
-      url: https://cdn.modrinth.com/data/1eAoo2KR/versions/GkKQsCJ6/YetAnotherConfigLib-2.1.1.jar
+      url: https://cdn.modrinth.com/data/1eAoo2KR/versions/3EWbdCzX/YetAnotherConfigLib-2.2.0.jar
       dependency: true
 
   Outdated/Disabled:
