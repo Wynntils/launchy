@@ -120,12 +120,12 @@ modGroups:
       url: https://cdn.modrinth.com/data/iG6ZHsUV/versions/BxA1B1tp/CullLessLeaves-1.1.0.jar
       requires: [ Yet Another Config Lib ]
 
-#    - name: Enhanced Block Entities
-#      license: LGPL-3
-#      homepage: https://modrinth.com/mod/ebe
-#      desc: Makes blocks like chests render faster and nicer
-#      url: https://cdn.modrinth.com/data/OVuFYfre/versions/0.7.1%2B1.18.2/enhancedblockentities-0.7.1%2B1.18.2.jar
-#      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/enhanced_bes_1.1.zip
+    - name: Enhanced Block Entities
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/ebe
+      desc: Makes blocks like chests render faster and nicer
+      url: https://cdn.modrinth.com/data/OVuFYfre/versions/6NvQpIBY/enhancedblockentities-0.8%2B1.19.3.jar
+      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/enhanced_bes_1.1.zip
 
     - name: ForgetMeChunk
       license: No License
@@ -148,15 +148,27 @@ modGroups:
       desc: Improves loading times when changing worlds
       url: https://cdn.modrinth.com/data/blWBX5n1/versions/1.1.1/forcecloseloadingscreen-1.1.1.jar
 
+    - name: Better Fps - Render Distance
+      license: No License
+      homepage: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric
+      desc: Adds a few performance improvements to increase fps
+      url: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric/download/4351677
+
+    - name: Cull Particles
+      license: CC0
+      homepage: https://github.com/Commander07/CullParticlesFabric
+      desc: Culls particles to improve performance
+      url: https://github.com/Commander07/CullParticlesFabric/releases/download/1.1/cullparticles-1.1_1.19.3.jar
+
   Wynncraft Enhancements:
-#    - name: WynnLib
-#      license: AGPL-3.0
-#      homepage: https://modrinth.com/mod/wynnlib
-#      desc: Mod that aims to provide data-related functionalities
-#      url: https://cdn.modrinth.com/data/e7tR8Lcc/versions/BkvL3mUr/wynnlib-0.2.8.jar
-#      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
-#      configDesc: "Fixes a conflict with Wynntils"
-#      requires: [FabricKotlinLanguage]
+    - name: WynnLib
+      license: AGPL-3.0
+      homepage: https://github.com/Commander07/WynnLibFabric
+      desc: Mod that aims to provide data-related functionalities
+      url: https://github.com/Commander07/WynnLibFabric/releases/download/1.19.3_ver_1/wynnlib-0.2.8-1.19.3.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
+      configDesc: "Fixes a conflict with Wynntils"
+      requires: [ FabricKotlinLanguage ]
 
     - name: Voices of Wynn
       license: GPL-3.0
@@ -299,11 +311,11 @@ modGroups:
       url: https://cdn.modrinth.com/data/T8MMXTpr/versions/hYDZaVYh/DripSounds-1.19-0.3.1.jar
       requires: [ Cloth Config ]
 
-#    - name: ExtraSounds
-#      license: CC0
-#      homepage: https://modrinth.com/mod/extrasounds
-#      desc: Adds more sounds to Minecraft
-#      url: https://cdn.modrinth.com/data/uPWCQrVL/versions/2.3.1%2B1.18/extrasounds-2.3.1%2B1.18.2.jar
+    - name: ExtraSounds
+      license: CC0
+      homepage: https://modrinth.com/mod/extrasounds
+      desc: Adds more sounds to Minecraft
+      url: https://artifactory.kow08absty.com/artifactory/fabricmc/dev/stashy/extra-sounds/2.3.1%2B1.19.3~lonefelidae16-SNAPSHOT/extra-sounds-2.3.1%2B1.19.3~lonefelidae16-20230111.075334-2.jar
 
   HUD & Menu Enhancements:
     - name: BetterF3
@@ -393,6 +405,21 @@ modGroups:
       desc: Adds a configurable zoom key.
       url: https://cdn.modrinth.com/data/8bOImuGU/versions/LqiSaocJ/logical_zoom-0.0.18.jar
 
+    - name: Borderless Mining
+      license: MIT
+      homepage: https://modrinth.com/mod/borderless-mining
+      modrinthId: kYq5qkSL
+      desc: Changes the fullscreen option to use a borderless window that fills the screen.
+      url: https://cdn.modrinth.com/data/kYq5qkSL/versions/61bxY5nb/borderless-mining-1.1.6%2B1.19.3.jar
+
+    - name: In-Game Account Switcher
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/in-game-account-switcher
+      modrinthId: cudtvDnd
+      desc: In-Game Account Switcher allows you to change which account you are logged in to in-game, without having to restart Minecraft.
+      url: https://cdn.modrinth.com/data/cudtvDnd/versions/rEirnYuQ/InGameAccountSwitcher-Fabric-1.19-8.0.1.1.jar
+
+
   Developer Tools:
     - name: NBTToolTips
       license: MIT
@@ -429,7 +456,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-language-kotlin
       modrinthId: Ha28R6CL
       desc: Language Dependency for some mods
-      url: https://cdn.modrinth.com/data/Ha28R6CL/versions/yLIAMDzv/fabric-language-kotlin-1.8.7%2Bkotlin.1.7.22.jar
+      url: https://cdn.modrinth.com/data/Ha28R6CL/versions/lgFl3olb/fabric-language-kotlin-1.9.1%2Bkotlin.1.8.10.jar
       dependency: true
 
     - name: Cloth Config
@@ -464,15 +491,6 @@ modGroups:
       desc: Adds better grass and snow to the game
       url: https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.4%2B1.18/lambdabettergrass-1.2.4%2B1.18.jar
 
-    - name: WynnLib
-      license: AGPL-3.0
-      homepage: https://modrinth.com/mod/wynnlib
-      desc: Mod that aims to provide data-related functionalities
-      url: https://cdn.modrinth.com/data/e7tR8Lcc/versions/2UtKS00k/wynnlib-0.2.7.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
-      configDesc: "Fixes a conflict with Wynntils"
-      requires: [ FabricKotlinLanguage ]
-
     - name: Continuity
       license: LGPL-3
       homepage: https://modrinth.com/mod/continuity
@@ -485,12 +503,6 @@ modGroups:
       desc: Makes blocks like chests render faster and nicer
       url: https://cdn.modrinth.com/data/OVuFYfre/versions/0.7.1%2B1.18.2/enhancedblockentities-0.7.1%2B1.18.2.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/enhanced_bes_1.1.zip
-
-    - name: ExtraSounds
-      license: CC0
-      homepage: https://modrinth.com/mod/extrasounds
-      desc: Adds more sounds to Minecraft
-      url: https://cdn.modrinth.com/data/uPWCQrVL/versions/2.3.1%2B1.18/extrasounds-2.3.1%2B1.18.2.jar
 
 #    - name: Indium
 #      license: APACHE
