@@ -1,0 +1,54 @@
+presets:
+  - name: "My Preset"
+    version: '1.0.0'
+    description: "My Preset Description"
+    # The preset's icon
+    icon: "http://placekitten.com/100/100"
+    # The preset's author
+    author: "My Name"
+    # The preset's author's website
+    url: "http://example.com"
+    # The mods to be enabled
+    mods:
+      - "WynnLib"
+      - "Visuality"
+      - "Camera Overhaul"
+    # The groups to be enabled
+    groups:
+      - "Performance"
+
+  - name: "My Other Preset"
+    version: '1.0.0'
+    description: "My Other Preset Description"
+    icon: "http://placekitten.com/150/150"
+    author: ""
+    url: ""
+    mods: []
+    groups: []
+
+  - name: "My Third Preset"
+    version: '1.0.0'
+    description: "My Third Preset Description"
+    icon: "http://placekitten.com/200/200"
+    author: ""
+    url: ""
+    mods: [ ]
+    groups: [ ]
+
+  - name: "My Fourth Preset"
+    version: '1.0.0'
+    description: "My Fourth Preset Description"
+    icon: "http://placekitten.com/250/250"
+    author: ""
+    url: ""
+    mods: [ ]
+    groups: [ ]
+
+  - name: "My Fifth Preset"
+    version: '1.0.0'
+    description: "My Fifth Preset Description"
+    icon: "http://placekitten.com/300/300"
+    author: ""
+    url: ""
+    mods: [ ]
+    groups: [ ]

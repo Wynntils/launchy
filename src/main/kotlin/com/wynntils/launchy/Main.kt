@@ -21,6 +21,7 @@ import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import com.wynntils.launchy.data.Config
 import com.wynntils.launchy.data.Dirs
+import com.wynntils.launchy.data.Presets
 import com.wynntils.launchy.data.Versions
 import com.wynntils.launchy.logic.LaunchyState
 import com.wynntils.launchy.ui.rememberMIAColorScheme
@@ -48,7 +49,8 @@ fun main() {
         val launchyState by produceState<LaunchyState?>(null) {
             val config = Config.read()
             val versions = Versions.readLatest(config.downloadUpdates)
-            value = LaunchyState(config, versions)
+            val presets = Presets.readLatest(config.downloadUpdates)
+            value = LaunchyState(config, versions, presets)
         }
         val onClose: () -> Unit = {
             exitApplication()

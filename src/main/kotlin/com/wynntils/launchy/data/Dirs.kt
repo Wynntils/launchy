@@ -27,6 +27,7 @@ object Dirs {
 
     val configFile = config / "wynntils-launcher.yml"
     val versionsFile = config / "wynntils-versions.yml"
+    val presetsFile = config / "wynntils-presets.yml"
 
     fun createDirs() {
         config.createDirectories()

@@ -14,12 +14,14 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import com.wynntils.launchy.ui.AppTopBar
 import com.wynntils.launchy.ui.screens.main.MainScreen
+import com.wynntils.launchy.ui.screens.presets.PresetsScreen
 import com.wynntils.launchy.ui.screens.settings.SettingsScreen
 import com.wynntils.launchy.ui.state.TopBar
 
 sealed class Screen(val transparentTopBar: Boolean = false) {
     object Default : Screen(transparentTopBar = true)
     object Settings : Screen()
+    object Presets : Screen()
 }
 
 var screen: Screen by mutableStateOf(Screen.Default)
@@ -34,6 +36,10 @@ fun Screens() {
     TranslucentTopBar(screen) {
         TransitionSlideUp(screen == Screen.Settings) {
             SettingsScreen()
+        }
+
+        TransitionSlideUp(screen == Screen.Presets) {
+            PresetsScreen()
         }
     }
 

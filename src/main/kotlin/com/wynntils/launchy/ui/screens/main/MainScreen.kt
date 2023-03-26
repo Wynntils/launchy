@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.wynntils.launchy.LocalLaunchyState
 import com.wynntils.launchy.ui.screens.main.buttons.InstallButton
-import com.wynntils.launchy.ui.screens.main.buttons.PlayButton
+import com.wynntils.launchy.ui.screens.main.buttons.PresetsButton
 import com.wynntils.launchy.ui.screens.main.buttons.SettingsButton
 import com.wynntils.launchy.ui.state.windowScope
 
@@ -38,13 +38,15 @@ fun MainScreen() {
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.fillMaxWidth().weight(1f),
             ) {
-                PlayButton(!state.isDownloading && !state.operationsQueued && state.minecraftValid)
-                Spacer(Modifier.width(10.dp))
+//                PlayButton(!state.isDownloading && !state.operationsQueued && state.minecraftValid)
+//                Spacer(Modifier.width(10.dp))
                 InstallButton(!state.isDownloading && state.operationsQueued && state.minecraftValid)
                 Spacer(Modifier.width(10.dp))
                 AnimatedVisibility(state.operationsQueued) {
                     UpdateInfoButton()
                 }
+                Spacer(Modifier.width(10.dp))
+                PresetsButton()
                 Spacer(Modifier.width(10.dp))
 //                NewsButton(hasUpdates = true)
 //                Spacer(Modifier.width(10.dp))

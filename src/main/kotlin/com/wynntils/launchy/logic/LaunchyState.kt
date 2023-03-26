@@ -16,6 +16,7 @@ class LaunchyState(
     private val config: Config,
     // Versions are immutable, we don't care for reading
     val versions: Versions,
+    val presets: Presets,
 //    val scaffoldState: ScaffoldState
 ) {
     val enabledMods = mutableStateSetOf<Mod>().apply {
@@ -28,8 +29,8 @@ class LaunchyState(
         val forceDisabled = versions.groups.filter { it.forceDisabled }
         val fullDisabled = config.fullDisabledGroups
         addAll(((fullEnabled + defaultEnabled + forceEnabled).toSet())
-            .mapNotNull { it.toGroup() }
-            .mapNotNull { versions.modGroups[it] }.flatten()
+            .mapNotNull { it.toGroup()?.mods() }
+            .flatten()
         )
         removeAll((forceDisabled + fullDisabled).toSet().mapNotNull { versions.modGroups[it] }.flatten().toSet())
     }
@@ -80,14 +81,12 @@ class LaunchyState(
         disabledMods.filter { it.isDownloaded }.also { if (it.isEmpty()) updateNotPresent() }
     }
 
-
-
     val enabledConfigs: MutableSet<Mod> = mutableStateSetOf<Mod>().apply {
         addAll(config.toggledConfigs.mapNotNull { it.toMod() })
     }
 
     init {
-        // trigger update incase we have dependencies
+        // trigger update in case we have dependencies
         enabledMods.forEach { setModEnabled(it, true) }
     }
 
@@ -96,7 +95,7 @@ class LaunchyState(
     val isDownloading by derivedStateOf { downloading.isNotEmpty() || downloadingConfigs.isNotEmpty() }
     val failedDownloads = mutableStateSetOf<Mod>()
 
-    // Caclculate the speed of the download
+    // Calculate the speed of the download
     val downloadSpeed by derivedStateOf {
         val total = downloading.values.sumOf { it.bytesDownloaded }
         val time = downloading.values.sumOf { it.timeElapsed }
@@ -129,6 +128,13 @@ class LaunchyState(
     var handledFirstLaunch by mutableStateOf(config.handledFirstLaunch)
 
     fun setModEnabled(mod: Mod, enabled: Boolean) {
+        if (!enabled) {
+            // Check if we are trying to disable a mod that is forced enabled
+            if (versions.groups.any { it.forceEnabled && mod in it.mods() }) {
+                return
+            }
+        }
+
         if (enabled) {
             enabledMods += mod
             enabledMods.filter { it.name in mod.incompatibleWith || it.incompatibleWith.contains(mod.name) }.forEach { setModEnabled(it, false) }
@@ -151,6 +157,14 @@ class LaunchyState(
     fun setModConfigEnabled(mod: Mod, enabled: Boolean) {
         if (mod.configUrl.isNotBlank() && enabled) enabledConfigs.add(mod)
         else enabledConfigs.remove(mod)
+    }
+
+    fun setPreset(preset: Preset) {
+        enabledMods.forEach { setModEnabled(it, false) }
+        preset.mods.forEach { mod -> mod.toMod()?.let { setModEnabled(it, true) } }
+        preset.groups.forEach { group ->
+            group.toGroup()?.mods()?.forEach { mod -> setModEnabled(mod, true) }
+        }
     }
 
     suspend fun install() = coroutineScope {
@@ -271,6 +285,7 @@ class LaunchyState(
 
     fun ModName.toMod(): Mod? = versions.nameToMod[this]
     fun GroupName.toGroup(): Group? = versions.nameToGroup[this]
+    fun Group.mods(): Set<Mod> = versions.modGroups[this] ?: emptySet()
 
     val Mod.file get() = Dirs.mods / "${name}.jar"
     val Mod.config get() = Dirs.tmp / "${name}-config.zip"
