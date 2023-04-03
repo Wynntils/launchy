@@ -217,11 +217,11 @@ modGroups:
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/FallingLeaves_1.0.zip
       requires: [ Cloth Config ]
 
-#    - name: Continuity
-#      license: LGPL-3
-#      homepage: https://modrinth.com/mod/continuity
-#      desc: Provides default connected textures
-#      url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
+    - name: Continuity
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/continuity
+      desc: Provides default connected textures
+      url: https://cdn.modrinth.com/data/1IjD5062/versions/4h5IIa7B/continuity-3.0.0-beta.2%2B1.19.3.jar
 
     - name: Lamb Dynamic Lights
       license: MIT
@@ -416,7 +416,7 @@ modGroups:
       license: LGPL-3
       homepage: https://modrinth.com/mod/in-game-account-switcher
       modrinthId: cudtvDnd
-      desc: In-Game Account Switcher allows you to change which account you are logged in to in-game, without having to restart Minecraft.
+      desc: Allows you to change which account you are logged in to in-game, without having to restart Minecraft.
       url: https://cdn.modrinth.com/data/cudtvDnd/versions/rEirnYuQ/InGameAccountSwitcher-Fabric-1.19-8.0.1.1.jar
 
 
@@ -491,11 +491,11 @@ modGroups:
       desc: Adds better grass and snow to the game
       url: https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.4%2B1.18/lambdabettergrass-1.2.4%2B1.18.jar
 
-    - name: Continuity
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/continuity
-      desc: Provides default connected textures
-      url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
+#    - name: Continuity
+#      license: LGPL-3
+#      homepage: https://modrinth.com/mod/continuity
+#      desc: Provides default connected textures
+#      url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
 
 #    - name: Indium
 #      license: APACHE
