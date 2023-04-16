@@ -54,15 +54,6 @@ modGroups:
       desc: Sodium addon providing support for Fabric Rendering API
       url: https://cdn.modrinth.com/data/Orvt0mRa/versions/qqiFL8NF/indium-1.0.15%2Bmc1.19.4.jar
 
-  #  - name: Desired Servers
-  #     license: MIT
-  #     homepage: https://modrinth.com/mod/desired-servers
-  #     modrinthId: GDpe4LHD
-  #     desc: Ship servers without modifying servers.dat
-  #     url: https://cdn.modrinth.com/data/GDpe4LHD/versions/4F5sOpkI/desiredservers-fabric-1.19.2-1.1.0.jar
-  #     configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DesiredServers.zip
-  #     forceConfigDownload: true
-
     - name: Controlling
       license: MIT
       homepage: https://www.curseforge.com/minecraft/mc-mods/controlling
@@ -105,35 +96,6 @@ modGroups:
       desc: Skips rendering Tiles/Entities that are not visible.
       url: https://cdn.modrinth.com/data/NNAgCjsB/versions/UvJN5Cy4/entityculling-fabric-1.6.2-mc1.19.4.jar
 
-    # - name: Cull Less Leaves
-    #   license: LGPL-3
-    #   homepage: https://modrinth.com/mod/cull-less-leaves
-    #   modrinthId: iG6ZHsUV
-    #   desc: Cull leaves while looking hot!
-    #   url: https://cdn.modrinth.com/data/iG6ZHsUV/versions/BxA1B1tp/CullLessLeaves-1.1.0.jar
-    #   requires: [ Yet Another Config Lib ]
-
-    # - name: Enhanced Block Entities
-    #   license: LGPL-3
-    #   homepage: https://modrinth.com/mod/ebe
-    #   desc: Makes blocks like chests render faster and nicer
-    #   url: https://cdn.modrinth.com/data/OVuFYfre/versions/6NvQpIBY/enhancedblockentities-0.8%2B1.19.3.jar
-    #   configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/enhanced_bes_1.1.zip
-
-    # - name: ForgetMeChunk
-    #   license: No License
-    #   homepage: https://modrinth.com/mod/forgetmechunk
-    #   modrinthId: vRXn3MrA
-    #   desc: Removes light-update when unloading chunks to fix lag spikes
-    #   url: https://cdn.modrinth.com/data/vRXn3MrA/versions/1.0.4/forgetmechunk-1.0.4-1.18.X-1.19.X.jar
-
-    # - name: C2ME
-    #   license: MIT
-    #   homepage: https://modrinth.com/mod/c2me-fabric
-    #   modrinthId: VSNURh3q
-    #   desc: Improves chunk performance of Minecraft
-    #   url: https://cdn.modrinth.com/data/VSNURh3q/versions/FpgVeSQK/c2me-fabric-mc1.19.3-0.2.0%2Balpha.10.0.jar
-
     - name: KennyTVsEpicForceCloseLoadingScreenMod
       license: MIT
       homepage: https://modrinth.com/mod/forcecloseworldloadingscreen
@@ -141,28 +103,7 @@ modGroups:
       desc: Improves loading times when changing worlds
       url: https://cdn.modrinth.com/data/blWBX5n1/versions/5DTExYfy/forcecloseloadingscreen-1.2.0.jar
 
-    # - name: Better Fps - Render Distance
-    #   license: No License
-    #   homepage: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric
-    #   desc: Adds a few performance improvements to increase fps
-    #   url: https://edge.forgecdn.net/files/4351/677/betterfpsdist-fabric-1.19-2.4.jar
-
-    # - name: Cull Particles
-    #   license: CC0
-    #   homepage: https://github.com/Commander07/CullParticlesFabric
-    #   desc: Culls particles to improve performance
-    #   url: https://github.com/Commander07/CullParticlesFabric/releases/download/1.1/cullparticles-1.1_1.19.3.jar
-
   Wynncraft Enhancements:
-    # - name: WynnLib
-    #   license: AGPL-3.0
-    #   homepage: https://github.com/Commander07/WynnLibFabric
-    #   desc: Mod that aims to provide data-related functionalities
-    #   url: https://github.com/Commander07/WynnLibFabric/releases/download/1.19.3_ver_2/wynnlib-0.2.9-1.19.3.jar
-    #   configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
-    #   configDesc: "Fixes a conflict with Wynntils"
-    #   requires: [ FabricKotlinLanguage ]
-
     - name: Voices of Wynn
       license: GPL-3.0
       homepage: https://voicesofwynn.com
@@ -178,7 +119,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/uCdwusMi/versions/xBHpiuwg/DistantHorizons-1.6.11a-1.19.4.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DistantHorizons.zip
       configDesc: "Includes cached chunks for Wynncraft"
-      incompatibleWith: [ Iris shaders, Bobby ]
+      incompatibleWith: [Iris shaders, Bobby]
 
     - name: Iris shaders
       license: LGPL-3
@@ -188,7 +129,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/YL57xq9U/versions/347HlKZS/iris-mc1.19.4-1.6.1.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Iris.zip
       configDesc: "Includes the following shaderpacks: \n - BSL v8.1.02.2 \n - Complementary Shaders v4.4 \n - Continuum v2.0.4 \n - Sonic Ether's Unbelievable Shaders PTGI HRR 3"
-      incompatibleWith: [ Distant Horizons ]
+      incompatibleWith: [Distant Horizons]
 
     - name: Bobby
       license: LGPL-3
@@ -198,8 +139,8 @@ modGroups:
       url: https://cdn.modrinth.com/data/M08ruV16/versions/fdmNcTR4/bobby-4.0.5.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Bobby.zip
       configDesc: "Includes cached chunks for Wynncraft"
-      incompatibleWith: [ Distant Horizons ]
-      requires: [ Cloth Config ]
+      incompatibleWith: [Distant Horizons]
+      requires: [Cloth Config]
 
     - name: Falling leaves
       license: MIT
@@ -208,13 +149,7 @@ modGroups:
       desc: Adds falling leaf particles to trees
       url: https://cdn.modrinth.com/data/WhbRG4iK/versions/OSEfdzSy/fallingleaves-1.15.0%2B1.19.4.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/FallingLeaves_1.0.zip
-      requires: [ Cloth Config ]
-
-#    - name: Continuity
-#      license: LGPL-3
-#      homepage: https://modrinth.com/mod/continuity
-#      desc: Provides default connected textures
-#      url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
+      requires: [Cloth Config]
 
     - name: Lamb Dynamic Lights
       license: MIT
@@ -229,13 +164,6 @@ modGroups:
       modrinthId: rI0hvYcd
       desc: Adds a bunch of new particles
       url: https://cdn.modrinth.com/data/rI0hvYcd/versions/8YMUO06d/visuality-0.7.0.jar
-
-    # - name: ClearSkies
-    #   license: LGPL-3
-    #   homepage: https://modrinth.com/mod/clear-skies
-    #   modrinthId: xNK6XfRv
-    #   desc: Removes the banding at the horizon of Vanilla Minecraft
-    #   url: https://cdn.modrinth.com/data/xNK6XfRv/versions/SSFjIc6G/clear-skies-fabric-mc119-2.0.96.jar
 
     - name: NotEnoughAnimations
       license: MIT
@@ -267,20 +195,14 @@ modGroups:
       desc: Adds various camera tilting
       url: https://cdn.modrinth.com/data/m0oRwcZx/versions/fzCKxnmb/CameraOverhaul-1.4.0-fabric-universal.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/CameraOverhaul.zip
-      requires: [ Cloth Config ]
-
-    # - name: Better Third Person
-    #   license: ARR
-    #   homepage: https://www.curseforge.com/minecraft/mc-mods/better-third-person
-    #   desc: Adds independent rotation of the camera in a third person view
-    #   url: https://edge.forgecdn.net/files/4182/575/BetterThirdPerson-Fabric-1.19-1.9.0.jar
+      requires: [Cloth Config]
 
     - name: Shoulder Surfing Reloaded
       license: MIT
       homepage: https://www.curseforge.com/minecraft/mc-mods/shoulder-surfing-reloaded
       desc: Revamped over-the-shoulder F5 third-person camera view
       url: https://mediafilez.forgecdn.net/files/4443/980/ShoulderSurfing-Fabric-1.19.4-2.3.0.jar
-      requires: [ Forge Config API Port ]
+      requires: [Forge Config API Port]
 
   Audio Enhancements:
     - name: Dynamic Sound filters
@@ -302,13 +224,7 @@ modGroups:
       modrinthId: T8MMXTpr
       desc: Adds sounds for drip particles landing
       url: https://cdn.modrinth.com/data/T8MMXTpr/versions/7GB1hLrr/DripSounds-1.19.4-0.3.2.jar
-      requires: [ Cloth Config ]
-
-    # - name: ExtraSounds
-    #   license: CC0
-    #   homepage: https://modrinth.com/mod/extrasounds
-    #   desc: Adds more sounds to Minecraft
-    #   url: https://artifactory.kow08absty.com/artifactory/fabricmc/dev/stashy/extra-sounds/2.3.1%2B1.19.3~lonefelidae16-SNAPSHOT/extra-sounds-2.3.1%2B1.19.3~lonefelidae16-20230111.075334-2.jar
+      requires: [Cloth Config]
 
   HUD & Menu Enhancements:
     - name: BetterF3
@@ -325,7 +241,7 @@ modGroups:
       modrinthId: Bh37bMuy
       desc: Alternative menu for Sodium
       url: https://cdn.modrinth.com/data/Bh37bMuy/versions/aO0hSGlL/reeses_sodium_options-1.5.0%2Bmc1.19.4-build.72.jar
-      requires: [ Sodium ]
+      requires: [Sodium]
 
   Misc Enhancements:
     - name: Server Packer Unlocker
@@ -348,27 +264,13 @@ modGroups:
       desc: Lets you see the held items whilst in a moving boat
       url: https://cdn.modrinth.com/data/BdKIyOLe/versions/ggcaKnQr/Boat-Item-View-Fabric-1.19.3-0.0.4.jar
 
-    # - name: Blur
-    #   license: MIT
-    #   homepage: https://modrinth.com/mod/blur-fabric
-    #   modrinthId: NK39zBp2
-    #   desc: Adds immersive blur to GUI backgrounds
-    #   url: https://cdn.modrinth.com/data/NK39zBp2/versions/bEtdkEbI/blur-2.6.1.jar
-
     - name: Sodium Extra
       license: LGPL-3
       homepage: https://modrinth.com/mod/sodium-extra
       modrinthId: PtjYWJkn
       desc: Extra features not available in Sodium
       url: https://cdn.modrinth.com/data/PtjYWJkn/versions/YknbqkHe/sodium-extra-0.4.18%2Bmc1.19.4-build.100.jar
-      requires: [ Sodium ]
-
-    # - name: Fabrishot
-    #   license: MIT
-    #   homepage: https://modrinth.com/mod/fabrishot
-    #   modrinthId: 3qsfQtE9
-    #   desc: Take screenshots at insanely large resolutions, because why not
-    #   url: https://cdn.modrinth.com/data/3qsfQtE9/versions/Fq42foYA/fabrishot-1.9.1.jar
+      requires: [Sodium]
 
     - name: ClickThrough
       license: MIT
@@ -412,7 +314,6 @@ modGroups:
       desc: In-Game Account Switcher allows you to change which account you are logged in to in-game, without having to restart Minecraft.
       url: https://cdn.modrinth.com/data/cudtvDnd/versions/OQZPp5Se/InGameAccountSwitcher-Fabric-1.19-8.0.1.2.jar
 
-
   Developer Tools:
     - name: NBTToolTips
       license: MIT
@@ -427,13 +328,6 @@ modGroups:
       modrinthId: E9sX1ncV
       desc: Simple GUI Mod to edit an item, a block or an entity in your current world
       url: https://cdn.modrinth.com/data/E9sX1ncV/versions/aAcdR2Mn/IBEEditor-1.19.4-2.2.2-fabric.jar
-
-    # - name: RoughlyEnoughItems
-    #   license: MIT
-    #   homepage: https://modrinth.com/mod/roughly-enough-items
-    #   desc: Alternative to Just Enough Items
-    #   url: https://cdn.modrinth.com/data/nfn13YXA/versions/V02yYRWs/RoughlyEnoughItems-10.0.581.jar
-    #   requires: [ArchitecturyAPI]
 
   Dependencies:
     - name: ArchitecturyAPI
@@ -490,6 +384,110 @@ modGroups:
       desc: Provides default connected textures
       url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
 
+    - name: RoughlyEnoughItems
+      license: MIT
+      homepage: https://modrinth.com/mod/roughly-enough-items
+      desc: Alternative to Just Enough Items
+      url: https://cdn.modrinth.com/data/nfn13YXA/versions/V02yYRWs/RoughlyEnoughItems-10.0.581.jar
+      requires: [ArchitecturyAPI]
+
+    - name: Blur
+      license: MIT
+      homepage: https://modrinth.com/mod/blur-fabric
+      modrinthId: NK39zBp2
+      desc: Adds immersive blur to GUI backgrounds
+      url: https://cdn.modrinth.com/data/NK39zBp2/versions/bEtdkEbI/blur-2.6.1.jar
+
+    - name: Fabrishot
+      license: MIT
+      homepage: https://modrinth.com/mod/fabrishot
+      modrinthId: 3qsfQtE9
+      desc: Take screenshots at insanely large resolutions, because why not
+      url: https://cdn.modrinth.com/data/3qsfQtE9/versions/Fq42foYA/fabrishot-1.9.1.jar
+
+    - name: Better Fps - Render Distance
+      license: No License
+      homepage: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric
+      desc: Adds a few performance improvements to increase fps
+      url: https://edge.forgecdn.net/files/4351/677/betterfpsdist-fabric-1.19-2.4.jar
+
+    - name: Cull Particles
+      license: CC0
+      homepage: https://github.com/Commander07/CullParticlesFabric
+      desc: Culls particles to improve performance
+      url: https://github.com/Commander07/CullParticlesFabric/releases/download/1.1/cullparticles-1.1_1.19.3.jar
+
+    - name: WynnLib
+      license: AGPL-3.0
+      homepage: https://github.com/Commander07/WynnLibFabric
+      desc: Mod that aims to provide data-related functionalities
+      url: https://github.com/Commander07/WynnLibFabric/releases/download/1.19.3_ver_2/wynnlib-0.2.9-1.19.3.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
+      configDesc: "Fixes a conflict with Wynntils"
+      requires: [FabricKotlinLanguage]
+
+    - name: Cull Less Leaves
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/cull-less-leaves
+      modrinthId: iG6ZHsUV
+      desc: Cull leaves while looking hot!
+      url: https://cdn.modrinth.com/data/iG6ZHsUV/versions/BxA1B1tp/CullLessLeaves-1.1.0.jar
+      requires: [Yet Another Config Lib]
+
+    - name: Enhanced Block Entities
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/ebe
+      desc: Makes blocks like chests render faster and nicer
+      url: https://cdn.modrinth.com/data/OVuFYfre/versions/6NvQpIBY/enhancedblockentities-0.8%2B1.19.3.jar
+      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/enhanced_bes_1.1.zip
+
+    - name: ForgetMeChunk
+      license: No License
+      homepage: https://modrinth.com/mod/forgetmechunk
+      modrinthId: vRXn3MrA
+      desc: Removes light-update when unloading chunks to fix lag spikes
+      url: https://cdn.modrinth.com/data/vRXn3MrA/versions/1.0.4/forgetmechunk-1.0.4-1.18.X-1.19.X.jar
+
+    - name: C2ME
+      license: MIT
+      homepage: https://modrinth.com/mod/c2me-fabric
+      modrinthId: VSNURh3q
+      desc: Improves chunk performance of Minecraft
+      url: https://cdn.modrinth.com/data/VSNURh3q/versions/FpgVeSQK/c2me-fabric-mc1.19.3-0.2.0%2Balpha.10.0.jar
+
+    - name: Desired Servers
+      license: MIT
+      homepage: https://modrinth.com/mod/desired-servers
+      modrinthId: GDpe4LHD
+      desc: Ship servers without modifying servers.dat
+      url: https://cdn.modrinth.com/data/GDpe4LHD/versions/4F5sOpkI/desiredservers-fabric-1.19.2-1.1.0.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DesiredServers.zip
+      forceConfigDownload: true
+
+    - name: ExtraSounds
+      license: CC0
+      homepage: https://modrinth.com/mod/extrasounds
+      desc: Adds more sounds to Minecraft
+      url: https://artifactory.kow08absty.com/artifactory/fabricmc/dev/stashy/extra-sounds/2.3.1%2B1.19.3~lonefelidae16-SNAPSHOT/extra-sounds-2.3.1%2B1.19.3~lonefelidae16-20230111.075334-2.jar
+
+    - name: ClearSkies
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/clear-skies
+      modrinthId: xNK6XfRv
+      desc: Removes the banding at the horizon of Vanilla Minecraft
+      url: https://cdn.modrinth.com/data/xNK6XfRv/versions/SSFjIc6G/clear-skies-fabric-mc119-2.0.96.jar
+
+    - name: Continuity
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/continuity
+      desc: Provides default connected textures
+      url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
+
+    - name: Better Third Person
+      license: ARR
+      homepage: https://www.curseforge.com/minecraft/mc-mods/better-third-person
+      desc: Adds independent rotation of the camera in a third person view
+      url: https://edge.forgecdn.net/files/4182/575/BetterThirdPerson-Fabric-1.19-1.9.0.jar
 #    - name: Indium
 #      license: APACHE
 #      homepage: https://modrinth.com/mod/indium
