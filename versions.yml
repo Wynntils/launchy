@@ -168,6 +168,7 @@ modGroups:
       homepage: https://voicesofwynn.com
       desc: Adds voice lines to Wynncraft
       url: https://voicesofwynn.com/download/42/jar
+      requires: [Cloth Config]
 
   Visual Enhancements:
     - name: Distant Horizons
