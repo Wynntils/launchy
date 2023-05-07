@@ -41,3 +41,9 @@ To fix this, use the following command to download the file to your computer:
 curl -L "https://github.com/Wynntils/launchy/releases/download/v1.2.0/Wynntils.Mod.Installer-1.2.0.dmg" -o Installer.dmg
 open Installer.dmg
 ```
+
+After installation, run the following commands:
+```shell
+cd ~/Applications
+xattr -d com.apple.quarantine Wynntils\ Mod\ Installer.app
+```
