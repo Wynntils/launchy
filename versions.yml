@@ -250,7 +250,7 @@ modGroups:
       homepage: https://modrinth.com/mod/physicsmod
       modrinthId: Xy8aRQKS
       desc: Adds more immersive physics to just about every aspect of the game
-      url: https://cdn.modrinth.com/data/Xy8aRQKS/versions/ANbbWY4c/physics-mod-2.12.4b-mc-1.19.4-fabric.jar
+      url: https://cdn.modrinth.com/data/Xy8aRQKS/versions/jBO7Omcb/physics-mod-2.11.11-mc-1.19.4-fabric.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/PhysicsMod.zip
 
     - name: 3D Skin Layers
@@ -280,7 +280,7 @@ modGroups:
       license: MIT
       homepage: https://www.curseforge.com/minecraft/mc-mods/shoulder-surfing-reloaded
       desc: Revamped over-the-shoulder F5 third-person camera view
-      url: https://mediafilez.forgecdn.net/files/4510/888/ShoulderSurfing-Forge-1.19.4-2.3.2.jar
+      url: https://mediafilez.forgecdn.net/files/4510/886/ShoulderSurfing-Fabric-1.19.4-2.3.2.jar
       requires: [Forge Config API Port]
 
   Audio Enhancements:
@@ -317,7 +317,7 @@ modGroups:
       homepage: https://modrinth.com/mod/betterf3
       modrinthId: 8shC1gFX
       desc: Makes the F3-menu customizable and cleaner
-      url: https://cdn.modrinth.com/data/8shC1gFX/versions/cEflCp0r/BetterF3-6.0.1-Forge-1.19.4.jar
+      url: https://cdn.modrinth.com/data/8shC1gFX/versions/vZ9QjDs5/BetterF3-6.0.1-Fabric-1.19.4.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
 
     - name: Reese's Sodium Options
@@ -442,7 +442,7 @@ modGroups:
       homepage: https://modrinth.com/mod/architectury-api
       modrinthId: lhGA9TYQ
       desc: Dependency for RoughlyEnoughItems
-      url: https://cdn.modrinth.com/data/lhGA9TYQ/versions/oGBEjb15/architectury-8.1.80-forge.jar
+      url: https://cdn.modrinth.com/data/lhGA9TYQ/versions/Xb48U4dI/architectury-8.1.80-fabric.jar
       dependency: true
 
     - name: FabricKotlinLanguage
