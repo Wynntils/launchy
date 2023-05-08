@@ -38,6 +38,6 @@ On MacOS, you will see this error message due to our file not being signed by an
 
 To fix this, use the following command to download the file to your computer:
 ```shell
-curl -L "https://github.com/Wynntils/launchy/releases/download/v1.2.0/Wynntils.Mod.Installer-1.2.0.dmg" -o Installer.dmg
+curl -L "https://github.com/Wynntils/launchy/releases/download/v1.3.0/Wynntils.Mod.Installer-1.3.0.dmg" -o Installer.dmg
 open Installer.dmg
 ```
