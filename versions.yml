@@ -31,28 +31,28 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-api
       modrinthId: P7dR8mSH
       desc: The core api used by fabric mods
-      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/unERf4ZJ/fabric-api-0.78.0%2B1.19.4.jar
+      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/s5UrEfIY/fabric-api-0.80.0%2B1.19.4.jar
 
     - name: Sodium
       license: LGPL-3
       homepage: https://modrinth.com/mod/sodium
       modrinthId: AANobbMI
       desc: Greatly improves rendering performance
-      url: https://cdn.modrinth.com/data/AANobbMI/versions/b4hTi3mo/sodium-fabric-mc1.19.4-0.4.10%2Bbuild.24.jar
+      url: https://cdn.modrinth.com/data/AANobbMI/versions/ugiIczl5/sodium-fabric-mc1.19.4-0.4.11%2Bbuild.26.jar
 
     - name: Mod menu
       license: MIT
       homepage: https://modrinth.com/mod/modmenu
       modrinthId: mOgUt4GM
       desc: Adds a menu that allows configuration of mods
-      url: https://cdn.modrinth.com/data/mOgUt4GM/versions/nM5QaZNo/modmenu-6.1.0.jar
+      url: https://cdn.modrinth.com/data/mOgUt4GM/versions/iZRiOnnj/modmenu-6.2.2.jar
 
     - name: Indium
       license: APACHE
       homepage: https://modrinth.com/mod/indium
       modrinthId: Orvt0mRa
       desc: Sodium addon providing support for Fabric Rendering API
-      url: https://cdn.modrinth.com/data/Orvt0mRa/versions/qqiFL8NF/indium-1.0.15%2Bmc1.19.4.jar
+      url: https://cdn.modrinth.com/data/Orvt0mRa/versions/PkJ3S58z/indium-1.0.17%2Bmc1.19.4.jar
 
     #  - name: Desired Servers
     #     license: MIT
@@ -139,7 +139,7 @@ modGroups:
       homepage: https://modrinth.com/mod/forcecloseworldloadingscreen
       modrinthId: blWBX5n1
       desc: Improves loading times when changing worlds
-      url: https://cdn.modrinth.com/data/blWBX5n1/versions/5DTExYfy/forcecloseloadingscreen-1.2.0.jar
+      url: https://cdn.modrinth.com/data/blWBX5n1/versions/Ql2mxFsU/forcecloseloadingscreen-2.1.0.jar
 
     # - name: Better Fps - Render Distance
     #   license: No License
@@ -186,7 +186,7 @@ modGroups:
       homepage: https://modrinth.com/mod/iris
       modrinthId: YL57xq9U
       desc: Shaders for fabric
-      url: https://cdn.modrinth.com/data/YL57xq9U/versions/347HlKZS/iris-mc1.19.4-1.6.1.jar
+      url: https://cdn.modrinth.com/data/YL57xq9U/versions/bSH9O0rj/iris-mc1.19.4-1.6.2.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Iris.zip
       configDesc: "Includes the following shaderpacks: \n - BSL v8.1.02.2 \n - Complementary Shaders v4.4 \n - Continuum v2.0.4 \n - Sonic Ether's Unbelievable Shaders PTGI HRR 3"
       incompatibleWith: [Distant Horizons]
@@ -280,7 +280,7 @@ modGroups:
       license: MIT
       homepage: https://www.curseforge.com/minecraft/mc-mods/shoulder-surfing-reloaded
       desc: Revamped over-the-shoulder F5 third-person camera view
-      url: https://mediafilez.forgecdn.net/files/4443/980/ShoulderSurfing-Fabric-1.19.4-2.3.0.jar
+      url: https://mediafilez.forgecdn.net/files/4510/886/ShoulderSurfing-Fabric-1.19.4-2.3.2.jar
       requires: [Forge Config API Port]
 
   Audio Enhancements:
@@ -317,7 +317,7 @@ modGroups:
       homepage: https://modrinth.com/mod/betterf3
       modrinthId: 8shC1gFX
       desc: Makes the F3-menu customizable and cleaner
-      url: https://cdn.modrinth.com/data/8shC1gFX/versions/jFVjbyGK/BetterF3-6.0.0-Fabric-1.19.4-pre3.jar
+      url: https://cdn.modrinth.com/data/8shC1gFX/versions/vZ9QjDs5/BetterF3-6.0.1-Fabric-1.19.4.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
 
     - name: Reese's Sodium Options
@@ -333,7 +333,7 @@ modGroups:
       license: UNLICENSE
       homepage: https://modrinth.com/mod/server-pack-unlocker
       desc: Allows resource packs provided by servers to be overridden and moved.
-      url: https://cdn.modrinth.com/data/PiuygVWJ/versions/Wz8xd8hp/spu-1.4.jar
+      url: https://cdn.modrinth.com/data/PiuygVWJ/versions/R2CGXkyy/spu-1.6.jar
 
     - name: First Person Models
       license: MIT
@@ -361,7 +361,7 @@ modGroups:
       homepage: https://modrinth.com/mod/sodium-extra
       modrinthId: PtjYWJkn
       desc: Extra features not available in Sodium
-      url: https://cdn.modrinth.com/data/PtjYWJkn/versions/YknbqkHe/sodium-extra-0.4.18%2Bmc1.19.4-build.100.jar
+      url: https://cdn.modrinth.com/data/PtjYWJkn/versions/O3qmYo1o/sodium-extra-0.4.19%2Bmc1.19.3-build.101.jar
       requires: [Sodium]
 
     # - name: Fabrishot
@@ -420,7 +420,7 @@ modGroups:
       homepage: https://modrinth.com/mod/nbttooltips
       modrinthID: FZcOyh3v
       desc: Allows you to see the NBT data of an item by hovering over it and holding the shift key
-      url: https://cdn.modrinth.com/data/FZcOyh3v/versions/0.1.2/nbttooltips-0.1.2-1.19.jar
+      url: https://cdn.modrinth.com/data/FZcOyh3v/versions/2SdKGoet/nbttooltips-0.1.4-1.19.x.jar
 
     - name: IBE Editor
       license: MIT
@@ -442,7 +442,7 @@ modGroups:
       homepage: https://modrinth.com/mod/architectury-api
       modrinthId: lhGA9TYQ
       desc: Dependency for RoughlyEnoughItems
-      url: https://cdn.modrinth.com/data/lhGA9TYQ/versions/tJGqxo3S/architectury-8.1.79-fabric.jar
+      url: https://cdn.modrinth.com/data/lhGA9TYQ/versions/Xb48U4dI/architectury-8.1.80-fabric.jar
       dependency: true
 
     - name: FabricKotlinLanguage
@@ -450,7 +450,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-language-kotlin
       modrinthId: Ha28R6CL
       desc: Language Dependency for some mods
-      url: https://cdn.modrinth.com/data/Ha28R6CL/versions/MkcO8aQ0/fabric-language-kotlin-1.9.3%2Bkotlin.1.8.20.jar
+      url: https://cdn.modrinth.com/data/Ha28R6CL/versions/qgTQJrUS/fabric-language-kotlin-1.9.4%2Bkotlin.1.8.21.jar
       dependency: true
 
     - name: Cloth Config
@@ -474,7 +474,7 @@ modGroups:
       homepage: https://modrinth.com/mod/yacl
       modrinthId: 1eAoo2KR
       desc: Yet Another Config Lib, like, what were you expecting?
-      url: https://cdn.modrinth.com/data/1eAoo2KR/versions/51iCmuDG/YetAnotherConfigLib-2.4.1.jar
+      url: https://cdn.modrinth.com/data/1eAoo2KR/versions/M5iKxVFU/yet-another-config-lib-fabric-2.5.1%2B1.19.4.jar
       dependency: true
 
   Outdated/Disabled:
@@ -547,3 +547,4 @@ modGroups:
       modrinthId: xNK6XfRv
       desc: Removes the banding at the horizon of Vanilla Minecraft
       url: https://cdn.modrinth.com/data/xNK6XfRv/versions/SSFjIc6G/clear-skies-fabric-mc119-2.0.96.jar
+
