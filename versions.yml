@@ -141,11 +141,11 @@ modGroups:
       desc: Improves loading times when changing worlds
       url: https://cdn.modrinth.com/data/blWBX5n1/versions/Ql2mxFsU/forcecloseloadingscreen-2.1.0.jar
 
-    # - name: Better Fps - Render Distance
-    #   license: No License
-    #   homepage: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric
-    #   desc: Adds a few performance improvements to increase fps
-    #   url: https://edge.forgecdn.net/files/4351/677/betterfpsdist-fabric-1.19-2.4.jar
+    - name: Better Fps - Render Distance
+      license: No License
+      homepage: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric
+      desc: Adds a few performance improvements to increase fps
+      url: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric/download/4522380
 
     - name: Cull Particles
       license: CC0
@@ -364,12 +364,12 @@ modGroups:
       url: https://cdn.modrinth.com/data/PtjYWJkn/versions/O3qmYo1o/sodium-extra-0.4.19%2Bmc1.19.3-build.101.jar
       requires: [Sodium]
 
-    # - name: Fabrishot
-    #   license: MIT
-    #   homepage: https://modrinth.com/mod/fabrishot
-    #   modrinthId: 3qsfQtE9
-    #   desc: Take screenshots at insanely large resolutions, because why not
-    #   url: https://cdn.modrinth.com/data/3qsfQtE9/versions/Fq42foYA/fabrishot-1.9.1.jar
+    - name: Fabrishot
+      license: MIT
+      homepage: https://modrinth.com/mod/fabrishot
+      modrinthId: 3qsfQtE9
+      desc: Take screenshots at insanely large resolutions, because why not
+      url: https://cdn.modrinth.com/data/3qsfQtE9/versions/IkbywOGy/fabrishot-1.9.2.jar
 
     - name: ClickThrough
       license: MIT
@@ -490,19 +490,6 @@ modGroups:
       homepage: https://modrinth.com/mod/continuity
       desc: Provides default connected textures
       url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
-
-    - name: Fabrishot
-      license: MIT
-      homepage: https://modrinth.com/mod/fabrishot
-      modrinthId: 3qsfQtE9
-      desc: Take screenshots at insanely large resolutions, because why not
-      url: https://cdn.modrinth.com/data/3qsfQtE9/versions/Fq42foYA/fabrishot-1.9.1.jar
-
-    - name: Better Fps - Render Distance
-      license: No License
-      homepage: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric
-      desc: Adds a few performance improvements to increase fps
-      url: https://edge.forgecdn.net/files/4351/677/betterfpsdist-fabric-1.19-2.4.jar
 
     - name: Cull Less Leaves
       license: LGPL-3
