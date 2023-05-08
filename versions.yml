@@ -270,11 +270,11 @@ modGroups:
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/CameraOverhaul.zip
       requires: [Cloth Config]
 
-    # - name: Better Third Person
-    #   license: ARR
-    #   homepage: https://www.curseforge.com/minecraft/mc-mods/better-third-person
-    #   desc: Adds independent rotation of the camera in a third person view
-    #   url: https://edge.forgecdn.net/files/4182/575/BetterThirdPerson-Fabric-1.19-1.9.0.jar
+    - name: Better Third Person
+      license: ARR
+      homepage: https://www.curseforge.com/minecraft/mc-mods/better-third-person
+      desc: Adds independent rotation of the camera in a third person view
+      url: https://edge.forgecdn.net/files/4182/575/BetterThirdPerson-Fabric-1.19-1.9.0.jar
 
     - name: Shoulder Surfing Reloaded
       license: MIT
@@ -589,9 +589,3 @@ modGroups:
       homepage: https://modrinth.com/mod/continuity
       desc: Provides default connected textures
       url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
-
-    - name: Better Third Person
-      license: ARR
-      homepage: https://www.curseforge.com/minecraft/mc-mods/better-third-person
-      desc: Adds independent rotation of the camera in a third person view
-      url: https://edge.forgecdn.net/files/4182/575/BetterThirdPerson-Fabric-1.19-1.9.0.jar
