@@ -145,7 +145,7 @@ modGroups:
       license: No License
       homepage: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric
       desc: Adds a few performance improvements to increase fps
-      url: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric/download/4522380
+      url: https://mediafilez.forgecdn.net/files/4522/380/betterfpsdist-fabric-1.19.4-2.5.jar
 
     - name: Cull Particles
       license: CC0
