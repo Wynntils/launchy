@@ -485,12 +485,6 @@ modGroups:
       desc: Adds better grass and snow to the game
       url: https://cdn.modrinth.com/data/2Uev7LdA/versions/1.2.4%2B1.18/lambdabettergrass-1.2.4%2B1.18.jar
 
-    - name: Continuity
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/continuity
-      desc: Provides default connected textures
-      url: https://cdn.modrinth.com/data/1IjD5062/versions/2.0.1%2B1.18.2/continuity-2.0.1%2B1.18.2.jar
-
     - name: Cull Less Leaves
       license: LGPL-3
       homepage: https://modrinth.com/mod/cull-less-leaves
