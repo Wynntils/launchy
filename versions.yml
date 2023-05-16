@@ -158,7 +158,7 @@ modGroups:
       license: AGPL-3.0
       homepage: https://github.com/Commander07/WynnLibFabric
       desc: Mod that aims to provide data-related functionalities
-      url: https://github.com/Commander07/WynnLibFabric/releases/download/2.10-1.19.4/wynnlib-0.2.11-1.19.4.jar
+      url: https://github.com/Commander07/WynnLibFabric/releases/download/0.2.11-1.19.4/wynnlib-0.2.11-1.19.4.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
       configDesc: "Fixes a conflict with Wynntils"
       requires: [FabricKotlinLanguage]
