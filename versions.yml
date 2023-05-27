@@ -410,7 +410,7 @@ modGroups:
       license: LGPL-3
       homepage: https://modrinth.com/mod/in-game-account-switcher
       modrinthId: cudtvDnd
-      desc: In-Game Account Switcher allows you to change which account you are logged in to in-game, without having to restart Minecraft.
+      desc: Allows you to change which account you are logged in to in-game.
       url: https://cdn.modrinth.com/data/cudtvDnd/versions/OQZPp5Se/InGameAccountSwitcher-Fabric-1.19-8.0.1.2.jar
 
 
