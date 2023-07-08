@@ -24,7 +24,7 @@ modGroups:
       homepage: https://wynntils.com
       modrinthId: dU5Gb9Ab
       desc: A Minecraft mod that adds a lot of quality of life features to Wynncraft
-      url: https://athena.wynntils.com/version/download/artemis/ce/fabric?1.19.4
+      url: https://athena.wynntils.com/version/download/artemis/alpha/fabric?1.19.4
 
     - name: Fabric API
       license: Apache
