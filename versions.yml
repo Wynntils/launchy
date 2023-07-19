@@ -154,14 +154,6 @@ modGroups:
       desc: Culls particles to improve performance
       url: https://github.com/Commander07/CullParticlesFabric/releases/download/1.1/cullparticles-1.1_1.19.3-1.19.4.jar
 
-    - name: Cull Less Leaves
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/cull-less-leaves
-      modrinthId: iG6ZHsUV
-      desc: Cull leaves while looking hot!
-      url: https://cdn.modrinth.com/data/iG6ZHsUV/versions/BxA1B1tp/CullLessLeaves-1.1.0.jar
-      requires: [Yet Another Config Lib]
-
 
   Wynncraft Enhancements:
     - name: WynnLib
