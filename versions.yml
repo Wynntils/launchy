@@ -497,6 +497,7 @@ modGroups:
     - name: Load My Resources
       license: GPL-3.0-only
       homepage: https://modrinth.com/mod/load-my-resources
+      desc: Load resources on game start, like a resource pack, but enabled by default.
       modrinthId: TqCKvqjC
       url: https://cdn.modrinth.com/data/TqCKvqjC/versions/lsBN5Uh2/loadmyresources_fabric_1.0.4_MC_1.19.3.jar
       dependency: true
