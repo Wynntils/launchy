@@ -169,7 +169,7 @@ modGroups:
       license: GPL-3.0
       homepage: https://voicesofwynn.com
       desc: Adds voice lines to Wynncraft
-      url: https://voicesofwynn.com/download/44/jar
+      url: https://voicesofwynn.com/download/46/jar
       requires: [Cloth Config]
 
   Visual Enhancements:
