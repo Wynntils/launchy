@@ -350,6 +350,14 @@ modGroups:
       url: https://cdn.modrinth.com/data/Bh37bMuy/versions/aO0hSGlL/reeses_sodium_options-1.5.0%2Bmc1.19.4-build.72.jar
       requires: [Sodium]
 
+    - name: Remove HUD
+      license: APACHE
+      homepage: https://modrinth.com/mod/removehud
+      modrinthId: MiPOIx6b
+      desc: Adds ability to remove or move specific hud elements
+      url: https://cdn.modrinth.com/data/MiPOIx6b/versions/lMAiYQSG/removehud-1.3b1.jar
+
+
   Misc Enhancements:
     - name: Server Packer Unlocker
       license: UNLICENSE
