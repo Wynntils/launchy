@@ -39,7 +39,7 @@ fun ComingSoonDialog() {
                     color = MaterialTheme.colorScheme.onSurface,
                     )
                 Text(
-                    "This feature is not yet implemented. Please check back later!",
+                    "This feature is not yet implemented. Open the Minecraft Launcher manually for now.",
                     style = MaterialTheme.typography.bodyMedium,
                     modifier = Modifier.padding(bottom = 10.dp),
                     color = MaterialTheme.colorScheme.onSurface,

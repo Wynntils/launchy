@@ -34,10 +34,18 @@ Install it from our [releases](https://github.com/Wynntils/launchy/releases/late
 ### [MacOS] "Wynntils Mod Installer" is damaged and can't be opened
 ![img.png](docs/img.png)
 
-On MacOS, you will see this error message due to our file not being signed by an apple developer key, which is $80/year
+On MacOS, you will see this error message due to our file not being signed by an apple developer key, which is $80/year. Fixing this is simple, please follow the guide below.
 
-To fix this, use the following command to download the file to your computer:
-```shell
-curl -L "https://github.com/Wynntils/launchy/releases/download/v1.2.0/Wynntils.Mod.Installer-1.2.0.dmg" -o Installer.dmg
-open Installer.dmg
+Install the app as you would any other app.
+After installation, you have to open the app in a specific way to force MacOS's Gatekeeper.
+Firstly, run this code in your Terminal app:
 ```
+cd /Applications
+xattr -d com.apple.quarantine Wynntils\ Mod\ Installer.app
+```
+
+After doing so, open the app. You should see the open to "Open" the application. Click it, and after that, the app should work normally.
+
+<img width="259" alt="image" src="https://github.com/Wynntils/launchy/assets/49001742/ab5f91c1-def9-4557-9a95-2c92275eabb1">
+
+If you have issues with installing, reach out on our [Discord](https://discord.gg/wynntils).
