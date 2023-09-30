@@ -1,3 +1,11 @@
+## [1.4.1](https://github.com/Wynntils/launchy/compare/v1.4.0...v1.4.1) (2023-09-30)
+
+
+### Bug Fixes
+
+* Fix loading failures ([#42](https://github.com/Wynntils/launchy/issues/42)) ([700d781](https://github.com/Wynntils/launchy/commit/700d7818e8f69c58ed2d13f75a4295f794c27995))
+* fix readme for newer ventura ([#40](https://github.com/Wynntils/launchy/issues/40)) ([b6ca498](https://github.com/Wynntils/launchy/commit/b6ca4982d9aa9f4fce5808bfa177eaf895a01c66))
+
 ## [1.4.0](https://github.com/Wynntils/launchy/compare/v1.3.0...v1.4.0) (2023-08-03)
 
 
@@ -23,6 +31,7 @@
 
 * add server packer unlocker ([15ff094](https://github.com/Wynntils/launchy/commit/15ff0949f43052a231c7678ef5ae4ba9740f7faf))
 * fix link for better fps ([2e0ef9f](https://github.com/Wynntils/launchy/commit/2e0ef9fa8612b5ba89a1c97874050b0195548a24))
+* **release:** v1.4.0 [skip ci] ([186bf10](https://github.com/Wynntils/launchy/commit/186bf103d4b8957107e203ef9f7b72a16d9eb62f))
 * Update fabric loader req ([#14](https://github.com/Wynntils/launchy/issues/14)) ([3e5f449](https://github.com/Wynntils/launchy/commit/3e5f44942971163a1bd1876b81d1383d13435743))
 * Update some more 1.19.3 mods ([7528288](https://github.com/Wynntils/launchy/commit/752828834dc627b814a3f4600cbd909ea8eb8ea0))
 * Update version of Voices of Wynn ([#7](https://github.com/Wynntils/launchy/issues/7)) ([b267428](https://github.com/Wynntils/launchy/commit/b26742815f4f464fe67f5c0a21a26f653e7d147c))
@@ -66,16 +75,4 @@
 ### Miscellaneous Chores
 
 * **release:** v1.2.0 [skip ci] ([dc95bec](https://github.com/Wynntils/launchy/commit/dc95becf5ecfc6fe59f46e1594a70eeeac3f5c9f))
-
-## [1.1.11](https://github.com/Wynntils/launchy/compare/v1.1.10...v1.1.11) (2022-11-06)
-
-
-### Bug Fixes
-
-* add error handling for downloads ([09df88e](https://github.com/Wynntils/launchy/commit/09df88e1f283b8b576b723cf3e8c47254517d6f9))
-
-
-### Miscellaneous Chores
-
-* **release:** v1.1.11 [skip ci] ([0eac8dc](https://github.com/Wynntils/launchy/commit/0eac8dc2fe4b538286ed083573be04d9cad01116))
 
