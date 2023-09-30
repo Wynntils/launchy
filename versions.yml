@@ -228,13 +228,6 @@ modGroups:
       desc: Lets you see the held items whilst in a moving boat
       url: https://cdn.modrinth.com/data/BdKIyOLe/versions/Q3Z6GESL/Boat-Item-View-Fabric-1.20.1-0.0.5.jar
 
-    - name: Blur
-      license: MIT
-      homepage: https://modrinth.com/mod/blur-fabric
-      modrinthId: NK39zBp2
-      desc: Adds immersive blur to GUI backgrounds
-      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
-
     - name: Sodium Extra
       license: LGPL-3
       homepage: https://modrinth.com/mod/sodium-extra
@@ -553,3 +546,10 @@ modGroups:
       modrinthId: H8CaAYZC
       desc: Rewrites light engine to reduces chunk load stuttering
       url: https://cdn.modrinth.com/data/H8CaAYZC/versions/1.1.1%2B1.19/starlight-1.1.1%2Bfabric.ae22326.jar
+
+    - name: Blur
+      license: MIT
+      homepage: https://modrinth.com/mod/blur-fabric
+      modrinthId: NK39zBp2
+      desc: Adds immersive blur to GUI backgrounds
+      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
