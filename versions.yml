@@ -111,7 +111,7 @@ modGroups:
       url: https://github.com/Commander07/CullParticlesFabric/releases/download/1.1/cullparticles-1.1_1.19.3-1.19.4.jar
 
 
-  Wynncraft Enhancements:
+  # Wynncraft Enhancements:
 
 
   Visual Enhancements:
@@ -209,7 +209,7 @@ modGroups:
       url: https://mediafilez.forgecdn.net/files/4745/844/ShoulderSurfing-Fabric-1.20.1-2.5.jar
       requires: [Forge Config API Port]
 
-  Audio Enhancements:
+  # Audio Enhancements:
 
   HUD & Menu Enhancements:
     - name: Reese's Sodium Options
@@ -250,7 +250,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/PtjYWJkn/versions/zgaajBnP/sodium-extra-0.5.2%2Bmc1.20.2-build.113.jar
       requires: [Sodium]
 
-  Developer Tools:
+  # Developer Tools:
 
   Dependencies:
     - name: ArchitecturyAPI
