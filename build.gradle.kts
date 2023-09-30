@@ -144,3 +144,7 @@ tasks {
         }
     }
 }
+
+tasks.jar {
+    manifest.attributes["Main-Class"] = "com.wynntils.launchy.MainKt"
+}
