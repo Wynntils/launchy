@@ -62,13 +62,6 @@ modGroups:
       requires: [Searchables]
 
   Performance:
-    - name: Starlight
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/starlight
-      modrinthId: H8CaAYZC
-      desc: Rewrites light engine to reduces chunk load stuttering
-      url: https://cdn.modrinth.com/data/H8CaAYZC/versions/1.1.1%2B1.19/starlight-1.1.1%2Bfabric.ae22326.jar
-
     - name: Lithium
       license: LGPL-3
       homepage: https://modrinth.com/mod/lithium
@@ -553,3 +546,10 @@ modGroups:
       desc: Alternative to Just Enough Items
       url: https://cdn.modrinth.com/data/nfn13YXA/versions/Jhn1Ib1h/RoughlyEnoughItems-11.0.633.jar
       requires: [ArchitecturyAPI]
+
+    - name: Starlight
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/starlight
+      modrinthId: H8CaAYZC
+      desc: Rewrites light engine to reduces chunk load stuttering
+      url: https://cdn.modrinth.com/data/H8CaAYZC/versions/1.1.1%2B1.19/starlight-1.1.1%2Bfabric.ae22326.jar
