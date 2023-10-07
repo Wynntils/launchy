@@ -316,7 +316,7 @@ modGroups:
 
     - name: Searchables
       license: MIT
-      homepage: https://modrinth.com/mod/indium
+      homepage: https://modrinth.com/mod/searchables
       modrinthId: fuuu3xnx
       desc: Library mod that adds methods for easier searching
       url: https://cdn.modrinth.com/data/fuuu3xnx/versions/vQ8Sa7rD/Searchables-fabric-1.20.2-1.0.2.jar
