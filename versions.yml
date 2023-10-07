@@ -103,6 +103,20 @@ modGroups:
       desc: Culls particles to improve performance
       url: https://github.com/Commander07/CullParticlesFabric/releases/download/1.1/cullparticles-1.1_1.19.3-1.19.4.jar
 
+    - name: FerriteCore
+      license: MIT
+      homepage: https://modrinth.com/mod/ferrite-core
+      modrinthId: uXXizFIs
+      desc: Optimizes memory usage
+      url: https://cdn.modrinth.com/data/uXXizFIs/versions/FCnCG6PS/ferritecore-6.0.0-fabric.jar
+
+    - name: Starlight
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/starlight
+      modrinthId: H8CaAYZC
+      desc: Rewrites light engine to reduces chunk load stuttering
+      url: https://cdn.modrinth.com/data/H8CaAYZC/versions/98VOoYPX/starlight-1.1.2%2Bfabric.bdaeb21.jar
+
 
   # Wynncraft Enhancements:
 
@@ -188,6 +202,12 @@ modGroups:
       desc: Adds Texture Features to entities in Optifine compatible format.
       url: https://cdn.modrinth.com/data/BVzZfTc1/versions/1Y3lxOX6/entity_texture_features_fabric_1.20.2-4.5.1.jar
 
+    - name: Continuity
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/continuity
+      desc: Provides default connected textures
+      url: https://cdn.modrinth.com/data/1IjD5062/versions/JXhQlDZl/continuity-3.0.0-beta.4%2B1.20.2.jar
+
   Camera Enhancements:
     - name: Better Third Person
       license: ARR
@@ -202,6 +222,13 @@ modGroups:
       url: https://mediafilez.forgecdn.net/files/4745/844/ShoulderSurfing-Fabric-1.20.1-2.5.jar
       requires: [Forge Config API Port]
 
+    - name: Blur
+      license: MIT
+      homepage: https://modrinth.com/mod/blur-fabric
+      modrinthId: NK39zBp2
+      desc: Adds immersive blur to GUI backgrounds
+      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
+
   # Audio Enhancements:
 
   HUD & Menu Enhancements:
@@ -212,6 +239,12 @@ modGroups:
       desc: Alternative menu for Sodium
       url: https://cdn.modrinth.com/data/Bh37bMuy/versions/UpKbnidp/reeses_sodium_options-1.6.5%2Bmc1.20.2-build.96.jar
       requires: [Sodium]
+
+    - name: Server Packer Unlocker
+      license: UNLICENSE
+      homepage: https://modrinth.com/mod/server-pack-unlocker
+      desc: Allows resource packs provided by servers to be overridden and moved.
+      url: https://cdn.modrinth.com/data/PiuygVWJ/versions/lRVqr2EB/spu-1.7.jar
 
   Misc Enhancements:
     - name: First Person Models
@@ -337,13 +370,6 @@ modGroups:
       desc: Adds a few performance improvements to increase fps
       url: https://mediafilez.forgecdn.net/files/4522/380/betterfpsdist-fabric-1.19.4-2.5.jar
 
-    - name: FerriteCore
-      license: MIT
-      homepage: https://modrinth.com/mod/ferrite-core
-      modrinthId: uXXizFIs
-      desc: Optimizes memory usage
-      url: https://cdn.modrinth.com/data/uXXizFIs/versions/RbR7EG8T/ferritecore-5.2.0-fabric.jar
-
     - name: Cull Less Leaves
       license: LGPL-3
       homepage: https://modrinth.com/mod/cull-less-leaves
@@ -414,12 +440,6 @@ modGroups:
       configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [Iris shaders, Bobby]
 
-    - name: Continuity
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/continuity
-      desc: Provides default connected textures
-      url: https://cdn.modrinth.com/data/1IjD5062/versions/4h5IIa7B/continuity-3.0.0-beta.2%2B1.19.3.jar
-
     - name: Camera Overhaul
       license: MIT
       homepage: https://modrinth.com/mod/cameraoverhaul
@@ -470,12 +490,6 @@ modGroups:
       modrinthId: MiPOIx6b
       desc: Adds ability to remove or move specific hud elements
       url: https://cdn.modrinth.com/data/MiPOIx6b/versions/lMAiYQSG/removehud-1.3b1.jar
-
-    - name: Server Packer Unlocker
-      license: UNLICENSE
-      homepage: https://modrinth.com/mod/server-pack-unlocker
-      desc: Allows resource packs provided by servers to be overridden and moved.
-      url: https://cdn.modrinth.com/data/PiuygVWJ/versions/R2CGXkyy/spu-1.6.jar
 
     - name: Fabrishot
       license: MIT
@@ -539,17 +553,3 @@ modGroups:
       desc: Alternative to Just Enough Items
       url: https://cdn.modrinth.com/data/nfn13YXA/versions/Jhn1Ib1h/RoughlyEnoughItems-11.0.633.jar
       requires: [ArchitecturyAPI]
-
-    - name: Starlight
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/starlight
-      modrinthId: H8CaAYZC
-      desc: Rewrites light engine to reduces chunk load stuttering
-      url: https://cdn.modrinth.com/data/H8CaAYZC/versions/1.1.1%2B1.19/starlight-1.1.1%2Bfabric.ae22326.jar
-
-    - name: Blur
-      license: MIT
-      homepage: https://modrinth.com/mod/blur-fabric
-      modrinthId: NK39zBp2
-      desc: Adds immersive blur to GUI backgrounds
-      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
