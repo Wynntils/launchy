@@ -125,6 +125,13 @@ modGroups:
       desc: Optimizes memory usage
       url: https://cdn.modrinth.com/data/uXXizFIs/versions/FCnCG6PS/ferritecore-6.0.0-fabric.jar
 
+    - name: ModernFix
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/modernfix
+      modrinthId: nmDcB62a
+      desc: All-in-one optimization mod
+      url: https://cdn.modrinth.com/data/nmDcB62a/versions/ADyFF3WV/modernfix-fabric-5.7.5%2Bmc1.20.2.jar
+
 #  Wynncraft Enhancements:
 
 
@@ -247,6 +254,15 @@ modGroups:
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/CameraOverhaul.zip
       requires: [Cloth Config]
 
+    - name: Nimble
+      license: MIT
+      homepage: https://modrinth.com/mod/nimble
+      modrinthId: Q5UvqqQd
+      desc: Adds animations and automation to third person
+      url: https://cdn.modrinth.com/data/Q5UvqqQd/versions/48U7dRu3/Nimble-1.20.1-fabric-5.0.0.jar
+      incompatibleWith: [Shoulder Surfing Reloaded]
+
+
   Audio Enhancements:
     - name: Drip Sounds
       license: LGPL-3
@@ -331,6 +347,13 @@ modGroups:
       desc: Allows resource packs provided by servers to be overridden and moved.
       url: https://cdn.modrinth.com/data/PiuygVWJ/versions/lRVqr2EB/spu-1.7.jar
 
+    - name: Midnight Controlls
+      license: MIT
+      homepage: https://modrinth.com/mod/midnightcontrols
+      modrinthId: bXX9h73M
+      desc: Adds controller support
+      url: https://cdn.modrinth.com/data/bXX9h73M/versions/N7rxLFKx/midnightcontrols-1.9.0%2B1.20.2.jar
+
   Developer Tools:
     - name: RoughlyEnoughItems
       license: MIT
@@ -345,6 +368,13 @@ modGroups:
       modrinthID: FZcOyh3v
       desc: Allows you to see the NBT data of an item by hovering over it and holding the shift key
       url: https://cdn.modrinth.com/data/FZcOyh3v/versions/XEAWEIcJ/nbttooltips-0.1.4-1.20.x.jar
+
+    - name: Spark
+      license: GPL-3
+      modrinthId: l6YH9Als
+      homepage: https://modrinth.com/mod/spark
+      desc: Performance Profiler
+      url: https://cdn.modrinth.com/data/l6YH9Als/versions/tCU9VuzX/spark-1.10.54-fabric.jar
 
   Dependencies:
     - name: ArchitecturyAPI
