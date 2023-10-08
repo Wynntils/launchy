@@ -309,6 +309,7 @@ modGroups:
       desc: Adds a zoom key with many customization options.
       url: https://cdn.modrinth.com/data/w7ThoJFB/versions/QRQLkNPJ/Zoomify-2.12.0.jar
       incompatibleWith: [Logical Zoom]
+      requires: [FabricKotlinLanguage, Yet Another Config Lib]
 
     - name: ClickThrough
       license: MIT
