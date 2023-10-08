@@ -1,4 +1,4 @@
-fabricVersion: 0.14.23
+fabricVersion: 0.14.22
 minecraftVersion: 1.20.2
 groups:
   - name: Core
@@ -31,7 +31,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-api
       modrinthId: P7dR8mSH
       desc: The core api used by fabric mods
-      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Hi8quJUM/fabric-api-0.89.3%2B1.20.2.jar
+      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Hk8zAzIB/fabric-api-0.90.0%2B1.20.2.jar
 
     - name: Sodium
       license: LGPL-3
@@ -254,7 +254,7 @@ modGroups:
       modrinthId: T8MMXTpr
       desc: Adds sounds for drip particles landing
       url: https://cdn.modrinth.com/data/T8MMXTpr/versions/7GB1hLrr/DripSounds-1.19.4-0.3.2.jar
-      requires: [ Cloth Config ]
+      requires: [Cloth Config]
 
   HUD & Menu Enhancements:
     - name: Reese's Sodium Options
@@ -334,7 +334,7 @@ modGroups:
   Developer Tools:
     - name: RoughlyEnoughItems
       license: MIT
-      homepage: https://modrinth.com/mod/roughly-enough-items
+      homepage: https://modrinth.com/mod/rei
       desc: Alternative to Just Enough Items
       url: https://cdn.modrinth.com/data/nfn13YXA/versions/PK9IHKYO/RoughlyEnoughItems-13.0.666.jar
       requires: [ArchitecturyAPI]
