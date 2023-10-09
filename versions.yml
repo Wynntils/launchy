@@ -31,7 +31,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-api
       modrinthId: P7dR8mSH
       desc: The core api used by fabric mods
-      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1Pj9mogm/fabric-api-0.89.2%2B1.20.2.jar
+      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Hk8zAzIB/fabric-api-0.90.0%2B1.20.2.jar
 
     - name: Sodium
       license: LGPL-3
@@ -103,8 +103,29 @@ modGroups:
       desc: Culls particles to improve performance
       url: https://github.com/Commander07/CullParticlesFabric/releases/download/1.1/cullparticles-1.1_1.19.3-1.19.4.jar
 
+    - name: Starlight
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/starlight
+      modrinthId: H8CaAYZC
+      desc: Rewrites light engine to reduces chunk load stuttering
+      url: https://cdn.modrinth.com/data/H8CaAYZC/versions/98VOoYPX/starlight-1.1.2%2Bfabric.bdaeb21.jar
 
-  # Wynncraft Enhancements:
+    - name: Cull Less Leaves
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/cull-less-leaves
+      modrinthId: iG6ZHsUV
+      desc: Cull leaves while looking hot!
+      url: https://cdn.modrinth.com/data/iG6ZHsUV/versions/TFvkv8XK/CullLessLeaves-1.3.0.jar
+      requires: [Yet Another Config Lib]
+
+    - name: FerriteCore
+      license: MIT
+      homepage: https://modrinth.com/mod/ferrite-core
+      modrinthId: uXXizFIs
+      desc: Optimizes memory usage
+      url: https://cdn.modrinth.com/data/uXXizFIs/versions/FCnCG6PS/ferritecore-6.0.0-fabric.jar
+
+#  Wynncraft Enhancements:
 
 
   Visual Enhancements:
@@ -134,7 +155,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fallingleaves
       modrinthId: WhbRG4iK
       desc: Adds falling leaf particles to trees
-      url: https://cdn.modrinth.com/data/WhbRG4iK/versions/mva7rKdl/fallingleaves-1.15.3%2B1.20.1.jar
+      url: https://cdn.modrinth.com/data/WhbRG4iK/versions/KpvXCE2X/fallingleaves-1.15.4%2B1.20.1.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/FallingLeaves_1.0.zip
       requires: [Cloth Config]
 
@@ -188,21 +209,52 @@ modGroups:
       desc: Adds Texture Features to entities in Optifine compatible format.
       url: https://cdn.modrinth.com/data/BVzZfTc1/versions/1Y3lxOX6/entity_texture_features_fabric_1.20.2-4.5.1.jar
 
+    - name: Continuity
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/continuity
+      desc: Provides default connected textures
+      url: https://cdn.modrinth.com/data/1IjD5062/versions/JXhQlDZl/continuity-3.0.0-beta.4%2B1.20.2.jar
+      requires: [Indium]
+
   Camera Enhancements:
     - name: Better Third Person
       license: ARR
-      homepage: https://www.curseforge.com/minecraft/mc-mods/better-third-person
+      homepage: https://modrinth.com/mod/better-third-person
+      modrinthId: G1s2WpNo
       desc: Adds independent rotation of the camera in a third person view
-      url: https://mediafilez.forgecdn.net/files/4596/636/BetterThirdPerson-Fabric-1.20-1.9.0.jar
+      url: https://cdn.modrinth.com/data/G1s2WpNo/versions/1yJzEpzh/BetterThirdPerson-Fabric-1.20-1.9.0.jar
 
     - name: Shoulder Surfing Reloaded
       license: MIT
-      homepage: https://www.curseforge.com/minecraft/mc-mods/shoulder-surfing-reloaded
+      homepage: https://modrinth.com/mod/shoulder-surfing-reloaded
+      modrinthId: kepjj2sy
       desc: Revamped over-the-shoulder F5 third-person camera view
-      url: https://mediafilez.forgecdn.net/files/4745/844/ShoulderSurfing-Fabric-1.20.1-2.5.jar
+      url: https://cdn.modrinth.com/data/kepjj2sy/versions/LHE2t99w/ShoulderSurfing-Fabric-1.20.1-2.5.jar
       requires: [Forge Config API Port]
 
-  # Audio Enhancements:
+    - name: Custom FOV
+      license: LGPL 3.0 or later
+      homepage: https://modrinth.com/mod/custom-fov-illusive
+      desc: Allows players to customize various field of view settings
+      url: https://cdn.modrinth.com/data/uZAcFHLd/versions/y3ZRuxm1/customfov-fabric-6.2.1%2B1.20.1.jar
+
+    - name: Camera Overhaul
+      license: MIT
+      homepage: https://modrinth.com/mod/cameraoverhaul
+      modrinthId: m0oRwcZx
+      desc: Adds various camera tilting
+      url: https://cdn.modrinth.com/data/m0oRwcZx/versions/fzCKxnmb/CameraOverhaul-1.4.0-fabric-universal.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/CameraOverhaul.zip
+      requires: [Cloth Config]
+
+  Audio Enhancements:
+    - name: Drip Sounds
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/dripsounds-fabric
+      modrinthId: T8MMXTpr
+      desc: Adds sounds for drip particles landing
+      url: https://cdn.modrinth.com/data/T8MMXTpr/versions/7GB1hLrr/DripSounds-1.19.4-0.3.2.jar
+      requires: [Cloth Config]
 
   HUD & Menu Enhancements:
     - name: Reese's Sodium Options
@@ -236,7 +288,63 @@ modGroups:
       url: https://cdn.modrinth.com/data/PtjYWJkn/versions/zgaajBnP/sodium-extra-0.5.2%2Bmc1.20.2-build.113.jar
       requires: [Sodium]
 
-  # Developer Tools:
+    - name: Blur
+      license: MIT
+      homepage: https://modrinth.com/mod/blur-fabric
+      modrinthId: NK39zBp2
+      desc: Adds immersive blur to GUI backgrounds
+      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
+
+    - name: Borderless Mining
+      license: MIT
+      homepage: https://modrinth.com/mod/borderless-mining
+      modrinthId: kYq5qkSL
+      desc: Changes the fullscreen option to use a borderless window that fills the screen.
+      url: https://cdn.modrinth.com/data/kYq5qkSL/versions/lhrW53q7/borderless-mining-1.1.8%2B1.20.1.jar
+
+    - name: Zoomify
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/zoomify
+      modrinthId: w7ThoJFB
+      desc: Adds a zoom key with many customization options.
+      url: https://cdn.modrinth.com/data/w7ThoJFB/versions/QRQLkNPJ/Zoomify-2.12.0.jar
+      incompatibleWith: [Logical Zoom]
+      requires: [FabricKotlinLanguage, Yet Another Config Lib]
+
+    - name: ClickThrough
+      license: MIT
+      homepage: https://modrinth.com/mod/clickthrough
+      modrinthId: Z5b0cAlD
+      desc: Click through signs and item frames to chests
+      url: https://cdn.modrinth.com/data/Z5b0cAlD/versions/bwQT3Pqa/clickthrough-1.20-fabric0.83.0-0.4.1.jar
+
+    - name: Fabrishot
+      license: MIT
+      homepage: https://modrinth.com/mod/fabrishot
+      modrinthId: 3qsfQtE9
+      desc: Take screenshots at insanely large resolutions, because why not
+      url: https://cdn.modrinth.com/data/3qsfQtE9/versions/fLwacDtJ/fabrishot-1.10.0.jar
+
+    - name: Server Packer Unlocker
+      license: UNLICENSE
+      homepage: https://modrinth.com/mod/server-pack-unlocker
+      desc: Allows resource packs provided by servers to be overridden and moved.
+      url: https://cdn.modrinth.com/data/PiuygVWJ/versions/lRVqr2EB/spu-1.7.jar
+
+  Developer Tools:
+    - name: RoughlyEnoughItems
+      license: MIT
+      homepage: https://modrinth.com/mod/rei
+      desc: Alternative to Just Enough Items
+      url: https://cdn.modrinth.com/data/nfn13YXA/versions/PK9IHKYO/RoughlyEnoughItems-13.0.666.jar
+      requires: [ArchitecturyAPI]
+
+    - name: NBTToolTips
+      license: MIT
+      homepage: https://modrinth.com/mod/nbttooltips
+      modrinthID: FZcOyh3v
+      desc: Allows you to see the NBT data of an item by hovering over it and holding the shift key
+      url: https://cdn.modrinth.com/data/FZcOyh3v/versions/XEAWEIcJ/nbttooltips-0.1.4-1.20.x.jar
 
   Dependencies:
     - name: ArchitecturyAPI
@@ -337,21 +445,6 @@ modGroups:
       desc: Adds a few performance improvements to increase fps
       url: https://mediafilez.forgecdn.net/files/4522/380/betterfpsdist-fabric-1.19.4-2.5.jar
 
-    - name: FerriteCore
-      license: MIT
-      homepage: https://modrinth.com/mod/ferrite-core
-      modrinthId: uXXizFIs
-      desc: Optimizes memory usage
-      url: https://cdn.modrinth.com/data/uXXizFIs/versions/RbR7EG8T/ferritecore-5.2.0-fabric.jar
-
-    - name: Cull Less Leaves
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/cull-less-leaves
-      modrinthId: iG6ZHsUV
-      desc: Cull leaves while looking hot!
-      url: https://cdn.modrinth.com/data/iG6ZHsUV/versions/mafk58Fm/CullLessLeaves-1.2.0.jar
-      requires: [Yet Another Config Lib]
-
     - name: Enhanced Block Entities
       license: LGPL-3
       homepage: https://modrinth.com/mod/ebe
@@ -414,27 +507,6 @@ modGroups:
       configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [Iris shaders, Bobby]
 
-    - name: Continuity
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/continuity
-      desc: Provides default connected textures
-      url: https://cdn.modrinth.com/data/1IjD5062/versions/4h5IIa7B/continuity-3.0.0-beta.2%2B1.19.3.jar
-
-    - name: Camera Overhaul
-      license: MIT
-      homepage: https://modrinth.com/mod/cameraoverhaul
-      modrinthId: m0oRwcZx
-      desc: Adds various camera tilting
-      url: https://cdn.modrinth.com/data/m0oRwcZx/versions/fzCKxnmb/CameraOverhaul-1.4.0-fabric-universal.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/CameraOverhaul.zip
-      requires: [Cloth Config]
-
-    - name: Custom FOV
-      license: LGPL 3.0 or later
-      homepage: https://modrinth.com/mod/custom-fov-illusive
-      desc: Allows players to customize various field of view settings
-      url: https://cdn.modrinth.com/data/uZAcFHLd/versions/y3ZRuxm1/customfov-fabric-6.2.1%2B1.20.1.jar
-
     - name: Dynamic Sound filters
       license: APACHE
       homepage: https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters
@@ -447,14 +519,6 @@ modGroups:
       modrinthId: rcTfTZr3
       desc: Improved stepping sound effects
       url: https://cdn.modrinth.com/data/rcTfTZr3/versions/jxsFtML2/PresenceFootsteps-1.8.2.jar
-
-    - name: Drip Sounds
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/dripsounds-fabric
-      modrinthId: T8MMXTpr
-      desc: Adds sounds for drip particles landing
-      url: https://cdn.modrinth.com/data/T8MMXTpr/versions/7GB1hLrr/DripSounds-1.19.4-0.3.2.jar
-      requires: [Cloth Config]
 
     - name: BetterF3
       license: MIT
@@ -471,26 +535,6 @@ modGroups:
       desc: Adds ability to remove or move specific hud elements
       url: https://cdn.modrinth.com/data/MiPOIx6b/versions/lMAiYQSG/removehud-1.3b1.jar
 
-    - name: Server Packer Unlocker
-      license: UNLICENSE
-      homepage: https://modrinth.com/mod/server-pack-unlocker
-      desc: Allows resource packs provided by servers to be overridden and moved.
-      url: https://cdn.modrinth.com/data/PiuygVWJ/versions/R2CGXkyy/spu-1.6.jar
-
-    - name: Fabrishot
-      license: MIT
-      homepage: https://modrinth.com/mod/fabrishot
-      modrinthId: 3qsfQtE9
-      desc: Take screenshots at insanely large resolutions, because why not
-      url: https://cdn.modrinth.com/data/3qsfQtE9/versions/IkbywOGy/fabrishot-1.9.2.jar
-
-    - name: ClickThrough
-      license: MIT
-      homepage: https://modrinth.com/mod/clickthrough
-      modrinthId: Z5b0cAlD
-      desc: Click through signs and item frames to chests
-      url: https://cdn.modrinth.com/data/Z5b0cAlD/versions/APnhH1uF/clickthrough-1.19.4-fabric0.76.0-0.4.jar
-
     - name: Dont Clear Chat History
       license: CC0
       homepage: https://modrinth.com/mod/dcch
@@ -504,13 +548,7 @@ modGroups:
       modrinthId: 8bOImuGU
       desc: Adds a configurable zoom key.
       url: https://cdn.modrinth.com/data/8bOImuGU/versions/i2lqyeCD/logical_zoom-0.0.19.jar
-
-    - name: Borderless Mining
-      license: MIT
-      homepage: https://modrinth.com/mod/borderless-mining
-      modrinthId: kYq5qkSL
-      desc: Changes the fullscreen option to use a borderless window that fills the screen.
-      url: https://cdn.modrinth.com/data/kYq5qkSL/versions/n8nRcdvu/borderless-mining-1.1.7%2B1.19.4.jar
+      incompatibleWith: [Zoomify]
 
     - name: In-Game Account Switcher
       license: LGPL-3
@@ -519,37 +557,9 @@ modGroups:
       desc: Allows you to change which account you are logged in to in-game.
       url: https://cdn.modrinth.com/data/cudtvDnd/versions/3khGbSG3/InGameAccountSwitcher-Fabric-1.19-8.0.2.jar
 
-    - name: NBTToolTips
-      license: MIT
-      homepage: https://modrinth.com/mod/nbttooltips
-      modrinthID: FZcOyh3v
-      desc: Allows you to see the NBT data of an item by hovering over it and holding the shift key
-      url: https://cdn.modrinth.com/data/FZcOyh3v/versions/qnoRBgop/nbttooltips-0.1.4-1.19.4.jar
-
     - name: IBE Editor
       license: MIT
       homepage: https://modrinth.com/mod/ibe-editor
       modrinthId: E9sX1ncV
       desc: Simple GUI Mod to edit an item, a block or an entity in your current world
       url: https://cdn.modrinth.com/data/E9sX1ncV/versions/aAcdR2Mn/IBEEditor-1.19.4-2.2.2-fabric.jar
-
-    - name: RoughlyEnoughItems
-      license: MIT
-      homepage: https://modrinth.com/mod/roughly-enough-items
-      desc: Alternative to Just Enough Items
-      url: https://cdn.modrinth.com/data/nfn13YXA/versions/Jhn1Ib1h/RoughlyEnoughItems-11.0.633.jar
-      requires: [ArchitecturyAPI]
-
-    - name: Starlight
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/starlight
-      modrinthId: H8CaAYZC
-      desc: Rewrites light engine to reduces chunk load stuttering
-      url: https://cdn.modrinth.com/data/H8CaAYZC/versions/1.1.1%2B1.19/starlight-1.1.1%2Bfabric.ae22326.jar
-
-    - name: Blur
-      license: MIT
-      homepage: https://modrinth.com/mod/blur-fabric
-      modrinthId: NK39zBp2
-      desc: Adds immersive blur to GUI backgrounds
-      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
