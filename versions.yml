@@ -262,7 +262,6 @@ modGroups:
       url: https://cdn.modrinth.com/data/Q5UvqqQd/versions/48U7dRu3/Nimble-1.20.1-fabric-5.0.0.jar
       incompatibleWith: [Shoulder Surfing Reloaded]
 
-
   Audio Enhancements:
     - name: Drip Sounds
       license: LGPL-3
