@@ -132,7 +132,15 @@ modGroups:
       desc: All-in-one optimization mod
       url: https://cdn.modrinth.com/data/nmDcB62a/versions/ADyFF3WV/modernfix-fabric-5.7.5%2Bmc1.20.2.jar
 
-#  Wynncraft Enhancements:
+  Wynncraft Enhancements:
+    - name: WynnLib
+      license: AGPL-3.0
+      homepage: https://github.com/Commander07/WynnLibFabric
+      desc: Mod that aims to provide data-related functionalities
+      url: https://github.com/Commander07/WynnLibFabric/releases/download/0.2.14-1.20.2/wynnlib-0.2.14-1.20.2.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
+      configDesc: "Fixes a conflict with Wynntils"
+      requires: [FabricKotlinLanguage]
 
 
   Visual Enhancements:
@@ -509,15 +517,6 @@ modGroups:
       url: https://cdn.modrinth.com/data/GDpe4LHD/versions/4F5sOpkI/desiredservers-fabric-1.19.2-1.1.0.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DesiredServers.zip
       forceConfigDownload: true
-
-    - name: WynnLib
-      license: AGPL-3.0
-      homepage: https://github.com/Commander07/WynnLibFabric
-      desc: Mod that aims to provide data-related functionalities
-      url: https://github.com/Commander07/WynnLibFabric/releases/download/0.2.11-1.19.4/wynnlib-0.2.11-1.19.4.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
-      configDesc: "Fixes a conflict with Wynntils"
-      requires: [FabricKotlinLanguage]
 
     - name: Voices of Wynn
       license: GPL-3.0
