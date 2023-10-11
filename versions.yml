@@ -40,7 +40,7 @@ modGroups:
       desc: Greatly improves rendering performance
       url: https://cdn.modrinth.com/data/AANobbMI/versions/bbP1qBMr/sodium-fabric-mc1.20.2-0.5.3.jar
 
-    - name: Mod menu
+    - name: Mod Menu
       license: MIT
       homepage: https://modrinth.com/mod/modmenu
       modrinthId: mOgUt4GM
@@ -142,9 +142,8 @@ modGroups:
       configDesc: "Fixes a conflict with Wynntils"
       requires: [FabricKotlinLanguage]
 
-
   Visual Enhancements:
-    - name: Iris shaders
+    - name: Iris Shaders
       license: LGPL-3
       homepage: https://modrinth.com/mod/iris
       modrinthId: YL57xq9U
@@ -165,7 +164,7 @@ modGroups:
       incompatibleWith: [Distant Horizons]
       requires: [Cloth Config]
 
-    - name: Falling leaves
+    - name: Falling Leaves
       license: MIT
       homepage: https://modrinth.com/mod/fallingleaves
       modrinthId: WhbRG4iK
@@ -270,6 +269,15 @@ modGroups:
       url: https://cdn.modrinth.com/data/Q5UvqqQd/versions/48U7dRu3/Nimble-1.20.1-fabric-5.0.0.jar
       incompatibleWith: [Shoulder Surfing Reloaded]
 
+    - name: Zoomify
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/zoomify
+      modrinthId: w7ThoJFB
+      desc: Adds a zoom key with many customization options.
+      url: https://cdn.modrinth.com/data/w7ThoJFB/versions/QRQLkNPJ/Zoomify-2.12.0.jar
+      incompatibleWith: [Logical Zoom]
+      requires: [FabricKotlinLanguage, Yet Another Config Lib]
+
   Audio Enhancements:
     - name: Drip Sounds
       license: LGPL-3
@@ -296,6 +304,20 @@ modGroups:
       url: https://cdn.modrinth.com/data/8shC1gFX/versions/5WYwDGtD/BetterF3-8.0.0-Fabric-1.20.2.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
 
+    - name: Blur
+      license: MIT
+      homepage: https://modrinth.com/mod/blur-fabric
+      modrinthId: NK39zBp2
+      desc: Adds immersive blur to GUI backgrounds
+      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
+
+    - name: Borderless Mining
+      license: MIT
+      homepage: https://modrinth.com/mod/borderless-mining
+      modrinthId: kYq5qkSL
+      desc: Changes the fullscreen option to use a borderless window that fills the screen.
+      url: https://cdn.modrinth.com/data/kYq5qkSL/versions/lhrW53q7/borderless-mining-1.1.8%2B1.20.1.jar
+
   Misc Enhancements:
     - name: First Person Models
       license: MIT
@@ -319,29 +341,6 @@ modGroups:
       url: https://cdn.modrinth.com/data/PtjYWJkn/versions/zgaajBnP/sodium-extra-0.5.2%2Bmc1.20.2-build.113.jar
       requires: [Sodium]
 
-    - name: Blur
-      license: MIT
-      homepage: https://modrinth.com/mod/blur-fabric
-      modrinthId: NK39zBp2
-      desc: Adds immersive blur to GUI backgrounds
-      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
-
-    - name: Borderless Mining
-      license: MIT
-      homepage: https://modrinth.com/mod/borderless-mining
-      modrinthId: kYq5qkSL
-      desc: Changes the fullscreen option to use a borderless window that fills the screen.
-      url: https://cdn.modrinth.com/data/kYq5qkSL/versions/lhrW53q7/borderless-mining-1.1.8%2B1.20.1.jar
-
-    - name: Zoomify
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/zoomify
-      modrinthId: w7ThoJFB
-      desc: Adds a zoom key with many customization options.
-      url: https://cdn.modrinth.com/data/w7ThoJFB/versions/QRQLkNPJ/Zoomify-2.12.0.jar
-      incompatibleWith: [Logical Zoom]
-      requires: [FabricKotlinLanguage, Yet Another Config Lib]
-
     - name: ClickThrough
       license: MIT
       homepage: https://modrinth.com/mod/clickthrough
@@ -362,7 +361,7 @@ modGroups:
       desc: Allows resource packs provided by servers to be overridden and moved.
       url: https://cdn.modrinth.com/data/PiuygVWJ/versions/lRVqr2EB/spu-1.7.jar
 
-    - name: Midnight Controlls
+    - name: Midnight Controls
       license: MIT
       homepage: https://modrinth.com/mod/midnightcontrols
       modrinthId: bXX9h73M
