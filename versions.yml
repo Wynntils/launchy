@@ -288,6 +288,14 @@ modGroups:
       url: https://cdn.modrinth.com/data/Bh37bMuy/versions/UpKbnidp/reeses_sodium_options-1.6.5%2Bmc1.20.2-build.96.jar
       requires: [Sodium]
 
+    - name: BetterF3
+      license: MIT
+      homepage: https://modrinth.com/mod/betterf3
+      modrinthId: 8shC1gFX
+      desc: Makes the F3-menu customizable and cleaner
+      url: https://cdn.modrinth.com/data/8shC1gFX/versions/5WYwDGtD/BetterF3-8.0.0-Fabric-1.20.2.jar
+      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
+
   Misc Enhancements:
     - name: First Person Models
       license: MIT
@@ -360,6 +368,13 @@ modGroups:
       modrinthId: bXX9h73M
       desc: Adds controller support
       url: https://cdn.modrinth.com/data/bXX9h73M/versions/N7rxLFKx/midnightcontrols-1.9.0%2B1.20.2.jar
+
+    - name: Not Enough Crashes
+      license: MIT
+      homepage: https://modrinth.com/mod/notenoughcrashes
+      modrinthId: yM94ont6
+      desc: Sends you to title screen instead of crashing your game
+      url: https://cdn.modrinth.com/data/yM94ont6/versions/QXoGlGqr/notenoughcrashes-4.4.6%2B1.20.2-fabric.jar
 
   Developer Tools:
     - name: RoughlyEnoughItems
@@ -469,13 +484,6 @@ modGroups:
       desc: Removes the banding at the horizon of Vanilla Minecraft
       url: https://cdn.modrinth.com/data/xNK6XfRv/versions/SSFjIc6G/clear-skies-fabric-mc119-2.0.96.jar
 
-    - name: Not Enough Crashes
-      license: MIT
-      homepage: https://modrinth.com/mod/notenoughcrashes
-      modrinthId: yM94ont6
-      desc: Sends you to title screen instead of crashing your game
-      url: https://cdn.modrinth.com/data/yM94ont6/versions/m0fQ0ZnK/notenoughcrashes-4.4.1%2B1.19.4-fabric.jar
-
     - name: Better Fps - Render Distance
       license: No License
       homepage: https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric
@@ -488,35 +496,6 @@ modGroups:
       desc: Makes blocks like chests render faster and nicer
       url: https://cdn.modrinth.com/data/OVuFYfre/versions/Xdo5ZiRc/enhancedblockentities-0.9%2B1.19.4.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/enhanced_bes_1.1.zip
-
-    - name: ForgetMeChunk
-      license: No License
-      homepage: https://modrinth.com/mod/forgetmechunk
-      modrinthId: vRXn3MrA
-      desc: Removes light-update when unloading chunks to fix lag spikes
-      url: https://cdn.modrinth.com/data/vRXn3MrA/versions/1.0.4/forgetmechunk-1.0.4-1.18.X-1.19.X.jar
-
-    - name: ExtraSounds
-      license: CC0
-      homepage: https://modrinth.com/mod/extrasounds
-      desc: Adds more sounds to Minecraft
-      url: https://artifactory.kow08absty.com/artifactory/fabricmc/dev/stashy/extra-sounds/2.3.1%2B1.19.3~lonefelidae16-SNAPSHOT/extra-sounds-2.3.1%2B1.19.3~lonefelidae16-20230111.075334-2.jar
-
-    - name: ClearSkies
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/clear-skies
-      modrinthId: xNK6XfRv
-      desc: Removes the banding at the horizon of Vanilla Minecraft
-      url: https://cdn.modrinth.com/data/xNK6XfRv/versions/SSFjIc6G/clear-skies-fabric-mc119-2.0.96.jar
-
-    - name: Desired Servers
-      license: MIT
-      homepage: https://modrinth.com/mod/desired-servers
-      modrinthId: GDpe4LHD
-      desc: Ship servers without modifying servers.dat
-      url: https://cdn.modrinth.com/data/GDpe4LHD/versions/4F5sOpkI/desiredservers-fabric-1.19.2-1.1.0.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DesiredServers.zip
-      forceConfigDownload: true
 
     - name: Voices of Wynn
       license: GPL-3.0
@@ -547,14 +526,6 @@ modGroups:
       modrinthId: rcTfTZr3
       desc: Improved stepping sound effects
       url: https://cdn.modrinth.com/data/rcTfTZr3/versions/jxsFtML2/PresenceFootsteps-1.8.2.jar
-
-    - name: BetterF3
-      license: MIT
-      homepage: https://modrinth.com/mod/betterf3
-      modrinthId: 8shC1gFX
-      desc: Makes the F3-menu customizable and cleaner
-      url: https://cdn.modrinth.com/data/8shC1gFX/versions/up8zocIz/BetterF3-6.0.2-Fabric-1.19.4.jar
-      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
 
     - name: Remove HUD
       license: APACHE
