@@ -279,6 +279,13 @@ modGroups:
       url: https://cdn.modrinth.com/data/T8MMXTpr/versions/7GB1hLrr/DripSounds-1.19.4-0.3.2.jar
       requires: [Cloth Config]
 
+    - name: Voices of Wynn
+      license: GPL-3.0
+      homepage: https://voicesofwynn.com
+      desc: Adds voice lines to Wynncraft
+      url: https://voicesofwynn.com/download/47/jar
+      requires: [Cloth Config]
+
   HUD & Menu Enhancements:
     - name: Reese's Sodium Options
       license: MIT
@@ -287,6 +294,21 @@ modGroups:
       desc: Alternative menu for Sodium
       url: https://cdn.modrinth.com/data/Bh37bMuy/versions/UpKbnidp/reeses_sodium_options-1.6.5%2Bmc1.20.2-build.96.jar
       requires: [Sodium]
+
+    - name: Remove HUD
+      license: APACHE
+      homepage: https://modrinth.com/mod/removehud
+      modrinthId: MiPOIx6b
+      desc: Adds ability to remove or move specific hud elements
+      url: https://github.com/JamieCallan117/RemoveHud-fabricmc/releases/download/v1.3-BETA-2/removehud-1.3b2.jar
+
+    - name: BetterF3
+      license: MIT
+      homepage: https://modrinth.com/mod/betterf3
+      modrinthId: 8shC1gFX
+      desc: Makes the F3-menu customizable and cleaner
+      url: https://cdn.modrinth.com/data/8shC1gFX/versions/o935ywNh/BetterF3-8.0.1-Fabric-1.20.2.jar
+      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
 
   Misc Enhancements:
     - name: First Person Models
@@ -360,6 +382,13 @@ modGroups:
       modrinthId: bXX9h73M
       desc: Adds controller support
       url: https://cdn.modrinth.com/data/bXX9h73M/versions/N7rxLFKx/midnightcontrols-1.9.0%2B1.20.2.jar
+
+    - name: In-Game Account Switcher
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/in-game-account-switcher
+      modrinthId: cudtvDnd
+      desc: Allows you to change which account you are logged in to in-game.
+      url: https://cdn.modrinth.com/data/cudtvDnd/versions/3n8w27Oj/InGameAccountSwitcher-Fabric-1.20.2-8.0.2.jar
 
   Developer Tools:
     - name: RoughlyEnoughItems
@@ -518,13 +547,6 @@ modGroups:
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DesiredServers.zip
       forceConfigDownload: true
 
-    - name: Voices of Wynn
-      license: GPL-3.0
-      homepage: https://voicesofwynn.com
-      desc: Adds voice lines to Wynncraft
-      url: https://voicesofwynn.com/download/46/jar
-      requires: [Cloth Config]
-
     - name: Distant Horizons
       license: LGPL-3
       homepage: https://modrinth.com/mod/distanthorizons
@@ -548,21 +570,6 @@ modGroups:
       desc: Improved stepping sound effects
       url: https://cdn.modrinth.com/data/rcTfTZr3/versions/jxsFtML2/PresenceFootsteps-1.8.2.jar
 
-    - name: BetterF3
-      license: MIT
-      homepage: https://modrinth.com/mod/betterf3
-      modrinthId: 8shC1gFX
-      desc: Makes the F3-menu customizable and cleaner
-      url: https://cdn.modrinth.com/data/8shC1gFX/versions/up8zocIz/BetterF3-6.0.2-Fabric-1.19.4.jar
-      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
-
-    - name: Remove HUD
-      license: APACHE
-      homepage: https://modrinth.com/mod/removehud
-      modrinthId: MiPOIx6b
-      desc: Adds ability to remove or move specific hud elements
-      url: https://cdn.modrinth.com/data/MiPOIx6b/versions/lMAiYQSG/removehud-1.3b1.jar
-
     - name: Dont Clear Chat History
       license: CC0
       homepage: https://modrinth.com/mod/dcch
@@ -577,13 +584,6 @@ modGroups:
       desc: Adds a configurable zoom key.
       url: https://cdn.modrinth.com/data/8bOImuGU/versions/i2lqyeCD/logical_zoom-0.0.19.jar
       incompatibleWith: [Zoomify]
-
-    - name: In-Game Account Switcher
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/in-game-account-switcher
-      modrinthId: cudtvDnd
-      desc: Allows you to change which account you are logged in to in-game.
-      url: https://cdn.modrinth.com/data/cudtvDnd/versions/3khGbSG3/InGameAccountSwitcher-Fabric-1.19-8.0.2.jar
 
     - name: IBE Editor
       license: MIT
