@@ -333,13 +333,6 @@ modGroups:
       url: https://cdn.modrinth.com/data/PtjYWJkn/versions/zgaajBnP/sodium-extra-0.5.2%2Bmc1.20.2-build.113.jar
       requires: [Sodium]
 
-    - name: Blur
-      license: MIT
-      homepage: https://modrinth.com/mod/blur-fabric
-      modrinthId: NK39zBp2
-      desc: Adds immersive blur to GUI backgrounds
-      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
-
     - name: Borderless Mining
       license: MIT
       homepage: https://modrinth.com/mod/borderless-mining
@@ -591,3 +584,10 @@ modGroups:
       modrinthId: E9sX1ncV
       desc: Simple GUI Mod to edit an item, a block or an entity in your current world
       url: https://cdn.modrinth.com/data/E9sX1ncV/versions/aAcdR2Mn/IBEEditor-1.19.4-2.2.2-fabric.jar
+
+    - name: Blur
+      license: MIT
+      homepage: https://modrinth.com/mod/blur-fabric
+      modrinthId: NK39zBp2
+      desc: Adds immersive blur to GUI backgrounds
+      url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
