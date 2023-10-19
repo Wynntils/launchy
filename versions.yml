@@ -142,6 +142,13 @@ modGroups:
       configDesc: "Fixes a conflict with Wynntils"
       requires: [FabricKotlinLanguage]
 
+    - name: Voices of Wynn
+      license: GPL-3.0
+      homepage: https://voicesofwynn.com
+      desc: Adds voice lines to Wynncraft
+      url: https://voicesofwynn.com/download/47/jar
+      requires: [Cloth Config]
+
 
   Visual Enhancements:
     - name: Iris shaders
@@ -277,13 +284,6 @@ modGroups:
       modrinthId: T8MMXTpr
       desc: Adds sounds for drip particles landing
       url: https://cdn.modrinth.com/data/T8MMXTpr/versions/7GB1hLrr/DripSounds-1.19.4-0.3.2.jar
-      requires: [Cloth Config]
-
-    - name: Voices of Wynn
-      license: GPL-3.0
-      homepage: https://voicesofwynn.com
-      desc: Adds voice lines to Wynncraft
-      url: https://voicesofwynn.com/download/47/jar
       requires: [Cloth Config]
 
   HUD & Menu Enhancements:
