@@ -172,16 +172,6 @@ modGroups:
       incompatibleWith: [Distant Horizons]
       requires: [Cloth Config]
       
-    - name: Distant Horizons
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/distanthorizons
-      modrinthId: uCdwusMi
-      desc: Level-Of-Detail mod to allow for better performance and higher render-distance
-      url: https://cdn.modrinth.com/data/uCdwusMi/versions/mjIVHovM/DistantHorizons-2.0.0-a-1.20.2.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DistantHorizons.zip
-      configDesc: "Includes cached chunks for Wynncraft"
-      incompatibleWith: [Iris shaders, Bobby]
-      
     - name: Falling leaves
       license: MIT
       homepage: https://modrinth.com/mod/fallingleaves
@@ -557,6 +547,16 @@ modGroups:
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DesiredServers.zip
       forceConfigDownload: true
 
+    - name: Distant Horizons
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/distanthorizons
+      modrinthId: uCdwusMi
+      desc: Level-Of-Detail mod to allow for better performance and higher render-distance
+      url: https://cdn.modrinth.com/data/uCdwusMi/versions/mjIVHovM/DistantHorizons-2.0.0-a-1.20.2.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DistantHorizons.zip
+      configDesc: "Includes cached chunks for Wynncraft"
+      incompatibleWith: [Iris shaders, Bobby]
+      
     - name: Dynamic Sound filters
       license: APACHE
       homepage: https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters
