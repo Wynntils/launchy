@@ -31,7 +31,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-api
       modrinthId: P7dR8mSH
       desc: The core api used by fabric mods
-      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Hk8zAzIB/fabric-api-0.90.0%2B1.20.2.jar
+      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/FhOnpSMY/fabric-api-0.90.7%2B1.20.2.jar
 
     - name: Sodium
       license: LGPL-3
@@ -95,7 +95,7 @@ modGroups:
       homepage: https://modrinth.com/mod/forcecloseworldloadingscreen
       modrinthId: blWBX5n1
       desc: Improves loading times when changing worlds
-      url: https://cdn.modrinth.com/data/blWBX5n1/versions/thTIgDLT/forcecloseloadingscreen-2.1.1.jar
+      url: https://cdn.modrinth.com/data/blWBX5n1/versions/hIUIDW3m/forcecloseloadingscreen-2.2.0.jar
 
     - name: Cull Particles
       license: CC0
@@ -108,7 +108,7 @@ modGroups:
       homepage: https://modrinth.com/mod/starlight
       modrinthId: H8CaAYZC
       desc: Rewrites light engine to reduces chunk load stuttering
-      url: https://cdn.modrinth.com/data/H8CaAYZC/versions/98VOoYPX/starlight-1.1.2%2Bfabric.bdaeb21.jar
+      url: https://cdn.modrinth.com/data/H8CaAYZC/versions/PLbxwptm/starlight-1.1.3%2Bfabric.5867eae.jar
 
     - name: Cull Less Leaves
       license: LGPL-3
@@ -123,14 +123,14 @@ modGroups:
       homepage: https://modrinth.com/mod/ferrite-core
       modrinthId: uXXizFIs
       desc: Optimizes memory usage
-      url: https://cdn.modrinth.com/data/uXXizFIs/versions/FCnCG6PS/ferritecore-6.0.0-fabric.jar
+      url: https://cdn.modrinth.com/data/uXXizFIs/versions/unerR5MN/ferritecore-6.0.1-fabric.jar
 
     - name: ModernFix
       license: LGPL-3
       homepage: https://modrinth.com/mod/modernfix
       modrinthId: nmDcB62a
       desc: All-in-one optimization mod
-      url: https://cdn.modrinth.com/data/nmDcB62a/versions/ADyFF3WV/modernfix-fabric-5.7.5%2Bmc1.20.2.jar
+      url: https://cdn.modrinth.com/data/nmDcB62a/versions/nYh2qee4/modernfix-fabric-5.9.3%2Bmc1.20.2.jar
 
   Wynncraft Enhancements:
     - name: WynnLib
@@ -156,7 +156,7 @@ modGroups:
       homepage: https://modrinth.com/mod/iris
       modrinthId: YL57xq9U
       desc: Shaders for fabric
-      url: https://cdn.modrinth.com/data/YL57xq9U/versions/Zra3j4VJ/iris-mc1.20.2-1.6.9.jar
+      url: https://cdn.modrinth.com/data/YL57xq9U/versions/O7RZrusV/iris-mc1.20.2-1.6.10.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Iris.zip
       configDesc: "Includes the following shaderpacks: \n - BSL v8.1.02.2 \n - Complementary Shaders v4.4 \n - Continuum v2.0.4 \n - Sonic Ether's Unbelievable Shaders PTGI HRR 3"
       incompatibleWith: [Distant Horizons]
@@ -171,7 +171,17 @@ modGroups:
       configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [Distant Horizons]
       requires: [Cloth Config]
-
+      
+    - name: Distant Horizons
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/distanthorizons
+      modrinthId: uCdwusMi
+      desc: Level-Of-Detail mod to allow for better performance and higher render-distance
+      url: https://cdn.modrinth.com/data/uCdwusMi/versions/mjIVHovM/DistantHorizons-2.0.0-a-1.20.2.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DistantHorizons.zip
+      configDesc: "Includes cached chunks for Wynncraft"
+      incompatibleWith: [Iris shaders, Bobby]
+      
     - name: Falling leaves
       license: MIT
       homepage: https://modrinth.com/mod/fallingleaves
@@ -186,7 +196,7 @@ modGroups:
       homepage: https://modrinth.com/mod/lambdynamiclights
       modrinthId: yBW8D80W
       desc: Holding a torch will light up your surroundings
-      url: https://cdn.modrinth.com/data/yBW8D80W/versions/mYl4RvKg/lambdynamiclights-2.3.2%2B1.20.1.jar
+      url: https://cdn.modrinth.com/data/yBW8D80W/versions/i6nks8QI/lambdynamiclights-2.3.3%2B1.20.2.jar
 
     - name: Visuality
       license: MIT
@@ -207,7 +217,7 @@ modGroups:
       homepage: https://modrinth.com/mod/physicsmod
       modrinthId: Xy8aRQKS
       desc: Adds more immersive physics to just about every aspect of the game
-      url: https://cdn.modrinth.com/data/Xy8aRQKS/versions/p2rnVdjo/physics-mod-3.0.8a-mc-1.20.2-fabric.jar
+      url: https://cdn.modrinth.com/data/Xy8aRQKS/versions/dBxi3s11/physics-mod-3.0.10-mc-1.20.2-fabric.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/PhysicsMod.zip
 
     - name: 3D Skin Layers
@@ -217,19 +227,19 @@ modGroups:
       desc: Creates 3d skin layers on skins
       url: https://cdn.modrinth.com/data/zV5r3pPn/versions/q77puo5I/3dskinlayers-fabric-1.5.6-mc1.20.2.jar
 
-    - name: Entity Texture Features
+    - name: Entity Model Features
       license: LGPL 3.0 only
       homepage: https://modrinth.com/mod/entity-model-features
       modrinthId: 4I1XuqiY
       desc: Adds Model Features to entities in Optifine compatible format.
-      url: https://cdn.modrinth.com/data/4I1XuqiY/versions/eg7GqpgR/entity_model_features_fabric_1.20.2-1.0.2.jar
+      url: https://cdn.modrinth.com/data/4I1XuqiY/versions/OsioKrT1/entity_model_features_fabric_1.20.2-1.1.0.jar
 
-    - name: Entity Model Features
+    - name: Entity Texture Features
       license: LGPL 3.0 only
       homepage: https://modrinth.com/mod/entitytexturefeatures
       modrinthId: BVzZfTc1
       desc: Adds Texture Features to entities in Optifine compatible format.
-      url: https://cdn.modrinth.com/data/BVzZfTc1/versions/1Y3lxOX6/entity_texture_features_fabric_1.20.2-4.5.1.jar
+      url: https://cdn.modrinth.com/data/BVzZfTc1/versions/2zQ0rZri/entity_texture_features_fabric_1.20.2-4.6.1.jar
 
     - name: Continuity
       license: LGPL-3
@@ -251,7 +261,7 @@ modGroups:
       homepage: https://modrinth.com/mod/shoulder-surfing-reloaded
       modrinthId: kepjj2sy
       desc: Revamped over-the-shoulder F5 third-person camera view
-      url: https://cdn.modrinth.com/data/kepjj2sy/versions/LHE2t99w/ShoulderSurfing-Fabric-1.20.1-2.5.jar
+      url: https://cdn.modrinth.com/data/kepjj2sy/versions/tU76J4Vs/ShoulderSurfing-Fabric-1.20.1-2.8.jar
       requires: [Forge Config API Port]
 
     - name: Custom FOV
@@ -286,13 +296,20 @@ modGroups:
       url: https://cdn.modrinth.com/data/T8MMXTpr/versions/7GB1hLrr/DripSounds-1.19.4-0.3.2.jar
       requires: [Cloth Config]
 
+    - name: Presence Footsteps
+      license: MIT
+      homepage: https://modrinth.com/mod/presence-footsteps
+      modrinthId: rcTfTZr3
+      desc: Improved stepping sound effects
+      url: https://cdn.modrinth.com/data/rcTfTZr3/versions/KrTss88l/PresenceFootsteps-1.10.0.jar
+      
   HUD & Menu Enhancements:
     - name: Reese's Sodium Options
       license: MIT
       homepage: https://modrinth.com/mod/reeses-sodium-options
       modrinthId: Bh37bMuy
       desc: Alternative menu for Sodium
-      url: https://cdn.modrinth.com/data/Bh37bMuy/versions/UpKbnidp/reeses_sodium_options-1.6.5%2Bmc1.20.2-build.96.jar
+      url: https://cdn.modrinth.com/data/Bh37bMuy/versions/YxKBGhki/reeses_sodium_options-1.7.0%2Bmc1.20.2-build.97.jar
       requires: [Sodium]
 
     - name: Remove HUD
@@ -307,7 +324,7 @@ modGroups:
       homepage: https://modrinth.com/mod/betterf3
       modrinthId: 8shC1gFX
       desc: Makes the F3-menu customizable and cleaner
-      url: https://cdn.modrinth.com/data/8shC1gFX/versions/o935ywNh/BetterF3-8.0.1-Fabric-1.20.2.jar
+      url: https://cdn.modrinth.com/data/8shC1gFX/versions/q61pgYQY/BetterF3-8.0.2-Forge-1.20.2.jar
       configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/BetterF3_1.0.zip
 
   Misc Enhancements:
@@ -316,7 +333,7 @@ modGroups:
       homepage: https://modrinth.com/mod/first-person-model
       modrinthId: H5XMjpHi
       desc: Enables the third-person model in first-person, making for a more realistic experience
-      url: https://cdn.modrinth.com/data/H5XMjpHi/versions/szmxJfsR/firstperson-fabric-2.2.3-mc1.20.2.jar
+      url: https://cdn.modrinth.com/data/H5XMjpHi/versions/sAIjL2oE/firstperson-fabric-2.2.4-mc1.20.2.jar
 
     - name: Boat Item View
       license: LGPL-3
@@ -330,7 +347,7 @@ modGroups:
       homepage: https://modrinth.com/mod/sodium-extra
       modrinthId: PtjYWJkn
       desc: Extra features not available in Sodium
-      url: https://cdn.modrinth.com/data/PtjYWJkn/versions/zgaajBnP/sodium-extra-0.5.2%2Bmc1.20.2-build.113.jar
+      url: https://cdn.modrinth.com/data/PtjYWJkn/versions/e8Jw5Pey/sodium-extra-0.5.3%2Bmc1.20.2-build.114.jar
       requires: [Sodium]
 
     - name: Borderless Mining
@@ -338,7 +355,7 @@ modGroups:
       homepage: https://modrinth.com/mod/borderless-mining
       modrinthId: kYq5qkSL
       desc: Changes the fullscreen option to use a borderless window that fills the screen.
-      url: https://cdn.modrinth.com/data/kYq5qkSL/versions/lhrW53q7/borderless-mining-1.1.8%2B1.20.1.jar
+      url: https://cdn.modrinth.com/data/kYq5qkSL/versions/r2hHx4zB/borderless-mining-1.1.9%2B1.20.2.jar
 
     - name: Zoomify
       license: LGPL-3
@@ -382,13 +399,13 @@ modGroups:
       modrinthId: cudtvDnd
       desc: Allows you to change which account you are logged in to in-game.
       url: https://cdn.modrinth.com/data/cudtvDnd/versions/3n8w27Oj/InGameAccountSwitcher-Fabric-1.20.2-8.0.2.jar
-
+      
   Developer Tools:
     - name: RoughlyEnoughItems
       license: MIT
       homepage: https://modrinth.com/mod/rei
       desc: Alternative to Just Enough Items
-      url: https://cdn.modrinth.com/data/nfn13YXA/versions/PK9IHKYO/RoughlyEnoughItems-13.0.666.jar
+      url: https://cdn.modrinth.com/data/nfn13YXA/versions/REZYphwx/RoughlyEnoughItems-13.0.675.jar
       requires: [ArchitecturyAPI]
 
     - name: NBTToolTips
@@ -411,7 +428,7 @@ modGroups:
       homepage: https://modrinth.com/mod/architectury-api
       modrinthId: lhGA9TYQ
       desc: Dependency for RoughlyEnoughItems
-      url: https://cdn.modrinth.com/data/lhGA9TYQ/versions/cv151FBM/architectury-10.0.8-fabric.jar
+      url: https://cdn.modrinth.com/data/lhGA9TYQ/versions/92SRnLOo/architectury-10.0.9-fabric.jar
       dependency: true
 
     - name: FabricKotlinLanguage
@@ -419,7 +436,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-language-kotlin
       modrinthId: Ha28R6CL
       desc: Language Dependency for some mods
-      url: https://cdn.modrinth.com/data/Ha28R6CL/versions/48ri5y9r/fabric-language-kotlin-1.10.10%2Bkotlin.1.9.10.jar
+      url: https://cdn.modrinth.com/data/Ha28R6CL/versions/vnTAITh8/fabric-language-kotlin-1.10.14%2Bkotlin.1.9.20.jar
       dependency: true
 
     - name: Cloth Config
@@ -451,7 +468,7 @@ modGroups:
       homepage: https://modrinth.com/mod/searchables
       modrinthId: fuuu3xnx
       desc: Library mod that adds methods for easier searching
-      url: https://cdn.modrinth.com/data/fuuu3xnx/versions/vQ8Sa7rD/Searchables-fabric-1.20.2-1.0.2.jar
+      url: https://cdn.modrinth.com/data/fuuu3xnx/versions/L6tli89N/Searchables-fabric-1.20.2-1.0.3.jar
       dependency: true
 
   Outdated/Disabled:
@@ -540,28 +557,11 @@ modGroups:
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DesiredServers.zip
       forceConfigDownload: true
 
-    - name: Distant Horizons
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/distanthorizons
-      modrinthId: uCdwusMi
-      desc: Level-Of-Detail mod to allow for better performance and higher render-distance
-      url: https://cdn.modrinth.com/data/uCdwusMi/versions/xBHpiuwg/DistantHorizons-1.6.11a-1.19.4.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/DistantHorizons.zip
-      configDesc: "Includes cached chunks for Wynncraft"
-      incompatibleWith: [Iris shaders, Bobby]
-
     - name: Dynamic Sound filters
       license: APACHE
       homepage: https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters
       desc: Adds sound filters depending on your current location
       url: https://mediafilez.forgecdn.net/files/4438/899/DynamicSoundFilters-1.4.0%2B1.19.4.jar
-
-    - name: Presence Footsteps
-      license: MIT
-      homepage: https://modrinth.com/mod/presence-footsteps
-      modrinthId: rcTfTZr3
-      desc: Improved stepping sound effects
-      url: https://cdn.modrinth.com/data/rcTfTZr3/versions/jxsFtML2/PresenceFootsteps-1.8.2.jar
 
     - name: Dont Clear Chat History
       license: CC0
