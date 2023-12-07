@@ -217,14 +217,6 @@ modGroups:
       desc: Adds missing animations from third-person to first-person
       url: https://cdn.modrinth.com/data/MPCX6s5C/versions/4QkMRJ1H/notenoughanimations-fabric-1.6.4-mc1.20.2.jar
 
-    - name: Physics Mod
-      license: AAR
-      homepage: https://modrinth.com/mod/physicsmod
-      modrinthId: Xy8aRQKS
-      desc: Adds more immersive physics to just about every aspect of the game
-      url: https://cdn.modrinth.com/data/Xy8aRQKS/versions/p2rnVdjo/physics-mod-3.0.8a-mc-1.20.2-fabric.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/PhysicsMod.zip
-
     - name: 3D Skin Layers
       license: tr7zw Protective License
       homepage: https://modrinth.com/mod/3dskinlayers
