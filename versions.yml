@@ -146,7 +146,7 @@ modGroups:
       desc: Mod that aims to provide data-related functionalities
       url: https://github.com/Commander07/WynnLibFabric/releases/download/0.2.14-1.20.2/wynnlib-0.2.14-1.20.2.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Wynnlib.zip
-      configDesc: 'Fixes a conflict with Wynntils'
+      configDesc: "Fixes a conflict with Wynntils"
       requires: [FabricKotlinLanguage]
 
     - name: Voices of Wynn
@@ -164,7 +164,7 @@ modGroups:
       desc: Shaders for fabric
       url: https://cdn.modrinth.com/data/YL57xq9U/versions/Zra3j4VJ/iris-mc1.20.2-1.6.9.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Iris.zip
-      configDesc: "Includes the following shaderpacks: \n - BSL v8.1.02.2 \n - Complementary Shaders v4.4 \n - Continuum v2.0.4 \n - Sonic Ether's Unbelievable Shaders PTGI HRR 3"
+      configDesc: "Includes the following shaderpacks: \n - BSL v8.1.02.2 \n - Complementary Shaders v4.4 \n - Continuum v2.0.4 \n - Sonic Ether"s Unbelievable Shaders PTGI HRR 3"
       incompatibleWith: [Distant Horizons]
 
     - name: Bobby
@@ -174,7 +174,7 @@ modGroups:
       desc: Bobby allows for render distances greater than the server's view-distance setting
       url: https://cdn.modrinth.com/data/M08ruV16/versions/AzrQtK1e/bobby-5.0.2.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.0.1-rc.0/Bobby.zip
-      configDesc: 'Includes cached chunks for Wynncraft'
+      configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [Distant Horizons]
       requires: [Cloth Config]
 
@@ -540,7 +540,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/NK39zBp2/versions/qh7RxICc/blur-3.1.1.jar
 
     - name: Physics Mod
-      license: AAR
+      license: ARR
       homepage: https://modrinth.com/mod/physicsmod
       modrinthId: Xy8aRQKS
       desc: Adds more immersive physics to just about every aspect of the game
