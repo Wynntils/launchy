@@ -209,7 +209,7 @@ modGroups:
       desc: Adds a bunch of new particles
       url: https://cdn.modrinth.com/data/rI0hvYcd/versions/uhvQD6Ny/visuality-0.7.1%2B1.20.jar
 
-    - name: Not Enough Animations
+    - name: NotEnoughAnimations
       license: MIT
       homepage: https://modrinth.com/mod/not-enough-animations
       modrinthId: MPCX6s5C
