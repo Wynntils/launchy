@@ -554,7 +554,7 @@ modGroups:
       desc: Allows you to change which account you are logged in to in-game.
       url: https://cdn.modrinth.com/data/cudtvDnd/versions/3n8w27Oj/InGameAccountSwitcher-Fabric-1.20.2-8.0.2.jar
 
-    - name: Roughly Enough Items - REI
+    - name: RoughlyEnoughItems
       license: MIT
       homepage: https://modrinth.com/mod/rei
       desc: Alternative to Just Enough Items
