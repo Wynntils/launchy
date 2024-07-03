@@ -429,7 +429,6 @@ modGroups:
       requires: [ArchitecturyAPI]
       incompatibleWith: [ModernFix]
 
-
   Dependencies:
     - name: ArchitecturyAPI
       license: LGPL-3
