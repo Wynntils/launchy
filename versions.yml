@@ -421,6 +421,14 @@ modGroups:
       desc: Simple GUI Mod to edit an item, a block or an entity in your current world
       url: https://cdn.modrinth.com/data/E9sX1ncV/versions/bTITl68h/IBEEditor-1.20.2-2.2.8-fabric.jar
 
+    - name: RoughlyEnoughItems
+      license: MIT
+      homepage: https://modrinth.com/mod/rei
+      desc: Alternative to Just Enough Items
+      url: https://cdn.modrinth.com/data/nfn13YXA/versions/GEqwuKdB/RoughlyEnoughItems-13.1.726-fabric.jar
+      requires: [ArchitecturyAPI]
+      incompatibleWith: [ModernFix]
+
   Dependencies:
     - name: ArchitecturyAPI
       license: LGPL-3
@@ -553,10 +561,3 @@ modGroups:
       modrinthId: cudtvDnd
       desc: Allows you to change which account you are logged in to in-game.
       url: https://cdn.modrinth.com/data/cudtvDnd/versions/3n8w27Oj/InGameAccountSwitcher-Fabric-1.20.2-8.0.2.jar
-
-    - name: Roughly Enough Items - REI
-      license: MIT
-      homepage: https://modrinth.com/mod/rei
-      desc: Alternative to Just Enough Items
-      url: https://cdn.modrinth.com/data/nfn13YXA/versions/GEqwuKdB/RoughlyEnoughItems-13.1.726-fabric.jar
-      requires: [ArchitecturyAPI]
