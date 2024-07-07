@@ -5,6 +5,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Mod(
     val name: String,
+    val displayName: String = "",
     val license: String = "Unknown",
     val homepage: String = "",
     val desc: String,

@@ -69,7 +69,8 @@ fun ModInfo(group: Group, mod: Mod) {
                 )
 
                 Row(Modifier.weight(6f)) {
-                    Text(mod.name, style = MaterialTheme.typography.bodyLarge)
+                    val displayedName = if (mod.displayName.isEmpty()) mod.name else mod.displayName
+                    Text(displayedName, style = MaterialTheme.typography.bodyLarge)
                     // build list of mods that are incompatible with this mod
                     val incompatibleMods = state.versions.modGroups.flatMap { it.value }
                         .filter { it.incompatibleWith.contains(mod.name) || mod.incompatibleWith.contains(it.name) }
@@ -79,19 +80,28 @@ fun ModInfo(group: Group, mod: Mod) {
                             modifier = Modifier.alpha(0.5f),
                             tooltip = {
                                 Box(Modifier.background(MaterialTheme.colorScheme.background)) {
-                                    if (mod.requires.isNotEmpty()) {
+                                    if (mod.requires.isNotEmpty() && incompatibleMods.isNotEmpty()) {
                                         Text(
-                                            text = "Requires: ${mod.requires.joinToString()}",
+                                            text = "Incompatible with: ${incompatibleMods.joinToString()}\nRequires: ${mod.requires.joinToString()}",
                                             modifier = Modifier.padding(4.dp),
                                             style = MaterialTheme.typography.labelMedium
                                         )
                                     }
-                                    if (incompatibleMods.isNotEmpty()) {
-                                        Text(
-                                            text = "Incompatible with: ${incompatibleMods.joinToString()}",
-                                            modifier = Modifier.padding(4.dp),
-                                            style = MaterialTheme.typography.labelMedium
-                                        )
+                                    else {
+                                        if (mod.requires.isNotEmpty()) {
+                                            Text(
+                                                text = "Requires: ${mod.requires.joinToString()}",
+                                                modifier = Modifier.padding(4.dp),
+                                                style = MaterialTheme.typography.labelMedium
+                                            )
+                                        }
+                                        if (incompatibleMods.isNotEmpty()) {
+                                            Text(
+                                                text = "Incompatible with: ${incompatibleMods.joinToString()}",
+                                                modifier = Modifier.padding(4.dp),
+                                                style = MaterialTheme.typography.labelMedium
+                                            )
+                                        }
                                     }
                                 }
                             }

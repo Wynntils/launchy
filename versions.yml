@@ -210,6 +210,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/rI0hvYcd/versions/uhvQD6Ny/visuality-0.7.1%2B1.20.jar
 
     - name: NotEnoughAnimations
+      displayName: Not Enough Animations
       license: MIT
       homepage: https://modrinth.com/mod/not-enough-animations
       modrinthId: MPCX6s5C
@@ -334,6 +335,7 @@ modGroups:
 
   Misc Enhancements:
     - name: First Person Models
+      displayName: First Person Model
       license: MIT
       homepage: https://modrinth.com/mod/first-person-model
       modrinthId: H5XMjpHi
@@ -408,6 +410,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/FZcOyh3v/versions/XEAWEIcJ/nbttooltips-0.1.4-1.20.x.jar
 
     - name: Spark
+      displayName: spark
       license: GPL-3
       modrinthId: l6YH9Als
       homepage: https://modrinth.com/mod/spark
@@ -422,6 +425,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/E9sX1ncV/versions/bTITl68h/IBEEditor-1.20.2-2.2.8-fabric.jar
 
     - name: RoughlyEnoughItems
+      displayName: Roughly Enough Items (REI)
       license: MIT
       homepage: https://modrinth.com/mod/rei
       desc: Alternative to Just Enough Items
@@ -434,11 +438,12 @@ modGroups:
       license: LGPL-3
       homepage: https://modrinth.com/mod/architectury-api
       modrinthId: lhGA9TYQ
-      desc: Dependency for RoughlyEnoughItems
+      desc: Cross-platform Dependency
       url: https://cdn.modrinth.com/data/lhGA9TYQ/versions/C2sB1Yq5/architectury-10.1.20-fabric.jar
       dependency: true
 
     - name: FabricKotlinLanguage
+      displayName: Fabric Language Kotlin
       license: APACHE
       homepage: https://modrinth.com/mod/fabric-language-kotlin
       modrinthId: Ha28R6CL
