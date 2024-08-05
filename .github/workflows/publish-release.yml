@@ -72,16 +72,16 @@ jobs:
       matrix:
         os: [ ubuntu-latest, windows-latest, macos-latest ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: actions/download-artifact@v3 # Download version information from changelog
         with:
           name: version
 
       - name: Set up JDK 16
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
-          distribution: adopt
+          distribution: temurin
           java-version: 16
           cache: gradle
 
