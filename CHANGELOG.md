@@ -18,6 +18,8 @@
 ### Miscellaneous Chores
 
 * Fix launchy release CI ([#70](https://github.com/Wynntils/launchy/issues/70)) ([cabebda](https://github.com/Wynntils/launchy/commit/cabebda7e2060db8caa6d099e27a8ddbf78a0d4a))
+* Make launchy compile on Java 21, and upgrade Fabric Installer ([#73](https://github.com/Wynntils/launchy/issues/73)) ([de2aad1](https://github.com/Wynntils/launchy/commit/de2aad169c4c5fc65fbbb255dc3b61dea0321cfd))
+* **release:** v1.5.0 [skip ci] ([a304ab3](https://github.com/Wynntils/launchy/commit/a304ab31d5f077087aeab7f763d248c8486f1918))
 * **release:** v1.5.0 [skip ci] ([2fe1f34](https://github.com/Wynntils/launchy/commit/2fe1f34e80f5a259b48a737bf0cc2331d86fe0d3))
 * update to 1.20.2 ([#43](https://github.com/Wynntils/launchy/issues/43)) ([3e3d224](https://github.com/Wynntils/launchy/commit/3e3d224655382277d2be05ac5913551601cafda4))
 * update Wynntils version from beta to release ([#63](https://github.com/Wynntils/launchy/issues/63)) ([c1c1939](https://github.com/Wynntils/launchy/commit/c1c19395ecab3a83581f76196c7b0e520add819c))
