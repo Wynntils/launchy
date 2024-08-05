@@ -33,7 +33,7 @@ dependencies {
     implementation("io.ktor:ktor-client-cio:1.6.8")
 
     implementation("org.json:json:20210307")
-    implementation("net.fabricmc:fabric-installer:0.9.0")
+    implementation("net.fabricmc:fabric-installer:1.0.1")
     implementation("edu.stanford.ejalbert:BrowserLauncher2:1.3")
 }
 

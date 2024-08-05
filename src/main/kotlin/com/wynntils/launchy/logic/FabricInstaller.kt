@@ -7,14 +7,12 @@
 package com.wynntils.launchy.logic
 
 import mjson.Json
-import mjson.Json.read
 import net.fabricmc.installer.client.ProfileInstaller
-import net.fabricmc.installer.util.Reference
+import net.fabricmc.installer.util.FabricService
 import net.fabricmc.installer.util.Utils
 import org.json.JSONObject
 import java.io.IOException
 import java.io.InputStream
-import java.net.URL
 import java.nio.file.Files
 import java.nio.file.Path
 import java.util.*
@@ -64,10 +62,7 @@ object FabricInstaller {
         val dummyJar = profileDir.resolve("$versionId.jar")
         Files.deleteIfExists(dummyJar)
         Files.createFile(dummyJar)
-        val profileUrl = URL(
-            Reference.getMetaServerEndpoint("v2/versions/loader/$gameVersion/$loaderVersion/profile/json")
-        )
-        val profileJson: Json = read(profileUrl)
+        val profileJson: Json = FabricService.queryMetaJson("v2/versions/loader/$gameVersion/$loaderVersion/profile/json")
         Utils.writeToFile(profileJsonPath, profileJson.toString())
     }
 
