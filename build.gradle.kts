@@ -1,14 +1,13 @@
-import Com_mineinabyss_conventions_platform_gradle.Deps
 import de.undercouch.gradle.tasks.download.Download
-import org.codehaus.plexus.util.Os
-import org.jetbrains.compose.compose
+import org.apache.tools.ant.taskdefs.condition.Os
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("com.mineinabyss.conventions.kotlin")
-    id("org.jetbrains.compose") version "1.1.1"
+    kotlin("jvm")
     kotlin("plugin.serialization")
+    id("org.jetbrains.compose") version "1.5.11"
+    id("de.undercouch.download") version "5.6.0"
 }
 
 repositories {
@@ -28,18 +27,17 @@ dependencies {
     implementation(compose.material3)
     implementation(compose.material)
     implementation(compose.materialIconsExtended)
-    implementation(Deps.kotlinx.serialization.json)
-    implementation(Deps.kotlinx.serialization.kaml)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.kotlinx.serialization.kaml)
     implementation("io.ktor:ktor-client-core:1.6.8")
     implementation("io.ktor:ktor-client-cio:1.6.8")
 
     implementation("org.json:json:20210307")
-    implementation("net.fabricmc:fabric-installer:0.9.0")
+    implementation("net.fabricmc:fabric-installer:1.0.1")
     implementation("edu.stanford.ejalbert:BrowserLauncher2:1.3")
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
     kotlinOptions.freeCompilerArgs = listOf(
         "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
         "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",

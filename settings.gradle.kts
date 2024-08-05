@@ -3,20 +3,26 @@ pluginManagement {
         gradlePluginPortal()
         maven("https://repo.mineinabyss.com/releases")
         google()
+        maven("https://maven.hq.hydraulic.software")
         mavenLocal()
     }
 
     plugins {
         val kotlinVersion: String by settings
+        kotlin("jvm") version kotlinVersion
         kotlin("plugin.serialization") version kotlinVersion
     }
+}
 
-    val idofrontConventions: String by settings
-    resolutionStrategy {
-        eachPlugin {
-            if (requested.id.id.startsWith("com.mineinabyss.conventions"))
-                useVersion(idofrontConventions)
-        }
+dependencyResolutionManagement {
+    val idofrontVersion: String by settings
+
+    repositories {
+        maven("https://repo.mineinabyss.com/releases")
+    }
+
+    versionCatalogs {
+        create("libs").from("com.mineinabyss:catalog:$idofrontVersion")
     }
 }
 
