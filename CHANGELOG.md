@@ -12,11 +12,13 @@
 * launchy should use beta wynntils ([#48](https://github.com/Wynntils/launchy/issues/48)) ([183d7b0](https://github.com/Wynntils/launchy/commit/183d7b07a58fb1873f2e55d11727f6b57441c167))
 * remove empty categories ([#45](https://github.com/Wynntils/launchy/issues/45)) ([81b4f65](https://github.com/Wynntils/launchy/commit/81b4f6573ba79d697f23fdb5c9d097f0efb84d71))
 * remove starlight ([#46](https://github.com/Wynntils/launchy/issues/46)) ([0014454](https://github.com/Wynntils/launchy/commit/001445432559545465f69477963945db454e249b))
+* Use `temurin` JDK in CI ([#71](https://github.com/Wynntils/launchy/issues/71)) ([3201fc5](https://github.com/Wynntils/launchy/commit/3201fc5cc51050027fa03dbdfdea5b7610ad82e0))
 
 
 ### Miscellaneous Chores
 
 * Fix launchy release CI ([#70](https://github.com/Wynntils/launchy/issues/70)) ([cabebda](https://github.com/Wynntils/launchy/commit/cabebda7e2060db8caa6d099e27a8ddbf78a0d4a))
+* **release:** v1.5.0 [skip ci] ([2fe1f34](https://github.com/Wynntils/launchy/commit/2fe1f34e80f5a259b48a737bf0cc2331d86fe0d3))
 * update to 1.20.2 ([#43](https://github.com/Wynntils/launchy/issues/43)) ([3e3d224](https://github.com/Wynntils/launchy/commit/3e3d224655382277d2be05ac5913551601cafda4))
 * update Wynntils version from beta to release ([#63](https://github.com/Wynntils/launchy/issues/63)) ([c1c1939](https://github.com/Wynntils/launchy/commit/c1c19395ecab3a83581f76196c7b0e520add819c))
 
