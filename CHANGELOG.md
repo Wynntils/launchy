@@ -1,3 +1,25 @@
+## [1.5.0](https://github.com/Wynntils/launchy/compare/v1.4.1...v1.5.0) (2024-08-05)
+
+
+### New Features
+
+* Introduce displayName ([#69](https://github.com/Wynntils/launchy/issues/69)) ([67af5db](https://github.com/Wynntils/launchy/commit/67af5db757a19a9feac63d8347c9a6f1f51dd598))
+
+
+### Bug Fixes
+
+* disable crashing blur mod ([#47](https://github.com/Wynntils/launchy/issues/47)) ([8ad68ee](https://github.com/Wynntils/launchy/commit/8ad68eed7026d63c0f41dd3e262b357d08c4fcf3))
+* launchy should use beta wynntils ([#48](https://github.com/Wynntils/launchy/issues/48)) ([183d7b0](https://github.com/Wynntils/launchy/commit/183d7b07a58fb1873f2e55d11727f6b57441c167))
+* remove empty categories ([#45](https://github.com/Wynntils/launchy/issues/45)) ([81b4f65](https://github.com/Wynntils/launchy/commit/81b4f6573ba79d697f23fdb5c9d097f0efb84d71))
+* remove starlight ([#46](https://github.com/Wynntils/launchy/issues/46)) ([0014454](https://github.com/Wynntils/launchy/commit/001445432559545465f69477963945db454e249b))
+
+
+### Miscellaneous Chores
+
+* Fix launchy release CI ([#70](https://github.com/Wynntils/launchy/issues/70)) ([cabebda](https://github.com/Wynntils/launchy/commit/cabebda7e2060db8caa6d099e27a8ddbf78a0d4a))
+* update to 1.20.2 ([#43](https://github.com/Wynntils/launchy/issues/43)) ([3e3d224](https://github.com/Wynntils/launchy/commit/3e3d224655382277d2be05ac5913551601cafda4))
+* update Wynntils version from beta to release ([#63](https://github.com/Wynntils/launchy/issues/63)) ([c1c1939](https://github.com/Wynntils/launchy/commit/c1c19395ecab3a83581f76196c7b0e520add819c))
+
 ## [1.4.1](https://github.com/Wynntils/launchy/compare/v1.4.0...v1.4.1) (2023-09-30)
 
 
@@ -5,6 +27,11 @@
 
 * Fix loading failures ([#42](https://github.com/Wynntils/launchy/issues/42)) ([700d781](https://github.com/Wynntils/launchy/commit/700d7818e8f69c58ed2d13f75a4295f794c27995))
 * fix readme for newer ventura ([#40](https://github.com/Wynntils/launchy/issues/40)) ([b6ca498](https://github.com/Wynntils/launchy/commit/b6ca4982d9aa9f4fce5808bfa177eaf895a01c66))
+
+
+### Miscellaneous Chores
+
+* **release:** v1.4.1 [skip ci] ([f52a7b2](https://github.com/Wynntils/launchy/commit/f52a7b213f6c9db50d682176708fcf7446ce4508))
 
 ## [1.4.0](https://github.com/Wynntils/launchy/compare/v1.3.0...v1.4.0) (2023-08-03)
 
@@ -63,16 +90,4 @@
 ### Code Refactoring
 
 * change package name ([dc5716d](https://github.com/Wynntils/launchy/commit/dc5716d27f5bde80a924e817f48c31c778e41404))
-
-## [1.2.0](https://github.com/Wynntils/launchy/compare/v1.1.11...v1.2.0) (2022-11-11)
-
-
-### New Features
-
-* add config download update support ([b0ef346](https://github.com/Wynntils/launchy/commit/b0ef3461f06a97eaf7a517ea801764a6b434937d))
-
-
-### Miscellaneous Chores
-
-* **release:** v1.2.0 [skip ci] ([dc95bec](https://github.com/Wynntils/launchy/commit/dc95becf5ecfc6fe59f46e1594a70eeeac3f5c9f))
 
