@@ -24,14 +24,14 @@ modGroups:
       homepage: https://wynntils.com
       modrinthId: dU5Gb9Ab
       desc: A Minecraft mod that adds a lot of quality of life features to Wynncraft
-      url: https://athena.wynntils.com/version/download/artemis/beta/fabric?1.21
+      url: https://athena.wynntils.com/version/download/artemis/release/fabric?1.21
 
     - name: Fabric API
       license: Apache
       homepage: https://modrinth.com/mod/fabric-api
       modrinthId: P7dR8mSH
       desc: The core api used by fabric mods
-      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/iS2jNAxk/fabric-api-0.100.8%2B1.21.jar
+      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/oGwyXeEI/fabric-api-0.102.0%2B1.21.jar
 
     - name: Sodium
       license: LGPL-3
@@ -58,7 +58,7 @@ modGroups:
       license: MIT
       homepage: https://www.curseforge.com/minecraft/mc-mods/controlling
       desc: Adds a keybinding menu to the options screen
-      url: https://cdn.modrinth.com/data/xv94TkTM/versions/arr7s65E/Controlling-fabric-1.21-18.0.3.jar
+      url: https://cdn.modrinth.com/data/xv94TkTM/versions/xl0PX3KR/Controlling-fabric-1.21-18.0.4.jar
       requires: [Searchables]
 
   Performance:
@@ -131,7 +131,7 @@ modGroups:
       license: GPL-3.0
       homepage: https://voicesofwynn.com
       desc: Adds voice lines to Wynncraft
-      url: https://mediafilez.forgecdn.net/files/5508/422/VoicesOfWynn-MC1.21-v1.8.2.jar
+      url: https://github.com/Team-VoW/WynncraftVoiceProject/releases/download/v1.8.3/Voices-of-Wynn-fabric-1.8.3-fabric+MC-1.21.jar
       requires: [Cloth Config]
 
   Visual Enhancements:
@@ -371,7 +371,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-language-kotlin
       modrinthId: Ha28R6CL
       desc: Language Dependency for some mods
-      url: https://cdn.modrinth.com/data/Ha28R6CL/versions/afsFajDC/fabric-language-kotlin-1.11.0%2Bkotlin.2.0.0.jar
+      url: https://cdn.modrinth.com/data/Ha28R6CL/versions/kdDGGNEt/fabric-language-kotlin-1.12.0%2Bkotlin.2.0.10.jar
       dependency: true
 
     - name: Cloth Config
@@ -388,7 +388,7 @@ modGroups:
       homepage: https://modrinth.com/mod/forge-config-api-port
       modrinthId: ohNO6lps
       desc: Forge Config API ported to Fabric
-      url: https://cdn.modrinth.com/data/ohNO6lps/versions/UGsNw3aI/ForgeConfigAPIPort-v21.0.7-1.21-Fabric.jar
+      url: https://cdn.modrinth.com/data/ohNO6lps/versions/GOreNSW6/ForgeConfigAPIPort-v21.0.8-1.21-Fabric.jar
       dependency: true
 
     - name: Yet Another Config Lib
@@ -404,7 +404,7 @@ modGroups:
       homepage: https://modrinth.com/mod/searchables
       modrinthId: fuuu3xnx
       desc: Library mod that adds methods for easier searching
-      url: https://cdn.modrinth.com/data/fuuu3xnx/versions/CBSMQxpQ/Searchables-fabric-1.21-1.0.1.jar
+      url: https://cdn.modrinth.com/data/fuuu3xnx/versions/8zrcFuRP/Searchables-fabric-1.21-1.0.5.jar
       dependency: true
 
   Outdated/Disabled:
