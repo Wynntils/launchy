@@ -159,6 +159,8 @@ modGroups:
       modrinthId: uCdwusMi
       desc: Level-Of-Detail mod to allow for better performance and higher render-distance
       url: https://cdn.modrinth.com/data/uCdwusMi/versions/NCz4yZ3v/DistantHorizons-2.1.2-a-1.21-neo-fabric.jar
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.2.0/DistantHorizons.zip
+      configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [Bobby]
 
     - name: Falling leaves
