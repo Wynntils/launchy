@@ -148,7 +148,7 @@ modGroups:
       modrinthId: M08ruV16
       desc: Bobby allows for render distances greater than the server's view-distance setting
       url: https://cdn.modrinth.com/data/M08ruV16/versions/hL2qgP4K/bobby-5.2.3%2Bmc1.21.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.1.1/Bobby.zip
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.2.0/Bobby.zip
       configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [Distant Horizons]
       requires: [Cloth Config]
@@ -244,7 +244,7 @@ modGroups:
       modrinthId: m0oRwcZx
       desc: Adds various camera tilting
       url: https://cdn.modrinth.com/data/m0oRwcZx/versions/siH8aqXE/CameraOverhaul-1.4.1-fabric-universal.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.1.1/CameraOverhaul.zip
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.2.0/CameraOverhaul.zip
       requires: [Cloth Config]
 
   Audio Enhancements:
@@ -484,7 +484,7 @@ modGroups:
       modrinthId: Xy8aRQKS
       desc: Adds more immersive physics to just about every aspect of the game
       url: https://cdn.modrinth.com/data/Xy8aRQKS/versions/p2rnVdjo/physics-mod-3.0.8a-mc-1.20.2-fabric.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.1.1/PhysicsMod.zip
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.2.0/PhysicsMod.zip
 
     - name: In-Game Account Switcher
       license: LGPL-3
@@ -519,7 +519,7 @@ modGroups:
       homepage: https://github.com/Commander07/WynnLibFabric
       desc: Mod that aims to provide data-related functionalities
       url: https://github.com/Commander07/WynnLibFabric/releases/download/0.2.14-1.20.2/wynnlib-0.2.14-1.20.2.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.1.1/Wynnlib.zip
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.2.0/Wynnlib.zip
       configDesc: "Fixes a conflict with Wynntils"
       requires: [FabricKotlinLanguage]
 
@@ -552,7 +552,7 @@ modGroups:
       modrinthId: GDpe4LHD
       desc: Ship servers without modifying servers.dat
       url: https://cdn.modrinth.com/data/GDpe4LHD/versions/ul5Tx6jd/desiredservers-fabric-1.20.2-1.3.1.jar
-      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.1.1/DesiredServers.zip
+      configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.2.0/DesiredServers.zip
       forceConfigDownload: true
 
     - name: Boat Item View
