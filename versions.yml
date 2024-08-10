@@ -89,7 +89,7 @@ modGroups:
       modrinthId: 51shyZVL
       desc: Adds many optimisation options
       url: https://cdn.modrinth.com/data/51shyZVL/versions/BUxgeDdf/moreculling-1.21-0.26.0.jar
-      requires: [Reese's Sodium Options]
+      requires: [Reese's Sodium Options, Cloth Config]
 
     - name: C2ME
       license: MIT
