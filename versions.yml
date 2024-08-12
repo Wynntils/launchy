@@ -31,7 +31,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-api
       modrinthId: P7dR8mSH
       desc: The core api used by fabric mods
-      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/oGwyXeEI/fabric-api-0.102.0%2B1.21.jar
+      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/iS2jNAxk/fabric-api-0.100.8%2B1.21.jar
 
     - name: Sodium
       license: LGPL-3
