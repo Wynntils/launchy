@@ -131,7 +131,7 @@ modGroups:
       license: GPL-3.0
       homepage: https://voicesofwynn.com
       desc: Adds voice lines to Wynncraft
-      url: https://github.com/Team-VoW/WynncraftVoiceProject/releases/download/v1.8.3/Voices-of-Wynn-fabric-1.8.3-fabric+MC-1.21.jar
+      url: https://github.com/Team-VoW/WynncraftVoiceProject/releases/download/v1.9.1/Voices-of-Wynn-fabric-1.9.1-fabric+MC-1.21.jar
       requires: [Cloth Config]
 
   Visual Enhancements:
