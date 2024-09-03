@@ -582,3 +582,10 @@ modGroups:
       modrinthId: E9sX1ncV
       desc: Simple GUI Mod to edit an item, a block or an entity in your current world
       url: https://cdn.modrinth.com/data/E9sX1ncV/versions/bTITl68h/IBEEditor-1.20.2-2.2.8-fabric.jar
+
+    - name: LazyDFU
+      license: MIT
+      homepage: https://modrinth.com/mod/lazydfu
+      modrinthId: hvFnDODi
+      desc: Makes the game start more quickly
+      url: https://cdn.modrinth.com/data/hvFnDODi/versions/0.1.3/lazydfu-0.1.3.jar
