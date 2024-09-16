@@ -384,6 +384,13 @@ modGroups:
       desc: Adds controller support
       url: https://cdn.modrinth.com/data/bXX9h73M/versions/PGbMYGjB/midnightcontrols-fabric-1.10.0-beta.1.jar
 
+    - name: CITResewn
+      license: MIT
+      homepage: https://modrinth.com/mod/cit-resewn
+      modrinthId: bXX9h73M
+      desc: Implements CIT format commonly used in Optifine resourcepacks
+      url: https://cdn.modrinth.com/data/otVJckYQ/versions/G6VEzcyZ/citresewn-1.2.0%2B1.21.jar
+
   Developer Tools:
 
     - name: Spark
