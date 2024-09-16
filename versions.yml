@@ -387,7 +387,7 @@ modGroups:
     - name: CITResewn
       license: MIT
       homepage: https://modrinth.com/mod/cit-resewn
-      modrinthId: bXX9h73M
+      modrinthId: otVJckYQ
       desc: Implements CIT format commonly used in Optifine resourcepacks
       url: https://cdn.modrinth.com/data/otVJckYQ/versions/G6VEzcyZ/citresewn-1.2.0%2B1.21.jar
 
