@@ -385,6 +385,7 @@ modGroups:
       url: https://cdn.modrinth.com/data/PiuygVWJ/versions/qnj9ffJd/spu-1.8.jar
 
     - name: Midnight Controlls
+      displayName: Midnight Controls
       license: MIT
       homepage: https://modrinth.com/mod/midnightcontrols
       modrinthId: bXX9h73M
