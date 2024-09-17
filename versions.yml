@@ -165,6 +165,13 @@ modGroups:
       desc: Forces first person during cutscenes
       url: https://cdn.modrinth.com/data/K2w0kbik/versions/HskhS3Fc/dont-surf-through-cutscenes-1.0.0.jar
 
+    - name: WynnBuild
+      license:  MIT
+      homepage: https://modrinth.com/mod/wynnbuild
+      modrinthId: 1RCjAAcr
+      desc: Generate WynnBuilder builds in game
+      url: https://cdn.modrinth.com/data/1RCjAAcr/versions/RIbGY5MX/WynnBuild-v0.4.4%2B1.21.jar
+
   Visual Enhancements:
     - name: Iris shaders
       license: LGPL-3
