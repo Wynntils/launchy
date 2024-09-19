@@ -185,7 +185,7 @@ modGroups:
       homepage: https://modrinth.com/mod/bobby
       modrinthId: M08ruV16
       desc: Bobby allows for render distances greater than the server's view-distance setting
-      url: https://cdn.modrinth.com/data/M08ruV16/versions/hL2qgP4K/bobby-5.2.3%2Bmc1.21.jar
+      url: https://cdn.modrinth.com/data/M08ruV16/versions/oeSOphtG/bobby-5.2.4%2Bmc1.21.jar
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.2.0/Bobby.zip
       configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [Distant Horizons]
