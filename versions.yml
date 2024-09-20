@@ -265,6 +265,7 @@ modGroups:
       modrinthId: PxQSWIcD
       desc: Dynamic Lights for Sodium
       url: https://cdn.modrinth.com/data/PxQSWIcD/versions/67IEqds3/sodiumdynamiclights-fabric-1.0.2-1.21.1.jar
+      requires: [Forge Config API Port]
 
   Camera Enhancements:
     - name: Better Third Person
