@@ -52,7 +52,13 @@ modGroups:
       homepage: https://www.curseforge.com/minecraft/mc-mods/controlling
       desc: Adds a keybinding menu to the options screen
       url: https://cdn.modrinth.com/data/xv94TkTM/versions/xl0PX3KR/Controlling-fabric-1.21-18.0.4.jar
-      requires: [Searchables]
+
+    - name: Searchables
+      license: MIT
+      homepage: https://modrinth.com/mod/searchables
+      modrinthId: fuuu3xnx
+      desc: Library mod that adds methods for easier searching
+      url: https://cdn.modrinth.com/data/fuuu3xnx/versions/8zrcFuRP/Searchables-fabric-1.21-1.0.5.jar
 
   Performance:
     - name: Lithium
@@ -265,6 +271,7 @@ modGroups:
       modrinthId: PxQSWIcD
       desc: Dynamic Lights for Sodium
       url: https://cdn.modrinth.com/data/PxQSWIcD/versions/67IEqds3/sodiumdynamiclights-fabric-1.0.2-1.21.1.jar
+      requires: [Forge Config API Port]
 
   Camera Enhancements:
     - name: Better Third Person
@@ -458,14 +465,6 @@ modGroups:
       modrinthId: 1eAoo2KR
       desc: Yet Another Config Lib, like, what were you expecting?
       url: https://cdn.modrinth.com/data/1eAoo2KR/versions/Y8Wa10Re/YetAnotherConfigLib-3.5.0%2B1.21-fabric.jar
-      dependency: true
-
-    - name: Searchables
-      license: MIT
-      homepage: https://modrinth.com/mod/searchables
-      modrinthId: fuuu3xnx
-      desc: Library mod that adds methods for easier searching
-      url: https://cdn.modrinth.com/data/fuuu3xnx/versions/8zrcFuRP/Searchables-fabric-1.21-1.0.5.jar
       dependency: true
 
   Outdated/Disabled:
