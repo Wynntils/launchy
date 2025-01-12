@@ -119,12 +119,6 @@ modGroups:
       url: https://cdn.modrinth.com/data/nmDcB62a/versions/gx7PIV8n/modernfix-fabric-5.20.1%2Bmc1.21.4.jar
 
   Wynncraft Enhancements:
-    - name: Voices of Wynn
-      license: GPL-3.0
-      homepage: https://voicesofwynn.com
-      desc: Adds voice lines to Wynncraft
-      url: https://github.com/Team-VoW/WynncraftVoiceProject/releases/download/v1.9.4/Voices-of-Wynn-fabric-1.9.4-fabric+MC-1.21.jar
-      requires: [Cloth Config]
 
   Visual Enhancements:
     - name: Iris shaders
@@ -654,3 +648,10 @@ modGroups:
       modrinthId: otVJckYQ
       desc: Implements CIT format commonly used in Optifine resourcepacks
       url: https://cdn.modrinth.com/data/otVJckYQ/versions/G6VEzcyZ/citresewn-1.2.0%2B1.21.jar
+
+    - name: Voices of Wynn
+      license: GPL-3.0
+      homepage: https://voicesofwynn.com
+      desc: Adds voice lines to Wynncraft
+      url: https://github.com/Team-VoW/WynncraftVoiceProject/releases/download/v1.9.4/Voices-of-Wynn-fabric-1.9.4-fabric+MC-1.21.jar
+      requires: [Cloth Config]
