@@ -118,8 +118,6 @@ modGroups:
       desc: All-in-one optimization mod
       url: https://cdn.modrinth.com/data/nmDcB62a/versions/gx7PIV8n/modernfix-fabric-5.20.1%2Bmc1.21.4.jar
 
-  Wynncraft Enhancements:
-
   Visual Enhancements:
     - name: Iris shaders
       license: LGPL-3
