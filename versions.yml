@@ -5,8 +5,6 @@ groups:
     forceEnabled: true
   - name: Performance
     enabledByDefault: true
-  - name: Wynncraft Enhancements
-    enabledByDefault: true
   - name: Visual Enhancements
   - name: Camera Enhancements
   - name: Audio Enhancements
