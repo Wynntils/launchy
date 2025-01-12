@@ -221,12 +221,6 @@ modGroups:
       url: https://cdn.modrinth.com/data/kepjj2sy/versions/7VkKfVhO/ShoulderSurfing-Fabric-1.21.4-4.7.0.jar
       requires: [Forge Config API Port]
 
-    - name: Custom FOV
-      license: LGPL 3.0 or later
-      homepage: https://modrinth.com/mod/custom-fov-illusive
-      desc: Allows players to customize various field of view settings
-      url: https://cdn.modrinth.com/data/uZAcFHLd/versions/EsCYMaOz/customfov-fabric-9.0.0%2B1.21.jar
-
     - name: Camera Overhaul
       license: MIT
       homepage: https://modrinth.com/mod/cameraoverhaul
@@ -300,14 +294,6 @@ modGroups:
       url: https://cdn.modrinth.com/data/w7ThoJFB/versions/RKRjd2h1/Zoomify-2.14.2%2B1.21.3.jar
       incompatibleWith: [Logical Zoom]
       requires: [FabricKotlinLanguage, Yet Another Config Lib]
-
-    - name: ClickThrough
-      displayName: ClickThrough 2.0
-      license: MIT
-      homepage: https://modrinth.com/mod/clickthrough2.0
-      modrinthId: ERHOxvaH
-      desc: Click through signs and item frames to chests
-      url: https://cdn.modrinth.com/data/ERHOxvaH/versions/E7ECzQD8/clickthrough-1.21.0%2B0.jar
 
     - name: Server Packer Unlocker
       license: UNLICENSE
@@ -654,3 +640,17 @@ modGroups:
       modrinthId: otVJckYQ
       desc: Implements CIT format commonly used in Optifine resourcepacks
       url: https://cdn.modrinth.com/data/otVJckYQ/versions/G6VEzcyZ/citresewn-1.2.0%2B1.21.jar
+
+    - name: ClickThrough
+      displayName: ClickThrough 2.0
+      license: MIT
+      homepage: https://modrinth.com/mod/clickthrough2.0
+      modrinthId: ERHOxvaH
+      desc: Click through signs and item frames to chests
+      url: https://cdn.modrinth.com/data/ERHOxvaH/versions/E7ECzQD8/clickthrough-1.21.0%2B0.jar
+
+    - name: Custom FOV
+      license: LGPL 3.0 or later
+      homepage: https://modrinth.com/mod/custom-fov-illusive
+      desc: Allows players to customize various field of view settings
+      url: https://cdn.modrinth.com/data/uZAcFHLd/versions/EsCYMaOz/customfov-fabric-9.0.0%2B1.21.jar
