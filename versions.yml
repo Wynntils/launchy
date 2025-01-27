@@ -217,6 +217,7 @@ modGroups:
       desc: Dynamic Lights for Sodium
       url: https://cdn.modrinth.com/data/PxQSWIcD/versions/aruAwiAC/sodiumdynamiclights-fabric-1.0.9-1.21.4.jar
       requires: [Forge Config API Port]
+      incompatibleWith: [Lamb Dynamic Lights]
 
     - name: Barriers Don't Block Rain
       license: CC0-1.0
