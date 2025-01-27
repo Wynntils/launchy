@@ -31,7 +31,7 @@ modGroups:
       homepage: https://modrinth.com/mod/fabric-api
       modrinthId: P7dR8mSH
       desc: The core api used by fabric mods
-      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/8FAH9fuR/fabric-api-0.114.2%2B1.21.4.jar
+      url: https://cdn.modrinth.com/data/P7dR8mSH/versions/S6sAWXmr/fabric-api-0.115.0%2B1.21.4.jar
 
     - name: Sodium
       license: LGPL-3
@@ -118,13 +118,27 @@ modGroups:
       desc: All-in-one optimization mod
       url: https://cdn.modrinth.com/data/nmDcB62a/versions/gx7PIV8n/modernfix-fabric-5.20.1%2Bmc1.21.4.jar
 
+    - name: Enhanced Block Entities
+      license: LGPL-3
+      homepage: https://modrinth.com/mod/ebe
+      desc: Makes blocks like chests render faster and nicer
+      url: https://cdn.modrinth.com/data/OVuFYfre/versions/YokFoILZ/enhancedblockentities-0.11.3%2B1.21.4.jar
+      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/enhanced_bes_1.1.zip
+
   Wynncraft Enhancements:
     - name: Voices of Wynn
       license: GPL-3.0
       homepage: https://voicesofwynn.com
       desc: Adds voice lines to Wynncraft
-      url: https://github.com/Team-VoW/WynncraftVoiceProject/releases/download/v1.9.4/Voices-of-Wynn-fabric-1.9.4-fabric+MC-1.21.jar
+      url: https://github.com/Team-VoW/WynncraftVoiceProject/releases/download/v1.10.2/Voices-of-Wynn-fabric-1.10.2-fabric+MC-1.21.4.jar
       requires: [ Cloth Config ]
+
+    - name: WynnLantern
+      license: CC-BY-NC-SA-4.0
+      homepage: https://modrinth.com/mod/wynnlantern
+      modrinthId: K9vp4EXE
+      desc: Ability to hold lantern in off hand
+      url: https://cdn.modrinth.com/data/K9vp4EXE/versions/3s8JJAnv/WynnLantern-1.3-mc1.21.4-fabric.jar
 
   Visual Enhancements:
     - name: Iris shaders
@@ -203,6 +217,20 @@ modGroups:
       desc: Dynamic Lights for Sodium
       url: https://cdn.modrinth.com/data/PxQSWIcD/versions/aruAwiAC/sodiumdynamiclights-fabric-1.0.9-1.21.4.jar
       requires: [Forge Config API Port]
+
+    - name: Barriers Don't Block Rain
+      license: CC0-1.0
+      homepage: https://modrinth.com/mod/barriers-dont-block-rain
+      modrinthId: nmDcB62a
+      desc: Allows weather effects to pass through barriers
+      url: https://cdn.modrinth.com/data/CXLh6wxz/versions/6tFgkvlI/barriers-dont-block-rain-1.0.5.jar
+
+    - name: Lamb Dynamic Lights
+      license: MIT
+      homepage: https://modrinth.com/mod/lambdynamiclights
+      modrinthId: yBW8D80W
+      desc: Holding a torch will light up your surroundings
+      url: https://cdn.modrinth.com/data/yBW8D80W/versions/YgZzYuBw/lambdynamiclights-4.0.1%2B1.21.4.jar
 
   Camera Enhancements:
     - name: Better Third Person
@@ -294,6 +322,13 @@ modGroups:
       url: https://cdn.modrinth.com/data/w7ThoJFB/versions/RKRjd2h1/Zoomify-2.14.2%2B1.21.3.jar
       incompatibleWith: [Logical Zoom]
       requires: [FabricKotlinLanguage, Yet Another Config Lib]
+
+    - name: Fabrishot
+      license: MIT
+      homepage: https://modrinth.com/mod/fabrishot
+      modrinthId: 3qsfQtE9
+      desc: Take screenshots at insanely large resolutions, because why not
+      url: https://cdn.modrinth.com/data/3qsfQtE9/versions/4eAaapNR/fabrishot-1.14.3.jar
 
     - name: Server Packer Unlocker
       license: UNLICENSE
@@ -484,13 +519,6 @@ modGroups:
       configDesc: "Fixes a conflict with Wynntils"
       requires: [FabricKotlinLanguage]
 
-    - name: Lamb Dynamic Lights
-      license: MIT
-      homepage: https://modrinth.com/mod/lambdynamiclights
-      modrinthId: yBW8D80W
-      desc: Holding a torch will light up your surroundings
-      url: https://cdn.modrinth.com/data/yBW8D80W/versions/i6nks8QI/lambdynamiclights-2.3.3%2B1.20.2.jar
-
     - name: Nimble
       license: MIT
       homepage: https://modrinth.com/mod/nimble
@@ -558,13 +586,6 @@ modGroups:
       desc: Sodium addon providing support for Fabric Rendering API
       url: https://cdn.modrinth.com/data/Orvt0mRa/versions/Z8VpxxGh/indium-1.0.35%2Bmc1.21.jar
 
-    - name: Enhanced Block Entities
-      license: LGPL-3
-      homepage: https://modrinth.com/mod/ebe
-      desc: Makes blocks like chests render faster and nicer
-      url: https://cdn.modrinth.com/data/OVuFYfre/versions/8OuTJDGd/enhancedblockentities-0.10.1%2B1.21.jar
-      configUrl: https://github.com/MineInAbyss/launchy-mods/releases/download/v1.0.0/enhanced_bes_1.1.zip
-
     - name: Wynncraft Dynamic Weather
       license: LGPL-3.0-or-later
       homepage: https://modrinth.com/mod/wynncraft-dynamic-weather
@@ -587,13 +608,6 @@ modGroups:
       desc: Automatically adjusts Distant Horizons for immersion and performance
       url: https://cdn.modrinth.com/data/70ZxXDHX/versions/kbcraubp/wynnvista-0.6.6.jar
       requires: [Distant Horizons]
-
-    - name: WynnLantern
-      license: CC-BY-NC-SA-4.0
-      homepage: https://modrinth.com/mod/wynnlantern
-      modrinthId: K9vp4EXE
-      desc: Ability to hold lantern in off hand
-      url: https://cdn.modrinth.com/data/K9vp4EXE/versions/JMhH7dJu/WynnLantern-1.3-mc1.21-fabric.jar
 
     - name: Dont Surf Through Cutscenes
       displayName: Don't Surf Through Cutscenes!
@@ -619,20 +633,6 @@ modGroups:
       configUrl: https://github.com/Wynntils/launchy-config/releases/download/v0.2.0/DistantHorizons.zip
       configDesc: "Includes cached chunks for Wynncraft"
       incompatibleWith: [Bobby]
-
-    - name: Barriers Don't Block Rain
-      license: CC0-1.0
-      homepage: https://modrinth.com/mod/barriers-dont-block-rain
-      modrinthId: nmDcB62a
-      desc: Allows weather effects to pass through barriers
-      url: https://cdn.modrinth.com/data/CXLh6wxz/versions/6tFgkvlI/barriers-dont-block-rain-1.0.5.jar
-
-    - name: Fabrishot
-      license: MIT
-      homepage: https://modrinth.com/mod/fabrishot
-      modrinthId: 3qsfQtE9
-      desc: Take screenshots at insanely large resolutions, because why not
-      url: https://cdn.modrinth.com/data/3qsfQtE9/versions/HfdXLVRy/fabrishot-1.14.1.jar
 
     - name: CITResewn
       license: MIT
