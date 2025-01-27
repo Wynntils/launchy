@@ -275,13 +275,6 @@ modGroups:
       url: https://cdn.modrinth.com/data/Bh37bMuy/versions/FK8MhLvJ/reeses-sodium-options-fabric-1.8.2%2Bmc1.21.4.jar
       requires: [Sodium]
 
-    - name: Remove HUD
-      license: APACHE
-      homepage: https://modrinth.com/mod/removehud
-      modrinthId: MiPOIx6b
-      desc: Adds ability to remove or move specific hud elements
-      url: https://cdn.modrinth.com/data/MiPOIx6b/versions/xa9MjFsj/removehud-1.3b5.jar
-
     - name: BetterF3
       license: MIT
       homepage: https://modrinth.com/mod/betterf3
@@ -654,3 +647,10 @@ modGroups:
       homepage: https://modrinth.com/mod/custom-fov-illusive
       desc: Allows players to customize various field of view settings
       url: https://cdn.modrinth.com/data/uZAcFHLd/versions/EsCYMaOz/customfov-fabric-9.0.0%2B1.21.jar
+
+    - name: Remove HUD
+      license: APACHE
+      homepage: https://modrinth.com/mod/removehud
+      modrinthId: MiPOIx6b
+      desc: Adds ability to remove or move specific hud elements
+      url: https://cdn.modrinth.com/data/MiPOIx6b/versions/xa9MjFsj/removehud-1.3b5.jar
