@@ -231,6 +231,7 @@ modGroups:
       modrinthId: yBW8D80W
       desc: Holding a torch will light up your surroundings
       url: https://cdn.modrinth.com/data/yBW8D80W/versions/YgZzYuBw/lambdynamiclights-4.0.1%2B1.21.4.jar
+      incompatibleWith: [Sodium Dynamic Lights]
 
   Camera Enhancements:
     - name: Better Third Person
